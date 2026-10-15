@@ -1,0 +1,402 @@
+[
+  {
+    "id": "n5-is-001",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "わたしはともだちとてがみをかきました。",
+    "options": [
+      "わたしはなかよいひととてがみをかきました。",
+      "わたしはあねとてがみをかきました。",
+      "わたしはせんせいとてがみをかきました。",
+      "わたしはちちとてがみをかきました。"
+    ],
+    "answerIndex": 0,
+    "key": ["わたしはなかよいひととてがみをかきました。"],
+    "evidence": "ともだちはなかよいひとのことで、あねやせんせいと同じではありません。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-002",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "きょうはやすみの日です。",
+    "options": [
+      "きょうはしごとをしない日です。",
+      "きょうはしごとをする日です。",
+      "きょうはあめがふる日です。",
+      "きょうはテストのある日です。"
+    ],
+    "answerIndex": 0,
+    "key": ["きょうはしごとをしない日です。"],
+    "evidence": "やすみはしごとをしない日のことで、しごとをする日と同じではありません。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-003",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "かあさんはまいにちはたらいています。",
+    "options": [
+      "かあさんはまいにちしごとをしています。",
+      "かあさんはまいにちやすんでいます。",
+      "かあさんはまいにちねています。",
+      "かあさんはまいにちべんきょうをしています。"
+    ],
+    "answerIndex": 0,
+    "key": ["かあさんはまいにちしごとをしています。"],
+    "evidence": "はたらくはしごとをしたことで、やすんでいますと同じではありません。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-004",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "そんなことはむりです。",
+    "options": [
+      "そんなことはできません。",
+      "そんなことはかんたんです。",
+      "そんなことはだいじょうぶです。",
+      "そんなことはしっています。"
+    ],
+    "answerIndex": 0,
+    "key": ["そんなことはできません。"],
+    "evidence": "むりはできないことだから、できませんが同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-005",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "このかばんはたかいです。",
+    "options": [
+      "このかばんはやすくありません。",
+      "このかばんは大きいです。",
+      "このかばんはかるいです。",
+      "このかばんはやすいです。"
+    ],
+    "answerIndex": 0,
+    "key": ["このかばんはやすくありません。"],
+    "evidence": "たかいはお金の多いことで、やすくありませんが同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-006",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "ちちはじどうしゃをもっています。",
+    "options": [
+      "ちちはくるまをもっています。",
+      "ちちはじてんしゃをもっています。",
+      "ちちはバスをもっています。",
+      "ちちはオートバイをもっています。"
+    ],
+    "answerIndex": 0,
+    "key": ["ちちはくるまをもっています。"],
+    "evidence": "じどうしゃはくるまのことで、じてんしゃと同じではありません。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-008",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "ゆうべこうえんでさんぽしました。",
+    "options": [
+      "ゆうべこうえんであるきました。",
+      "ゆうべこうえんでおどりました。",
+      "ゆうべこうえんでねました。",
+      "あさこうえんでさんぽしました。"
+    ],
+    "answerIndex": 0,
+    "key": ["ゆうべこうえんであるきました。"],
+    "evidence": "さんぽはゆっくりあるくことで、あるきましたと同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-009",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "みずをぜんぶのみました。",
+    "options": [
+      "みずをのこらずのみました。",
+      "みずをすこしのみました。",
+      "みずをのみませんでした。",
+      "おちゃをぜんぶのみました。"
+    ],
+    "answerIndex": 0,
+    "key": ["みずをのこらずのみました。"],
+    "evidence": "ぜんぶはのこさないことで、すこしと同じではありません。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-010",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "このへやはしずかです。",
+    "options": [
+      "このへやはおとがしません。",
+      "このへやはあかるいです。",
+      "このへやはひろいです。",
+      "このへやはきれいです。"
+    ],
+    "answerIndex": 0,
+    "key": ["このへやはおとがしません。"],
+    "evidence": "しずかですという言い方は、音がしませんと同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-011",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "私は土曜日と日曜日に働きます。",
+    "options": [
+      "私は週末に働きます。",
+      "私は金曜日と土曜日に働きます。",
+      "私は毎週土曜日に働きます。",
+      "私は土曜日と日曜日に毎日働きます。"
+    ],
+    "answerIndex": 0,
+    "key": ["私は週末に働きます。"],
+    "evidence": "週末は土曜日と日曜日のことですから、私は週末に働きますが同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-012",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "父の父は祖父です。",
+    "options": [
+      "父の父はおじいさんです。",
+      "父の母は祖父です。",
+      "父の兄は祖父です。",
+      "父の父は孫です。"
+    ],
+    "answerIndex": 0,
+    "key": ["父の父はおじいさんです。"],
+    "evidence": "祖父とおじいさんは同じ人をさす言い方ですから、父の父はおじいさんですだけが同じ意味になります。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-013",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "来週、わたしは旅行へ行きます。",
+    "options": [
+      "次の週に、わたしは旅行へ行きます。",
+      "先週、わたしは旅行へ行きます。",
+      "来週、わたしは旅行へ行きました。",
+      "来週は毎日、旅行へ行きます。"
+    ],
+    "answerIndex": 0,
+    "key": ["次の週に、わたしは旅行へ行きます。"],
+    "evidence": "来週は次の週のことですから、同じ意味になるのは次の週に、わたしは旅行へ行きますだけです。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-014",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "散歩は毎日一時間ぐらいです。",
+    "options": [
+      "散歩は毎日六十分ぐらいです。",
+      "散歩は毎日十分ぐらいです。",
+      "散歩は毎晩一時間ぐらいです。",
+      "ランニングは毎日一時間ぐらいです。"
+    ],
+    "answerIndex": 0,
+    "key": ["散歩は毎日六十分ぐらいです。"],
+    "evidence": "一時間は六十分といっしょの長さの言い方だから、散歩は毎日六十分ぐらいですと同じ意味になります。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-015",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "明日は雨ですから、山へ行きません。",
+    "options": [
+      "明日は天気がよくありませんから、山へ行きません。",
+      "明日はいい天気ですから、山へ行きません。",
+      "明日は雪ですから、山へ行きません。",
+      "明日は雨ですから、山へ行きます。"
+    ],
+    "answerIndex": 0,
+    "key": ["明日は天気がよくありませんから、山へ行きません。"],
+    "evidence": "雨は天気がよくないということですから、明日は天気がよくありませんから、山へ行きませんと同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-017",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "母はあさって京都へ行きます。",
+    "options": [
+      "母は二日後に京都へ行きます。",
+      "母は来週京都へ行きます。",
+      "母はあさって大阪へ行きます。",
+      "母はあさって京都から帰ります。"
+    ],
+    "answerIndex": 0,
+    "key": ["母は二日後に京都へ行きます。"],
+    "evidence": "あさってはいまから二日後のことですから、母は二日後に京都へ行きますと同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-018",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "父は毎日新聞を読みます。",
+    "options": [
+      "父はいつも新聞を読みます。",
+      "父は毎日新聞を読みません。",
+      "母が毎日新聞を読みます。",
+      "父は毎日本を読みます。"
+    ],
+    "answerIndex": 0,
+    "key": ["父はいつも新聞を読みます。"],
+    "evidence": "毎日はいつもと同じ意味ですから、父はいつも新聞を読みますがいちばんいい文です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-019",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "兄は私の前に座っています。",
+    "options": [
+      "私は兄のうしろに座っています。",
+      "兄は私の隣に座っています。",
+      "兄は私の前に立っています。",
+      "姉は私の前に座っています。"
+    ],
+    "answerIndex": 0,
+    "key": ["私は兄のうしろに座っています。"],
+    "evidence": "兄は私の前に座っていますから、私は兄のうしろに座っているのと同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-020",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "このへやはきたないです。",
+    "options": [
+      "このへやはきれいではありません。",
+      "このへやはきれいでした。",
+      "このへやはあたたかいです。",
+      "このへやはきたなくありません。"
+    ],
+    "answerIndex": 0,
+    "key": ["このへやはきれいではありません。"],
+    "evidence": "「きれいではありません」は「きたないです」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-021",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "きのうかさをわすれてきました。",
+    "options": [
+      "きのうかさを持ってきませんでした。",
+      "きのうかさをなくしました。",
+      "きのうかさをかいました。",
+      "きのうくるまをわすれてきました。"
+    ],
+    "answerIndex": 0,
+    "key": ["きのうかさを持ってきませんでした。"],
+    "evidence": "「もってきませんでした」は「わすれてきました」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-is-022",
+    "block": "iikae-ruiji",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "えいがはよじはんにはじまります。",
+    "options": [
+      "えいがはよじさんじゅっぷんにはじまります。",
+      "えいがはしちじはんにはじまります。",
+      "えいがはよじはんにおわりました。",
+      "えいがはあさよじはんにはじまります。"
+    ],
+    "answerIndex": 0,
+    "key": ["えいがはよじさんじゅっぷんにはじまります。"],
+    "evidence": "よじはんはよじさんじゅっぷんのことですから、同じ時間を言っています。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  }
+]

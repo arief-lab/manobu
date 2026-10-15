@@ -1,0 +1,74 @@
+[
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "first 主張理解 pass over the frozen 10-row N1 batch, key withheld. Every row judged PASS: the key is the option the passage states, and each distractor was marked as contradicting explicit text. Zero rejections.",
+    "verdicts": {
+      "pass": 10,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "second judge FAMILY, blind pass over the same frozen 10-row batch. Agreed with the shipped key on every row (10/10). Zero rejections, so no regeneration was needed.",
+    "verdicts": {
+      "pass": 10,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass A over the 16-row AUTHORED N1 主張理解 batch (n1sh-1..n1sh-16, packet .cache/judge/n1/chuushou-final.md, verdicts chuushou-final-A.md). All 16 rows PASS and every blind pick equals the frozen key (16/16). Provenance of this round matters: an earlier pair of passes ran against a packet emitted at 08:13 from a store the author was still writing, and the store's last four rows moved afterwards (a field-by-field diff of the two packets shows rows 1-12 identical and 13-16 rewritten), so that round was VOIDED and both passes were re-run over the final bytes rather than carried over. Batch shape measured off the store: 800-1200 runes (CHUUSHOU_AUTHORED_BAND.N1), five paragraphs, one fixed stem form, keys 4/4/4/4, the claim option a paraphrase of the closing paragraph and each distractor a verbatim detail, a reversed stance or a counter-position.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 16,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass B over the same final 16 authored 主張理解 rows (verdicts chuushou-final-B.md). 16 PASS, 0 AMBIGUOUS, picks again equal to the shipped key on every row (16/16 across both passes). It reported the mechanism the construction intends: the stem's 最も主張している qualifier is what excludes a true-but-peripheral premise sentence, and it named n1sh-8's 「失敗のデータはゴミではなく…」 as the closest call in the batch because that option is the author's own verbatim line. Neither pass found a second survivor. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 16,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass A over the 12 rows of this store the two repair windows touched (n1sh-1..n1sh-7, n1sh-10, n1sh-12, n1sh-14..n1sh-16; packet .cache/judge/n1/chuushou-rejudge.md, verdicts chuushou-rejudge-A.md, store sha256 09eb30cf5c96… then 880b988ea14f73d8). 12 PASS and all 12 picks equal the frozen key. Prose round: a separate blind proofread of the authored Japanese (particle case, subject/predicate fit, non-existent verb forms, Chinese counters, truncated compounds) flagged the spans; each one was checked against the store before it was applied, and only the spans the author agreed with were edited. Edits were mirrored into every field of the same row, because a distractor may lift a passage sentence verbatim and the gate requires the evidence span to stay a literal substring. The second window took the proofread's own output back through the store rather than applying it: 調べたところ, 引き直し→見直し and 規律が擦り減る→衰える, 取り替わる→入れ替わる, 形だけ消して→形を消して (both copies, passage and option), 年月を持ち→刻み, 見返りは…使う→費用は見返りの大きいほうへ使う, 税を立てる→掛ける, 審査へ替えた→に替えた, 数学→算数 where the whole row says 算数, 住民の可決→合議 in the key option. Eight of the proofread's 18 claims were refused as not defects, including 寝直す (attested), 週二回のまま (a schedule can persist), 三年分の書類 (three years' worth, idiomatic), 公平と測定をぶつけ合う (standard reciprocal-transitive) and both of the n1sh-16 claims, one of which proposed writing ASCII digits into an N1 passage.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 12,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass B over the same 12 repaired 主張理解 rows (verdicts chuushou-rejudge-B.md): 12 PASS, 0 AMBIGUOUS, every pick equal to the shipped key, so the store ships as repaired at 16 rows. It reported that in 11 of 12 the closest call is the distractor that lifts the writer's own cited statistic verbatim, refused because the passage introduces it as evidence or as the opponent's premise and then subordinates it, never as the 主張. One caveat it kept and this record keeps: n1sh-15's key option says 住民の合議 where the document speaks of a seat inside 市の制度, a mild extrapolation that survives because no other option carries the procedural thesis. The four rows neither window touched (n1sh-8, n1sh-9, n1sh-11, n1sh-13) are carried byte-identically: diffing a packet of them against chuushou-final.md shows text diffs NONE. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 12,
+      "unanswerable": 0
+    }
+  }
+]

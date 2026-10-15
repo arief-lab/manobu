@@ -1,0 +1,350 @@
+[
+  {
+    "id": "n5-hw-001",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "あさ 学校で 先生に 会いました。何と 言いますか。",
+    "passage": "あさ 学校で 先生に 会いました。",
+    "options": [
+      "おはよう ございます",
+      "おやすみ なさい",
+      "こんばんは",
+      "さようなら"
+    ],
+    "answerIndex": 0,
+    "key": ["おはよう ございます"]
+  },
+  {
+    "id": "n5-hw-002",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "店で コーヒーを 買いたいです。何と 言いますか。",
+    "passage": "店で コーヒーを 買いたいです。",
+    "options": [
+      "コーヒーを ください",
+      "コーヒーを 食べます",
+      "コーヒーは どこですか",
+      "コーヒーが すきです"
+    ],
+    "answerIndex": 0,
+    "key": ["コーヒーを ください"]
+  },
+  {
+    "id": "n5-hw-003",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "友だちが おちゃを すすめました。 飲みたく ないです。何と 言いますか。",
+    "passage": "友だちが おちゃを すすめました。 飲みたく ないです。",
+    "options": [
+      "いいえ、けっこうです",
+      "ありがとう ございます",
+      "すみません",
+      "おねがいします"
+    ],
+    "answerIndex": 0,
+    "key": ["いいえ、けっこうです"]
+  },
+  {
+    "id": "n5-hw-004",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "先生の へやに 入ります。何と 言いますか。",
+    "passage": "先生の へやに 入ります。何と 言いますか。",
+    "options": [
+      "しつれいします",
+      "ただいま",
+      "いただきます",
+      "どうも ありがとう"
+    ],
+    "answerIndex": 0,
+    "key": ["しつれいします"]
+  },
+  {
+    "id": "n5-hw-005",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "ごはんを 食べる 前です。何と 言いますか。",
+    "passage": "ごはんを 食べる 前です。",
+    "options": ["いただきます", "ごちそうさま", "しつれいします", "すみません"],
+    "answerIndex": 0,
+    "key": ["いただきます"]
+  },
+  {
+    "id": "n5-hw-006",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "駅へ 行きたいです。 道が わかりません。 しらない 人に 何と 聞きますか。",
+    "passage": "駅へ 行きたいです。 道が わかりません。",
+    "options": [
+      "駅は どこですか",
+      "駅は 何時ですか",
+      "駅は いくらですか",
+      "駅へ 行って ください"
+    ],
+    "answerIndex": 0,
+    "key": ["駅は どこですか"]
+  },
+  {
+    "id": "n5-hw-007",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "ともだちの いえに 入ります。何と 言いますか。",
+    "passage": "ともだちの いえに 入る とき",
+    "options": ["おじゃまします", "ただいま", "おかえりなさい", "いただきます"],
+    "answerIndex": 0,
+    "key": ["おじゃまします"]
+  },
+  {
+    "id": "n5-hw-008",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "何と 言いますか。",
+    "passage": "じょうけい：ごはんを 食べた あとで、お金を はらいました。店を 出る とき、何と 言いますか。",
+    "options": [
+      "ごちそうさまでした",
+      "いただきます",
+      "おはようございます",
+      "おやすみなさい"
+    ],
+    "answerIndex": 0,
+    "key": ["ごちそうさまでした"]
+  },
+  {
+    "id": "n5-hw-101",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ごご 学校で 先生に あいました。何と 言いますか。",
+    "passage": "ごご 学校で 先生に あいました。",
+    "options": ["こんにちは", "おやすみ なさい", "さようなら", "ただいま"],
+    "answerIndex": 0,
+    "key": ["こんにちは"],
+    "evidence": "ごごに 人に あったときは こんにちはと 言います。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-102",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "学校に とても おそく つきました。何と 言いますか。",
+    "passage": "学校に とても おそく つきました。",
+    "options": [
+      "おそく なって すみません",
+      "いただきます",
+      "いってきます",
+      "おさきに しつれい します"
+    ],
+    "answerIndex": 0,
+    "key": ["おそく なって すみません"],
+    "evidence": "学校に おそく ついたときは おそく なって すみませんと あやまります。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-103",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "友達が すてきな ものを くれました。何と 言いますか。",
+    "passage": "友達が すてきな ものを くれました。",
+    "options": [
+      "ありがとう ございます",
+      "はじめまして",
+      "どうぞ",
+      "おやすみ なさい"
+    ],
+    "answerIndex": 0,
+    "key": ["ありがとう ございます"],
+    "evidence": "ものを もらったときは ありがとう ございますと 返事を します。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-104",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "友達が なにを いったか、よく わかりません。何と 言いますか。",
+    "passage": "友達が なにを いったか、よく わかりません。",
+    "options": [
+      "もう いちど いって ください",
+      "はじめまして",
+      "さようなら",
+      "いただきます"
+    ],
+    "answerIndex": 0,
+    "key": ["もう いちど いって ください"],
+    "evidence": "話が わからないときは もう いちど いって くださいと おねがいします。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-105",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "友達が すてきな ほんを もっています。何と 言いますか。",
+    "passage": "友達が すてきな ほんを もっています。",
+    "options": [
+      "ほんを かして ください",
+      "いっしょに たべませんか",
+      "これ いくら ですか",
+      "ただいま"
+    ],
+    "answerIndex": 0,
+    "key": ["ほんを かして ください"],
+    "evidence": "人の ほんが よみたい ときは ほんを かして くださいと 言います。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-106",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "バスで 人の あしを ふみました。何と 言いますか。",
+    "passage": "バスで 人の あしを ふみました。",
+    "options": [
+      "すみません",
+      "ありがとう ございます",
+      "おかえり なさい",
+      "いただきます"
+    ],
+    "answerIndex": 0,
+    "key": ["すみません"],
+    "evidence": "あしを ふんだときは すみませんと あやまります。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-107",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "昼、友達と ごはんを いっしょに たべたいです。何と 言いますか。",
+    "passage": "昼、友達と ごはんを いっしょに たべたいです。",
+    "options": [
+      "いっしょに たべませんか",
+      "いらっしゃいませ",
+      "ただいま",
+      "いってきます"
+    ],
+    "answerIndex": 0,
+    "key": ["いっしょに たべませんか"],
+    "evidence": "友達を さそうときは いっしょに たべませんか と 言います。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-108",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "学校で 先生が てつだってくれました。何と 言いますか。",
+    "passage": "学校で 先生が てつだってくれました。",
+    "options": [
+      "どうも ありがとうございます",
+      "すみません",
+      "はじめまして",
+      "もう いちど いって ください"
+    ],
+    "answerIndex": 0,
+    "key": ["どうも ありがとうございます"],
+    "evidence": "てつだって もらったときは どうも ありがとうございますと 言います。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-109",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "店で ほしかった ぼうしを みつけました。何と 言いますか。",
+    "passage": "店で ほしかった ぼうしを みつけました。",
+    "options": [
+      "これ いくら ですか",
+      "いらっしゃいませ",
+      "ただいま",
+      "おさきに しつれい します"
+    ],
+    "answerIndex": 0,
+    "key": ["これ いくら ですか"],
+    "evidence": "ねだんが しりたいときは これ いくら ですかと 店員に 聞きます。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-110",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "家に いる ばん、電話が なりました。何と 言いますか。",
+    "passage": "家に いる ばん、電話が なりました。",
+    "options": ["もしもし", "いらっしゃいませ", "ただいま", "おやすみ なさい"],
+    "answerIndex": 0,
+    "key": ["もしもし"],
+    "evidence": "でんわが なって でるときは まず もしもしと 言います。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-111",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "学校で 人に 名前を きかれました。何と 言いますか。",
+    "passage": "学校で 人に 名前を きかれました。",
+    "options": [
+      "はじめまして、やまだです",
+      "ただいま",
+      "ありがとう ございます",
+      "いってきます"
+    ],
+    "answerIndex": 0,
+    "key": ["はじめまして、やまだです"],
+    "evidence": "はじめまして、やまだですと いうのが ふつうです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-hw-112",
+    "block": "hatsuwa-hyougen",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "かいしゃで みんなより さきに かえります。何と 言いますか。",
+    "passage": "かいしゃで みんなより さきに かえります。",
+    "options": [
+      "おさきに しつれい します",
+      "ただいま",
+      "おかえり なさい",
+      "こんにちは"
+    ],
+    "answerIndex": 0,
+    "key": ["おさきに しつれい します"],
+    "evidence": "みんなより 先に かえる ときは おさきに しつれい しますと 言います。",
+    "validatedBy": "authored:agent-blind-judged"
+  }
+]

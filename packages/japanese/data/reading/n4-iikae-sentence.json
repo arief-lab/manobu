@@ -1,0 +1,402 @@
+[
+  {
+    "id": "n4-is-001",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "弟は日本語で手紙を書くことができます。",
+    "options": [
+      "弟は日本語で手紙が書けます。",
+      "妹は日本語で手紙を書くことができます。",
+      "弟は日本語で手紙を読むことができます。",
+      "弟は日本語で手紙を書くことができません。"
+    ],
+    "answerIndex": 0,
+    "key": ["弟は日本語で手紙が書けます。"],
+    "evidence": "「が書けます」は「を書くことができます」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-002",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "父が買ってくれたこのかばんは丈夫です。",
+    "options": [
+      "父が買ってくれたこのかばんはこわれにくいです。",
+      "父が買ってくれたこのかばんは新品です。",
+      "父が買ってくれたこのかばんは丈夫ではありません。",
+      "父が買ってくれたこのかばんは重すぎます。"
+    ],
+    "answerIndex": 0,
+    "key": ["父が買ってくれたこのかばんはこわれにくいです。"],
+    "evidence": "「こわれにくい」は「丈夫」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-003",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "山田さんは毎晩、近くの公園で犬と散歩します。",
+    "options": [
+      "山田さんは晩ごとに、近くの公園で犬と散歩します。",
+      "山田さんは毎晩、遠くの公園で犬と散歩します。",
+      "山田さんの息子は毎晩、近くの公園で犬と散歩します。",
+      "山田さんは毎晩、近くの公園で犬と遊びます。"
+    ],
+    "answerIndex": 0,
+    "key": ["山田さんは晩ごとに、近くの公園で犬と散歩します。"],
+    "evidence": "「晩ごとに」は「毎晩」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-004",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "冷蔵庫に、野菜がたくさん入っています。",
+    "options": [
+      "冷蔵庫に、野菜がいっぱい入っています。",
+      "冷蔵庫に、野菜が少しだけ入っています。",
+      "冷蔵庫に、果物がたくさん入っています。",
+      "冷蔵庫に、野菜がたくさん入っていません。"
+    ],
+    "answerIndex": 0,
+    "key": ["冷蔵庫に、野菜がいっぱい入っています。"],
+    "evidence": "「いっぱい」は「たくさん」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-005",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "私はまだ外国へ行ったことがありません。",
+    "options": [
+      "私はまだ外国へ行った経験がありません。",
+      "私はまだ外国へ行くことができません。",
+      "私の母はまだ外国へ行ったことがありません。",
+      "私はまだ外国へ引っ越したことがありません。"
+    ],
+    "answerIndex": 0,
+    "key": ["私はまだ外国へ行った経験がありません。"],
+    "evidence": "「経験がありません」は「ことがありません」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-006",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "子どもが広場のまんなかでボールであそんでいます。",
+    "options": [
+      "子どもが広場の中心でボールであそんでいます。",
+      "子どもが広場のまんなかでボールをけっています。",
+      "先生が広場のまんなかでボールであそんでいます。",
+      "子どもが体育館でボールであそんでいます。"
+    ],
+    "answerIndex": 0,
+    "key": ["子どもが広場の中心でボールであそんでいます。"],
+    "evidence": "「中心」は「まんなか」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-007",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "この仕事は、明日までに終わらせる必要があります。",
+    "options": [
+      "この仕事は、明日までに終わらせなければなりません。",
+      "この仕事は、明日までに終わらせることができます。",
+      "この仕事は、来週までに終わらせる必要があります。",
+      "この仕事は、明日までに終わらせる必要がありません。"
+    ],
+    "answerIndex": 0,
+    "key": ["この仕事は、明日までに終わらせなければなりません。"],
+    "evidence": "「終わらせなければなりません」は「終わらせる必要があります」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-008",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "この博物館の入場料はいりません。",
+    "options": [
+      "この博物館の入場料はただです。",
+      "この博物館の入場料はとても高いです。",
+      "この公園の入場料はいりません。",
+      "この博物館の入場料は今日はいりません。"
+    ],
+    "answerIndex": 0,
+    "key": ["この博物館の入場料はただです。"],
+    "evidence": "「ただです」は「いりません」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-009",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "私は朝、バスに乗り遅れました。",
+    "options": [
+      "私は朝、バスに間に合いませんでした。",
+      "私は夜、バスに乗り遅れました。",
+      "私は朝、バスに乗り換えました。",
+      "私は朝、バスに乗り遅れません。"
+    ],
+    "answerIndex": 0,
+    "key": ["私は朝、バスに間に合いませんでした。"],
+    "evidence": "「間に合いませんでした」は「乗り遅れました」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-010",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "明日の会議に行かないといけません。",
+    "options": [
+      "明日の会議に行かなければなりません。",
+      "明日の会議に行かなくてもいいです。",
+      "明日の会議に行かないほうがいいです。",
+      "明日の会議に行かないと言いました。"
+    ],
+    "answerIndex": 0,
+    "key": ["明日の会議に行かなければなりません。"],
+    "evidence": "「行かなければなりません」は「行かないといけません」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-011",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "写真を撮っても大丈夫です。",
+    "options": [
+      "写真を撮ってもいいです。",
+      "写真を撮ってもいいですか。",
+      "写真を撮る必要があります。",
+      "写真を撮らなくてもいいです。"
+    ],
+    "answerIndex": 0,
+    "key": ["写真を撮ってもいいです。"],
+    "evidence": "「いいです」は「大丈夫です」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-012",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "ここで食べてはいけません。",
+    "options": [
+      "ここで食べないでください。",
+      "ここで食べなければなりません。",
+      "教室で食べてはいけません。",
+      "ここで食べてもいいですか。"
+    ],
+    "answerIndex": 0,
+    "key": ["ここで食べないでください。"],
+    "evidence": "「食べないでください」は「食べてはいけません」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-013",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "彼はきっと約束を忘れたのでしょう。",
+    "options": [
+      "彼はきっと約束を忘れたにちがいない。",
+      "彼はきっと宿題を忘れたのでしょう。",
+      "彼はきっと約束を忘れたのではありません。",
+      "彼はきっと約束を守ったでしょう。"
+    ],
+    "answerIndex": 0,
+    "key": ["彼はきっと約束を忘れたにちがいない。"],
+    "evidence": "「忘れたにちがいない」は「忘れたのでしょう」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-014",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "発表のあとで先生にほめられました。",
+    "options": [
+      "発表のあとで先生がほめてくれました。",
+      "発表のあとで先生に三回ほめられました。",
+      "発表のまえに先生にほめられました。",
+      "発表のあとで友だちにほめられました。"
+    ],
+    "answerIndex": 0,
+    "key": ["発表のあとで先生がほめてくれました。"],
+    "evidence": "「先生がほめてくれました」は「先生にほめられました」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-015",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "電池が切れたので、買いに行きました。",
+    "options": [
+      "電池が切れたから、買いに行きました。",
+      "電池が切れたのに、買いに行きました。",
+      "電池が切れる前に、買いに行きました。",
+      "電池が切れても、買いに行きました。"
+    ],
+    "answerIndex": 0,
+    "key": ["電池が切れたから、買いに行きました。"],
+    "evidence": "「切れたから」は「切れたので」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-016",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "ごはんを食べてから学校へ行きました。",
+    "options": [
+      "ごはんを食べたあとで学校へ行きました。",
+      "ごはんを食べてから家へ行きました。",
+      "ごはんを食べないで学校へ行きました。",
+      "ごはんを食べる前に学校へ行きました。"
+    ],
+    "answerIndex": 0,
+    "key": ["ごはんを食べたあとで学校へ行きました。"],
+    "evidence": "「食べたあとで」は「食べてから」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-017",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "来年は日本語を勉強するつもりです。",
+    "options": [
+      "来年は日本語を勉強する予定です。",
+      "再来年は日本語を勉強するつもりです。",
+      "来年は日本語を勉強しないつもりです。",
+      "来年は日本語を勉強しなければなりません。"
+    ],
+    "answerIndex": 0,
+    "key": ["来年は日本語を勉強する予定です。"],
+    "evidence": "「勉強する予定です」は「勉強するつもりです」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-018",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "窓を開けてくださいませんか。",
+    "options": [
+      "窓を開けていただけませんか。",
+      "窓を開けてもいいですか。",
+      "窓を開けなければなりませんか。",
+      "窓を開けたほうがよいですか。"
+    ],
+    "answerIndex": 0,
+    "key": ["窓を開けていただけませんか。"],
+    "evidence": "「開けていただけませんか」は「開けてくださいませんか」とだいたいおなじ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-019",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "このテストはかんたんでした。",
+    "options": [
+      "このテストはむずかしくありませんでした。",
+      "このテストはむずかしかったです。",
+      "このテストはながかったです。",
+      "このテストはかんたんではありませんでした。"
+    ],
+    "answerIndex": 0,
+    "key": ["このテストはむずかしくありませんでした。"],
+    "evidence": "「むずかしくありませんでした」は「かんたんでした」とだいたい同じ意味です。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-is-020",
+    "block": "iikae-ruiji",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "stem": "＿＿＿の ぶんと だいたい おなじ いみの ぶんが あります。１・２・３・４から いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "そのことはまったくわかりません。",
+    "options": [
+      "そのことはぜんぜんわかりません。",
+      "そのことはまだわかりません。",
+      "そのことはすこしだけわかります。",
+      "そのことはたしかにわかります。"
+    ],
+    "answerIndex": 0,
+    "key": ["そのことはぜんぜんわかりません。"],
+    "evidence": "「ぜんぜん」は「まったく」とだいたい同じ意味ですから、同じ文になります。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  }
+]

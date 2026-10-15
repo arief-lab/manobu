@@ -1,0 +1,58 @@
+# TASK-97 + TASK-98: Rust formatting gate, kept ABOVE the ultracite block so that
+# block stays the only thing an ultracite re-init rewrites. Both Rust crates are
+# rustfmt-clean and must stay that way; each check fires only when a .rs file
+# under its own crate is staged, so a JS/TS commit pays nothing. The crates are
+# standalone (no workspace Cargo.toml), hence one manifest-path per crate.
+for rust_crate in crates/jlpt-mcp apps/desktop/src-tauri; do
+  if git diff --cached --name-only --diff-filter=ACMR -- "$rust_crate" |
+    grep -q '\.rs$'; then
+    echo "Checking Rust formatting ($rust_crate)…"
+    if ! cargo fmt --check --manifest-path "$rust_crate/Cargo.toml"; then
+      echo "rustfmt wants changes: cargo fmt --manifest-path $rust_crate/Cargo.toml"
+      exit 1
+    fi
+  fi
+done
+
+# ultracite
+#!/bin/sh
+# Check if there are any staged files
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACMR)
+if [ -z "$STAGED_FILES" ]; then
+  echo "No staged files to format"
+  exit 0
+fi
+
+# Run formatter, capturing the exit code so we can still re-stage and report
+FORMAT_EXIT_CODE=0
+bun x ultracite fix || FORMAT_EXIT_CODE=$?
+
+# Re-stage files that were already staged
+echo "$STAGED_FILES" | while IFS= read -r file; do
+  if [ -f "$file" ]; then
+    git add -- "$file"
+  fi
+done
+
+if [ $FORMAT_EXIT_CODE -ne 0 ]; then
+  echo "Ultracite found issues that could not be auto-fixed."
+  exit $FORMAT_EXIT_CODE
+fi
+
+echo "✨ Files formatted by Ultracite"
+# ultracite end
+
+# mutation-gate anchor preflight (read-only, ~20ms). It runs AFTER the ultracite
+# block on purpose: ultracite reformats in place, and a reformatted seam target
+# can be exactly the line an anchor names, so a preflight placed above would
+# pass and then be invalidated in the same commit. A seam whose anchor no longer
+# resolves is a STALE GATE, not a passing one - without this, a refactor can
+# silently disarm a seam and nobody finds out until the full run is run by hand.
+STAGED_TS=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(ts|tsx)$' || true)
+if [ -n "$STAGED_TS" ]; then
+  if ! bun scripts/mutation-gate.ts --check; then
+    echo "A mutation seam is stale. Update the seam (or delete it), then re-stage."
+    exit 1
+  fi
+fi
+# mutation-gate end

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "manobu",
+  "version": "0.1.0",
+  "identifier": "gg.manobu.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:3001",
+    "beforeDevCommand": "bunx concurrently --success first --kill-others-on-fail \"bun run dev\" \"bun run sidecar:dev\"",
+    "beforeBuildCommand": "bun run build && bash scripts/sidecar-stage.sh"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "manobu",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 900,
+        "minHeight": 600,
+        "maxWidth": 1600,
+        "center": true,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: asset: https://asset.localhost; connect-src 'self' ipc: http://ipc.localhost tauri://localhost http://tauri.localhost http://localhost:4317; font-src 'self' data:; media-src 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["deb", "appimage", "rpm"],
+    "externalBin": [
+      "../../../apps/server/dist/server",
+      "../../../crates/jlpt-mcp/dist/jlpt-mcp"
+    ],
+    "resources": {
+      "../../../assistant": "assistant",
+      "../../../node_modules/.bun/@libsql+linux-x64-gnu@0.5.29/node_modules/@libsql/linux-x64-gnu": "node_modules/@libsql/linux-x64-gnu",
+      "../../../packages/japanese/data/n1.json": "packages/japanese/data/n1.json",
+      "../../../packages/japanese/data/n2.json": "packages/japanese/data/n2.json",
+      "../../../packages/japanese/data/n3.json": "packages/japanese/data/n3.json",
+      "../../../packages/japanese/data/n4.json": "packages/japanese/data/n4.json",
+      "../../../packages/japanese/data/n5.json": "packages/japanese/data/n5.json",
+      "../../../packages/japanese/data/kanji.json": "packages/japanese/data/kanji.json",
+      "../../../packages/japanese/data/verbs-n5.json": "packages/japanese/data/verbs-n5.json",
+      "../../../packages/japanese/data/grammar": "packages/japanese/data/grammar",
+      "../../../packages/japanese/data/reading": "packages/japanese/data/reading",
+      "../../../packages/japanese/data/kanjivg": "packages/japanese/data/kanjivg"
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "android": {
+      "debugApplicationIdSuffix": ".debug"
+    }
+  }
+}

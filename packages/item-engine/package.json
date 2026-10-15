@@ -1,0 +1,24 @@
+{
+  "name": "@manobu/item-engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./grading": "./src/grading.ts",
+    "./hash": "./src/hash.ts",
+    "./paper": "./src/paper.ts",
+    "./selection": "./src/selection.ts",
+    "./stimuli": "./src/stimuli.ts",
+    "./types": "./src/types.ts",
+    "./validation": "./src/validation.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@manobu/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

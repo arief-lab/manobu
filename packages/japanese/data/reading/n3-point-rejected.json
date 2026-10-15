@@ -1,0 +1,50 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N3 point candidates; the burned rows were replaced by newly authored rows judged in its own packet under the same protocol (.cache/judge/n3-listening/rep). Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. N3 ships authored-only: JLPTSuccess ships listening at N5 only (LICENSE §29), so every N3 row is composed (LICENSE §30).",
+    "rejectedIds": ["n3-pt-117", "n3-pt-124"],
+    "verdicts": {
+      "pass": 48,
+      "ambiguous": 0,
+      "unanswerable": 2,
+      "unfit": 2,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n3-pt-117",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: Option A その次の電車 and option D 二番後の電車 name the same train; two options identical in meaning. The content decision (その次の電車) is fine, the option set is broken.",
+          "pass2 UNFIT: Same duplicate pair found per-option; 二番後の電車 and その次の電車 are the same train, so the item cannot be uniquely keyed."
+        ]
+      },
+      {
+        "id": "n3-pt-124",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "unanswerable"
+          },
+          "pass2": {
+            "verdict": "unanswerable"
+          }
+        },
+        "why": [
+          "pass1 UNANSWERABLE: The wake-up the dialogue decides is the WOMAN's (she asks 何時に起きたらいいの and is told 六時); the question asks 男の人は何時に起きますか, whose answer is never spoken.",
+          "pass2 UNANSWERABLE: Same gap; the man's own wake-up time is not in the transcript, only his instruction to her."
+        ]
+      }
+    ]
+  }
+]

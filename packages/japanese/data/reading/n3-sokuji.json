@@ -1,0 +1,722 @@
+[
+  {
+    "id": "n3-sj-101",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "お先に失礼します。",
+    "options": [
+      "お疲れさまでした",
+      "お世話になりました",
+      "ごめんなさい",
+      "かしこまりました"
+    ],
+    "answerIndex": 0,
+    "key": ["お疲れさまでした"],
+    "evidence": "職場で先に帰る人への挨拶には、お疲れさまでした が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-102",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "ちょっとお時間よろしいですか。",
+    "options": [
+      "はい、どうしましたか",
+      "いいえ、時間はありません",
+      "お待ちしています",
+      "どうぞごゆっくり"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、どうしましたか"],
+    "evidence": "用件を尋ねられて時間を確かめられたときには、はい、どうしましたか が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-103",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "こちらの資料、ご確認いただけますか。",
+    "options": [
+      "はい、拝見します",
+      "いいえ、見ません",
+      "お読みになりましたか",
+      "はい、読みたいです"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、拝見します"],
+    "evidence": "資料の確認を依頼されたときには、はい、拝見します が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-106",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "この荷物、重そうですね。お手伝いしましょうか。",
+    "options": [
+      "ありがとうございます、助かります",
+      "いいえ、重くありません",
+      "はい、荷物です",
+      "どこに持っていきますかね"
+    ],
+    "answerIndex": 0,
+    "key": ["ありがとうございます、助かります"],
+    "evidence": "荷物を持つ手伝いを申し出られたときには、ありがとうございます、助かります が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-107",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "明日の会議、参加いただけますか。",
+    "options": [
+      "はい、参加します",
+      "いいえ、会議ではありません",
+      "会議は明日です",
+      "まだ決めていませんが"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、参加します"],
+    "evidence": "会議への参加を尋ねられたときには、はい、参加します が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-108",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "お帰りなさいませ。",
+    "options": [
+      "ただいま戻りました",
+      "いってきます",
+      "行ってらっしゃい",
+      "お疲れさまでした"
+    ],
+    "answerIndex": 0,
+    "key": ["ただいま戻りました"],
+    "evidence": "職場に帰ってきたとき、迎えの挨拶には、ただいま戻りました が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-109",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "何かお探しのものはありますか。",
+    "options": [
+      "はい、赤いワンピースを探しています",
+      "いいえ、探していません",
+      "どこにありますか",
+      "見つかりませんでした"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、赤いワンピースを探しています"],
+    "evidence": "店員に探し物を尋ねられたときには、はい、赤いワンピースを探しています が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-110",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "その点、私も同じ意見です。",
+    "options": [
+      "では、この方針で進めましょう",
+      "いいえ、違いますか",
+      "意見がありません",
+      "もう一度読んでください"
+    ],
+    "answerIndex": 0,
+    "key": ["では、この方針で進めましょう"],
+    "evidence": "意見が一致したときには、では、この方針で進めましょう が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-111",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "先日の件、どうなりましたか。",
+    "options": [
+      "幸い、無事に解決しました",
+      "はい、先日行きました",
+      "いいえ、まだです",
+      "どうもありがとうございました"
+    ],
+    "answerIndex": 0,
+    "key": ["幸い、無事に解決しました"],
+    "evidence": "その後の経過を尋ねられたときには、幸い、無事に解決しました が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-112",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "メールの返事、まだですか。",
+    "options": [
+      "申し訳ありません、今からすぐ送ります",
+      "はい、送りました",
+      "メールは見ませんでした",
+      "もう一度送ってください"
+    ],
+    "answerIndex": 0,
+    "key": ["申し訳ありません、今からすぐ送ります"],
+    "evidence": "返事の催促をされたときには、申し訳ありません、今からすぐ送ります が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-114",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "こちらの写真、見ていただけますか。",
+    "options": [
+      "はい、どんな写真ですか",
+      "いいえ、見られません",
+      "写真は撮りませんでした",
+      "カメラは持っていません"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、どんな写真ですか"],
+    "evidence": "写真を見せてとの依頼には、はい、どんな写真ですか が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-115",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "駅へはどう行けばいいですか。",
+    "options": [
+      "この道をまっすぐ行ってください",
+      "駅はあそこです",
+      "電車に乗ってください",
+      "歩いて十五分ですけど"
+    ],
+    "answerIndex": 0,
+    "key": ["この道をまっすぐ行ってください"],
+    "evidence": "駅への道を尋ねられたときには、この道をまっすぐ行ってください が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-116",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "少し早退してもいいですか。",
+    "options": [
+      "はい、どうぞ、お気をつけて",
+      "いいえ、早退はできません",
+      "何時ですか",
+      "明日は休みです"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、どうぞ、お気をつけて"],
+    "evidence": "早退の許しを求めたときには、はい、どうぞ、お気をつけて が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-117",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "この辞書、いつまで使いますか。",
+    "options": [
+      "今週の金曜まで返します",
+      "はい、使います",
+      "辞書は貸しません",
+      "もう買いました"
+    ],
+    "answerIndex": 0,
+    "key": ["今週の金曜まで返します"],
+    "evidence": "借り物の返却時期を尋ねられたときには、今週の金曜まで返します が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-118",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "今日の発表、緊張しませんでしたか。",
+    "options": [
+      "いいえ、思ったより落ち着いて話せました",
+      "はい、発表しました",
+      "いいえ、話しませんでした",
+      "明日が発表です"
+    ],
+    "answerIndex": 0,
+    "key": ["いいえ、思ったより落ち着いて話せました"],
+    "evidence": "発表への緊張を尋ねられたときには、いいえ、思ったより落ち着いて話せました が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-119",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "お土産、何がいいと思いますか。",
+    "options": [
+      "この町の菓子が人気だそうですよ",
+      "私は好きではありません",
+      "土産は要りません",
+      "買ってきませんでした"
+    ],
+    "answerIndex": 0,
+    "key": ["この町の菓子が人気だそうですよ"],
+    "evidence": "お土産の相談には、この町の菓子が人気だそうですよ が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-124",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "週末の登山、行けそうですか。",
+    "options": [
+      "天気次第ですが、行けると思います",
+      "いいえ、登山はしません",
+      "山は登れませんでした",
+      "週末は家にいます"
+    ],
+    "answerIndex": 0,
+    "key": ["天気次第ですが、行けると思います"],
+    "evidence": "登山への参加を尋ねられたときには、天気次第ですが、行けると思います が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-125",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "この服、似合っていますか。",
+    "options": [
+      "はい、とても似合っていますよ",
+      "いいえ、似合いません",
+      "服は高くありません",
+      "サイズは二番です"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、とても似合っていますよ"],
+    "evidence": "服の印象を尋ねられたときには、はい、とても似合っていますよ が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-126",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "部長は今、会議中ですが。",
+    "options": [
+      "では、お手すきのときにご連絡ください",
+      "はい、部長は会議です",
+      "いいえ、会議ではありません",
+      "会議はいつですか"
+    ],
+    "answerIndex": 0,
+    "key": ["では、お手すきのときにご連絡ください"],
+    "evidence": "上司が会議中だと伝えられたときには、では、お手すきのときにご連絡ください が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-127",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "もう一度、ゆっくり言っていただけますか。",
+    "options": [
+      "はい、では、もう一度言います",
+      "いいえ、言いません",
+      "わかりましたか",
+      "ゆっくり話してください"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、では、もう一度言います"],
+    "evidence": "もう一度言ってとの依頼には、はい、では、もう一度言います が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-128",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "書類、こちらに置いておいてもらえますか。",
+    "options": [
+      "はい、ここに置きます",
+      "いいえ、置けません",
+      "書類は読みました",
+      "どこにありますか"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、ここに置きます"],
+    "evidence": "書類の置き場所を頼まれたときには、はい、ここに置きます が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-129",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "ご結婚、おめでとうございます。",
+    "options": [
+      "ありがとうございます、ぜひ式にもお越しください",
+      "いいえ、まだです",
+      "結婚式は来月です",
+      "ごめんなさい"
+    ],
+    "answerIndex": 0,
+    "key": ["ありがとうございます、ぜひ式にもお越しください"],
+    "evidence": "結婚を祝われたときには、ありがとうございます、ぜひ式にもお越しください が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-130",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "明日の朝、ちょっと手伝ってもらえませんか。",
+    "options": [
+      "はい、何時ごろですか",
+      "いいえ、起きていません",
+      "明日は仕事です",
+      "朝は忙しいですけど"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、何時ごろですか"],
+    "evidence": "朝の手伝いを頼まれたときには、はい、何時ごろですか が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-131",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "この荷物、明日の朝に届きますか。",
+    "options": [
+      "明日の午前中には届くそうですよ",
+      "いいえ、届きません",
+      "荷物は今日届きました",
+      "どこに送りますか"
+    ],
+    "answerIndex": 0,
+    "key": ["明日の午前中には届くそうですよ"],
+    "evidence": "荷物の到着時期を尋ねられたときには、明日の午前中には届くそうですよ が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-132",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "今日の午後、図書館に行きますか。",
+    "options": [
+      "いいえ、今日は家で本を読みます",
+      "はい、図書館に住んでいます",
+      "図書館は三時までです",
+      "本を借りませんでした"
+    ],
+    "answerIndex": 0,
+    "key": ["いいえ、今日は家で本を読みます"],
+    "evidence": "午後の予定を尋ねられたときには、いいえ、今日は家で本を読みます が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-134",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "すみませんが、ご住所とお電話番号をお願いします。",
+    "options": [
+      "はい、ここに書いてもよいですか",
+      "いいえ、書けません",
+      "住所は変えませんでした",
+      "電話番号は教えられません"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、ここに書いてもよいですか"],
+    "evidence": "住所と電話番号の記入を頼まれたときには、はい、ここに書いてもよいですか が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-136",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "お忘年会の日程が決まりましたよ。",
+    "options": [
+      "楽しみですね、いつになりますか",
+      "いいえ、決まりませんでした",
+      "忘年会はしません",
+      "会場は駅前です"
+    ],
+    "answerIndex": 0,
+    "key": ["楽しみですね、いつになりますか"],
+    "evidence": "忘年会の日程が決まったとの知らせには、楽しみですね、いつになりますか が適切な応答です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-sj-137",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "いらっしゃいませ。ご予約のお客様ですね。お名前をお願いします。",
+    "options": [
+      "山田で予約しています",
+      "三人でお願いします",
+      "六時からです",
+      "こちらの席へどうぞ"
+    ],
+    "answerIndex": 0,
+    "key": ["山田で予約しています"],
+    "evidence": "お名前を求められたので、山田で予約しています が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-138",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "会議の前に、この紙をコピーしておいてください。",
+    "options": [
+      "何部コピーしますか",
+      "会議室は二番です",
+      "明日の会議は九時です",
+      "もう会議は終わりました"
+    ],
+    "answerIndex": 0,
+    "key": ["何部コピーしますか"],
+    "evidence": "コピーの指示を受けたので、何部コピーしますか が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-139",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "飲み会はどこでやりますか。",
+    "options": [
+      "駅前のホテルです",
+      "来週の金曜日です",
+      "五人です",
+      "もう帰りました"
+    ],
+    "answerIndex": 0,
+    "key": ["駅前のホテルです"],
+    "evidence": "場所を尋ねたので、駅前のホテルです が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-140",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "明日の天気、予報ではどうなっていましたか。",
+    "options": [
+      "午後から雨になるそうです",
+      "今日は晴れでした",
+      "明日は忙しいです",
+      "傘はたたみました"
+    ],
+    "answerIndex": 0,
+    "key": ["午後から雨になるそうです"],
+    "evidence": "予報の内容を尋ねたので、午後から雨になるそうです が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-141",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "予約はどのくらい前までにすればいいですか。",
+    "options": [
+      "一週間前に電話でお願いします",
+      "二階に席を用意します",
+      "三名でお願いします",
+      "この店は六時に閉まります"
+    ],
+    "answerIndex": 0,
+    "key": ["一週間前に電話でお願いします"],
+    "evidence": "予約の期限を尋ねたので、一週間前に電話でお願いします が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-142",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "パソコンの調子、いつから悪かったんですか。",
+    "options": [
+      "昨日の朝からです",
+      "駅前の店で直します",
+      "保証はもう切れています",
+      "明日の会議で使います"
+    ],
+    "answerIndex": 0,
+    "key": ["昨日の朝からです"],
+    "evidence": "悪くなった時期を尋ねたので、昨日の朝からです が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-143",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "会議が十分長引いてしまいそうですが。",
+    "options": [
+      "では、下の階にも伝えておきます",
+      "資料は昨日配りました",
+      "明日の会議は九時です",
+      "コピーを頼まれました"
+    ],
+    "answerIndex": 0,
+    "key": ["では、下の階にも伝えておきます"],
+    "evidence": "長引きそうだと伝えられたので、では、下の階にも伝えておきます が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-144",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "このあたり、駐車場はどこにありますか。",
+    "options": [
+      "公園の横に一つあります",
+      "車は持っていません",
+      "今日は混んでいません",
+      "家から歩いて来ました"
+    ],
+    "answerIndex": 0,
+    "key": ["公園の横に一つあります"],
+    "evidence": "駐車場の場所を尋ねたので、公園の横に一つあります が適切な応答です。"
+  },
+  {
+    "id": "n3-sj-145",
+    "block": "sokuji-outou",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "短い挨拶や質問などを聞いて、すぐ答える最もよいものを、１から４の中から一つえらびなさい。",
+    "passage": "日曜の映画、何時に始まりますか。",
+    "options": [
+      "二時の回です",
+      "チケットは先に買いました",
+      "今日は水曜日です",
+      "席は三番です"
+    ],
+    "answerIndex": 0,
+    "key": ["二時の回です"],
+    "evidence": "映画の開始時間を尋ねたので、二時の回です が適切な応答です。"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "notification": {
+    "update": {
+      "currentModeId": "code",
+      "sessionUpdate": "current_mode_update"
+    }
+  },
+  "expectedFrame": {
+    "currentModeId": "code",
+    "type": "acp_mode_info"
+  },
+  "expectedHandle": {
+    "currentModeId": "code"
+  }
+}

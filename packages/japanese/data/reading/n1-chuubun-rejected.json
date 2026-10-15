@@ -1,0 +1,194 @@
+[
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "first 中文 pass. Every row was judged PASS, but one row's blind pick disagreed with the shipped key (n1c-1-1-2-49: judge chose option 2, key is 3), so it is rejected: a row two readers key differently is a row the passage does not decide.",
+    "verdicts": {
+      "pass": 11,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n1c-1-1-2-49"]
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "second judge FAMILY. Every row PASS, and it agreed with the shipped key on all 10 frozen rows (10/10). On n1c-1-1-2-49 it picked the SAME option 2 the first family picked against the key 3, which is independent confirmation that the key is wrong rather than one model's slip: the row stays rejected.",
+    "verdicts": {
+      "pass": 11,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n1c-1-1-2-49"]
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "TASK-173.9.8 appended-rows pass: the 13 rows the page-set widening appended to `n1-chuubun.json` (the 10 pre-widening rows are judged in the records above). 12 rows PASS and agree with the shipped key; n1c-r05-1-3-1-7 came back AMBIGUOUS, with the slot 地域の＿＿ admitting the distractor 泉 as well as the key 人材.",
+    "verdicts": {
+      "pass": 12,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n1c-r05-1-3-1-7"]
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY over the same 13 appended N1 rows. Every row PASS, but on n1c-r05-1-3-1-7 it picked option 3 泉 against the shipped key 1 人材, the SAME row the first family called AMBIGUOUS - independent confirmation that the passage does not decide it, so the row stays rejected.",
+    "verdicts": {
+      "pass": 13,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n1c-r05-1-3-1-7"]
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "SECOND pass on the regeneration the rejection above forced. The N1 regeneration produced NO new row: the eligible supply after the rejection is 22 and the store is 22 rows, so nothing unjudged entered the store.",
+    "verdicts": {
+      "pass": 0,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY: the regenerated N1 store contains no unjudged row, so this pass judged nothing and rejects nothing.",
+    "verdicts": {
+      "pass": 0,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "TASK-173.9.10 appended-rows pass over the 令和7年版 regeneration (supply 22 -> 27): the 5 new N1 rows were judged blind, key withheld. Every row PASS and keyed as shipped (5/5).",
+    "verdicts": {
+      "pass": 5,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY over the same 5 appended N1 rows: every row PASS and keyed as shipped (5/5).",
+    "verdicts": {
+      "pass": 5,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass A over the 36-row AUTHORED N1 中文 batch (n1m-1..n1m-36, packet .cache/judge/n1/chuubun.md, verdicts .cache/judge/n1/chuubun-A.md). 35 PASS, 1 AMBIGUOUS: n1m-4 read two options as survivors, so it is burned (see the rejection rule already used for n1c-1-1-2-49 and n1c-r05-1-3-1-7 above). Batch shape measured off the store: 250-600 runes (PASSAGE_BAND.authored), the 小問 drawn from the 内容理解 intents, no answer a word printed next to a ＿＿.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": ["n1m-4"],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 1,
+      "pass": 35,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass B. The burned row was replaced by an authored n1m-37 and the remaining 35 were carried, so this pass scored a packet of the 35 carried rows plus the new one (carry packet .cache/judge/n1/chuubun-full-B.md, verdicts .cache/judge/n1/chuubun-B.md and chuubun-roundB-{A,B}.md). 36 PASS and every pick equals the frozen key; the new row agreed 1/1 in both procedures. The carry-over was proved, not assumed: a field-by-field diff of the two packets shows the 35 carried rows byte-identical in item text and answer key.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 36,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass A over the 22 rows of this store the prose round touched (packet .cache/judge/n1/chuubun-rejudge.md, verdicts chuubun-rejudge-A.md, store sha256 4443d3a5177d538a). 21 PASS with the pick equal to the frozen key; n1m-24 AMBIGUOUS. Prose round: a separate blind proofread of the authored Japanese (particle case, subject/predicate fit, non-existent verb forms, Chinese counters, truncated compounds) flagged the spans; each one was checked against the store before it was applied, and only the spans the author agreed with were edited. Edits were mirrored into every field of the same row, because a distractor may lift a passage sentence verbatim and the gate requires the evidence span to stay a literal substring. Repairs here span 22 rows and include 見積もられたの格, 三万点あまりを…写してきた and 幾多→どれだけ多くても, いつの期間→どの期間 (mirrored into the evidence), 勤める先→勤め先, 采访→取材, 徴う/徴る→取り立てる, 十四キロ先まで行くほかなく→買いに行くほかなく, 車を置く→車椅子を置く, 見抜きがいい→見抜きやすい, 手を触れられる→手を触れてよい, 人件→人件費, 装置へ→装置に, LED→発光ダイオード with 進捗が三年おくれ→工事が三年遅れている, 申請の流れ→申請の手続.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": ["n1m-24"],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 1,
+      "pass": 21,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass B over the same 22 rows (verdicts chuubun-rejudge-B.md): 21 keyed as shipped, and n1m-24 again refused the key, choosing option 4 where the shipped key is option 1. Two independent procedures disagreeing with the same key is the rejection condition, and the reason is in the row itself: 「この見込み」 is the estimate that RESTS ON the price calculation, so the key, which says the 見込み IS that calculation, is a reading the passage excludes. The row is burned and replaced by n1m-38 (学校給食のセンター方式, 449 runes, 4 paragraphs, evidence 77 runes / ratio 0.17), written so the referent sentence states its own limit. Store sha256 4eddb42047752a73. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": ["n1m-24"],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 21,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round C, pass A over n1m-1, n1m-34 and the new n1m-38 (packet .cache/judge/n1/chuubun-new.md, verdicts chuubun-new-A.md, store sha256 05c86d05fd273918). 3 PASS, all keyed as shipped. These two rows were repaired again after Round B because pass B named defects in rows it had still keyed correctly: n1m-1 placed both hospitals in 南部 and then called one of them 北部, and n1m-34's stem asked a second why (why no bidder came for two years) that the passage never answers, so that clause was dropped rather than invented into the document. The 14 rows neither round touched are carried: diffing a packet of them against chuubun-full-B.md shows text diffs NONE.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 3,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round C, pass B over the same 3 rows (verdicts chuubun-new-B.md): 3 PASS, 0 AMBIGUOUS, all 3 keyed as shipped (3/3 across both passes). It was told to try to make the passage contradict itself, which is the check the two repairs above came out of, and to report every option that survives the strongest case built for it. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree. It still reported one defect that changed no verdict: n1m-38 claims 「センター方式の経費は一校あたり年九千万円」 is 「建て替えの四億円を二十年で割った額より少なくなる」, but 四億円÷20年 = 二千万円, so that sentence contradicts the rebuild cost two paragraphs above. No option touches the calculation, so the row stayed answerable, and a PASS resting on a known internal contradiction is not a shipped row: see Round D.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 3,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round D, pass A over n1m-38 alone (packet .cache/judge/n1/chuubun-m38.md, verdicts chuubun-m38-A.md, store sha256 1b846a94ad6d1cc2). 1 PASS and the pick equals the frozen key. The repair came out of Round C pass B's finding: 年九千万円→年千五百万円, so the report's own arithmetic holds (千五百万円 × 20年 = 三億円 < 四億円) and the amortization claim compares what it says it compares. Prose round: a separate blind proofread of the authored Japanese (particle case, subject/predicate fit, non-existent verb forms, Chinese counters, truncated compounds) flagged the spans; each one was checked against the store before it was applied, and only the spans the author agreed with were edited. Edits were mirrored into every field of the same row, because a distractor may lift a passage sentence verbatim and the gate requires the evidence span to stay a literal substring. The span sits in the fourth paragraph, outside the evidence and outside every option, so nothing needed mirroring. Carries were proved, not assumed: diffing a 3-row packet cut from the repaired store against chuubun-new.md shows exactly one changed line, the 九千万円 sentence, so n1m-1 and n1m-34 stay certified by Round C's two passes on byte-identical text.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 1,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round D, pass B over the same single row (verdicts chuubun-m38-B.md): 1 PASS, keyed as shipped, and this time its contradiction hunt found none, checking every count (九校・五校・四十年・四億円・九十分・千五百万円 against 四億円÷20年=二千万円), the causal arrows, the tense and the subject/object assignment, and reading 来年九月 as inside 来年度分. Option 2 has verbatim support; options 1, 3, 4 collide with 「三校を来年度分」「配置は変えない」「配送の車と容器を新しく買い」 respectively. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree. With this round the AUTHORED N1 中文 store is certified end to end at 36 rows: 14 carried from Round A byte-identically, 21 from Round B, n1m-1 and n1m-34 from Round C, n1m-38 from Round D, after n1m-4 and n1m-24 were burned and replaced.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 1,
+      "unanswerable": 0
+    }
+  }
+]

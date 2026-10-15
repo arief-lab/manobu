@@ -1,0 +1,1579 @@
+[
+  {
+    "kind": "gojuon",
+    "char": "あ",
+    "romaji": "a",
+    "row": "vowel",
+    "mnemonic": "Apple — round like the fruit",
+    "katakana": "ア"
+  },
+  {
+    "kind": "gojuon",
+    "char": "い",
+    "romaji": "i",
+    "row": "vowel",
+    "mnemonic": "Two strokes — easy"
+  },
+  {
+    "kind": "gojuon",
+    "char": "う",
+    "romaji": "u",
+    "row": "vowel",
+    "mnemonic": "UFO — sweeping wing"
+  },
+  {
+    "kind": "gojuon",
+    "char": "え",
+    "romaji": "e",
+    "row": "vowel",
+    "mnemonic": "Energy — figure on a stage",
+    "katakana": "エ"
+  },
+  {
+    "kind": "gojuon",
+    "char": "お",
+    "romaji": "o",
+    "row": "vowel",
+    "mnemonic": "Olympic rings — closed loop"
+  },
+  {
+    "kind": "gojuon",
+    "char": "か",
+    "romaji": "ka",
+    "row": "k",
+    "mnemonic": "Key — single prong (ka is key)",
+    "katakana": "カ"
+  },
+  {
+    "kind": "gojuon",
+    "char": "き",
+    "romaji": "ki",
+    "row": "k",
+    "mnemonic": "Key — two prongs (ki is key)"
+  },
+  {
+    "kind": "gojuon",
+    "char": "く",
+    "romaji": "ku",
+    "row": "k",
+    "mnemonic": "Coo (bird) — beak mouth"
+  },
+  {
+    "kind": "gojuon",
+    "char": "け",
+    "romaji": "ke",
+    "row": "k",
+    "mnemonic": "Keg — tap dripping"
+  },
+  {
+    "kind": "gojuon",
+    "char": "こ",
+    "romaji": "ko",
+    "row": "k",
+    "mnemonic": "Corn — two kernels"
+  },
+  {
+    "kind": "gojuon",
+    "char": "さ",
+    "romaji": "sa",
+    "row": "s",
+    "mnemonic": "Samurai — sideways slash"
+  },
+  {
+    "kind": "gojuon",
+    "char": "し",
+    "romaji": "shi",
+    "row": "s",
+    "mnemonic": "Tsunami — hook on a wave",
+    "katakana": "シ"
+  },
+  {
+    "kind": "gojuon",
+    "char": "す",
+    "romaji": "su",
+    "row": "s",
+    "mnemonic": "Swing — single loop"
+  },
+  {
+    "kind": "gojuon",
+    "char": "せ",
+    "romaji": "se",
+    "row": "s",
+    "mnemonic": "Sentry — two crosses"
+  },
+  {
+    "kind": "gojuon",
+    "char": "そ",
+    "romaji": "so",
+    "row": "s",
+    "mnemonic": "Sewing needle — two slashes"
+  },
+  {
+    "kind": "gojuon",
+    "char": "た",
+    "romaji": "ta",
+    "row": "t",
+    "mnemonic": "Taco — crossed fold"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ち",
+    "romaji": "chi",
+    "row": "t",
+    "mnemonic": "Cheese — two dots + hook"
+  },
+  {
+    "kind": "gojuon",
+    "char": "つ",
+    "romaji": "tsu",
+    "row": "t",
+    "mnemonic": "Tsunami — bigger wave",
+    "katakana": "ツ"
+  },
+  {
+    "kind": "gojuon",
+    "char": "て",
+    "romaji": "te",
+    "row": "t",
+    "mnemonic": "Tennis racket — single sweep"
+  },
+  {
+    "kind": "gojuon",
+    "char": "と",
+    "romaji": "to",
+    "row": "t",
+    "mnemonic": "Tornado — two crossbars"
+  },
+  {
+    "kind": "gojuon",
+    "char": "な",
+    "romaji": "na",
+    "row": "n",
+    "mnemonic": "Napkin — folded square"
+  },
+  {
+    "kind": "gojuon",
+    "char": "に",
+    "romaji": "ni",
+    "row": "n",
+    "mnemonic": "Needle — two slashes"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ぬ",
+    "romaji": "nu",
+    "row": "n",
+    "mnemonic": "Noodle — long twist"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ね",
+    "romaji": "ne",
+    "row": "n",
+    "mnemonic": "Net — wide web"
+  },
+  {
+    "kind": "gojuon",
+    "char": "の",
+    "romaji": "no",
+    "row": "n",
+    "mnemonic": "No — single loop"
+  },
+  {
+    "kind": "gojuon",
+    "char": "は",
+    "romaji": "ha",
+    "row": "h",
+    "mnemonic": "Hat — three prongs"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ひ",
+    "romaji": "hi",
+    "row": "h",
+    "mnemonic": "Heel — single side stroke"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ふ",
+    "romaji": "fu",
+    "row": "h",
+    "mnemonic": "Fool — bow-tied"
+  },
+  {
+    "kind": "gojuon",
+    "char": "へ",
+    "romaji": "he",
+    "row": "h",
+    "mnemonic": "Heaven — mountain peak"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ほ",
+    "romaji": "ho",
+    "row": "h",
+    "mnemonic": "Home — bird over a frame"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ま",
+    "romaji": "ma",
+    "row": "m",
+    "mnemonic": "Mammoth — tusk + ear"
+  },
+  {
+    "kind": "gojuon",
+    "char": "み",
+    "romaji": "mi",
+    "row": "m",
+    "mnemonic": "Mime — three strokes"
+  },
+  {
+    "kind": "gojuon",
+    "char": "む",
+    "romaji": "mu",
+    "row": "m",
+    "mnemonic": "Moo — cow snout"
+  },
+  {
+    "kind": "gojuon",
+    "char": "め",
+    "romaji": "me",
+    "row": "m",
+    "mnemonic": "Medal — round ribbon"
+  },
+  {
+    "kind": "gojuon",
+    "char": "も",
+    "romaji": "mo",
+    "row": "m",
+    "mnemonic": "Mouth — three lines"
+  },
+  {
+    "kind": "gojuon",
+    "char": "や",
+    "romaji": "ya",
+    "row": "y",
+    "mnemonic": "Yacht — single curve"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ゆ",
+    "romaji": "yu",
+    "row": "y",
+    "mnemonic": "YuTube — fishhook"
+  },
+  {
+    "kind": "gojuon",
+    "char": "よ",
+    "romaji": "yo",
+    "row": "y",
+    "mnemonic": "Yo-yo — twin loops"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ら",
+    "romaji": "ra",
+    "row": "r",
+    "mnemonic": "Rabbit — single ear"
+  },
+  {
+    "kind": "gojuon",
+    "char": "り",
+    "romaji": "ri",
+    "row": "r",
+    "mnemonic": "River — two short strokes"
+  },
+  {
+    "kind": "gojuon",
+    "char": "る",
+    "romaji": "ru",
+    "row": "r",
+    "mnemonic": "Rooster — comb + loop"
+  },
+  {
+    "kind": "gojuon",
+    "char": "れ",
+    "romaji": "re",
+    "row": "r",
+    "mnemonic": "Replay — gentle bend"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ろ",
+    "romaji": "ro",
+    "row": "r",
+    "mnemonic": "Roll — single loop"
+  },
+  {
+    "kind": "gojuon",
+    "char": "わ",
+    "romaji": "wa",
+    "row": "w",
+    "mnemonic": "Wave — single hook"
+  },
+  {
+    "kind": "gojuon",
+    "char": "を",
+    "romaji": "wo",
+    "row": "w",
+    "mnemonic": "Object — double-crossed"
+  },
+  {
+    "kind": "gojuon",
+    "char": "ん",
+    "romaji": "n",
+    "row": "n-alone",
+    "mnemonic": "N — single curl"
+  },
+  {
+    "kind": "dakuten",
+    "char": "が",
+    "romaji": "ga",
+    "row": "k",
+    "mnemonic": "Key with d两颗 — voiced k",
+    "from": "か"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぎ",
+    "romaji": "gi",
+    "row": "k",
+    "mnemonic": "Key+two prongs voiced",
+    "from": "き"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぐ",
+    "romaji": "gu",
+    "row": "k",
+    "mnemonic": "Beak voiced",
+    "from": "く"
+  },
+  {
+    "kind": "dakuten",
+    "char": "げ",
+    "romaji": "ge",
+    "row": "k",
+    "mnemonic": "Keg tap dripping voiced",
+    "from": "け"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ご",
+    "romaji": "go",
+    "row": "k",
+    "mnemonic": "Corn kernels voiced",
+    "from": "こ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ざ",
+    "romaji": "za",
+    "row": "s",
+    "mnemonic": "Samurai voiced",
+    "from": "さ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "じ",
+    "romaji": "ji",
+    "row": "s",
+    "mnemonic": "Tsunami hook voiced",
+    "from": "し"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ず",
+    "romaji": "zu",
+    "row": "s",
+    "mnemonic": "Swing loop voiced",
+    "from": "す"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぜ",
+    "romaji": "ze",
+    "row": "s",
+    "mnemonic": "Sentry two crosses voiced",
+    "from": "せ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぞ",
+    "romaji": "zo",
+    "row": "s",
+    "mnemonic": "Needle slashes voiced",
+    "from": "そ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "だ",
+    "romaji": "da",
+    "row": "t",
+    "mnemonic": "Taco voiced",
+    "from": "た"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぢ",
+    "romaji": "di",
+    "row": "t",
+    "mnemonic": "Cheese voiced (rare; usually じ)",
+    "from": "ち"
+  },
+  {
+    "kind": "dakuten",
+    "char": "づ",
+    "romaji": "du",
+    "row": "t",
+    "mnemonic": "Bigger wave voiced (rare; usually ず)",
+    "from": "つ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "で",
+    "romaji": "de",
+    "row": "t",
+    "mnemonic": "Racket sweep voiced",
+    "from": "て"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ど",
+    "romaji": "do",
+    "row": "t",
+    "mnemonic": "Tornado crossbars voiced",
+    "from": "と"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ば",
+    "romaji": "ba",
+    "row": "h",
+    "mnemonic": "Hat prongs voiced",
+    "from": "は"
+  },
+  {
+    "kind": "dakuten",
+    "char": "び",
+    "romaji": "bi",
+    "row": "h",
+    "mnemonic": "Heel stroke voiced",
+    "from": "ひ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぶ",
+    "romaji": "bu",
+    "row": "h",
+    "mnemonic": "Bow-tie voiced",
+    "from": "ふ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "べ",
+    "romaji": "be",
+    "row": "h",
+    "mnemonic": "Mountain peak voiced",
+    "from": "へ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぼ",
+    "romaji": "bo",
+    "row": "h",
+    "mnemonic": "Bird over frame voiced",
+    "from": "ほ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぱ",
+    "romaji": "pa",
+    "row": "h",
+    "mnemonic": "Hat prongs half-voiced (p)",
+    "from": "は"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぴ",
+    "romaji": "pi",
+    "row": "h",
+    "mnemonic": "Heel stroke half-voiced (p)",
+    "from": "ひ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぷ",
+    "romaji": "pu",
+    "row": "h",
+    "mnemonic": "Bow-tie half-voiced (p)",
+    "from": "ふ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぺ",
+    "romaji": "pe",
+    "row": "h",
+    "mnemonic": "Mountain peak half-voiced (p)",
+    "from": "へ"
+  },
+  {
+    "kind": "dakuten",
+    "char": "ぽ",
+    "romaji": "po",
+    "row": "h",
+    "mnemonic": "Bird over frame half-voiced (p)",
+    "from": "ほ"
+  },
+  {
+    "kind": "yoon",
+    "char": "きゃ",
+    "romaji": "kya",
+    "row": "k+y",
+    "mnemonic": "Ki + small ya",
+    "from": "き + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "きゅ",
+    "romaji": "kyu",
+    "row": "k+y",
+    "mnemonic": "Ki + small yu",
+    "from": "き + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "きょ",
+    "romaji": "kyo",
+    "row": "k+y",
+    "mnemonic": "Ki + small yo",
+    "from": "き + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "しゃ",
+    "romaji": "sha",
+    "row": "s+y",
+    "mnemonic": "Shi + small ya",
+    "from": "し + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "しゅ",
+    "romaji": "shu",
+    "row": "s+y",
+    "mnemonic": "Shi + small yu",
+    "from": "し + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "しょ",
+    "romaji": "sho",
+    "row": "s+y",
+    "mnemonic": "Shi + small yo",
+    "from": "し + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ちゃ",
+    "romaji": "cha",
+    "row": "t+y",
+    "mnemonic": "Chi + small ya",
+    "from": "ち + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ちゅ",
+    "romaji": "chu",
+    "row": "t+y",
+    "mnemonic": "Chi + small yu",
+    "from": "ち + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ちょ",
+    "romaji": "cho",
+    "row": "t+y",
+    "mnemonic": "Chi + small yo",
+    "from": "ち + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "にゃ",
+    "romaji": "nya",
+    "row": "n+y",
+    "mnemonic": "Ni + small ya",
+    "from": "に + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "にゅ",
+    "romaji": "nyu",
+    "row": "n+y",
+    "mnemonic": "Ni + small yu",
+    "from": "に + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "にょ",
+    "romaji": "nyo",
+    "row": "n+y",
+    "mnemonic": "Ni + small yo",
+    "from": "に + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ひゃ",
+    "romaji": "hya",
+    "row": "h+y",
+    "mnemonic": "Hi + small ya",
+    "from": "ひ + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ひゅ",
+    "romaji": "hyu",
+    "row": "h+y",
+    "mnemonic": "Hi + small yu",
+    "from": "ひ + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ひょ",
+    "romaji": "hyo",
+    "row": "h+y",
+    "mnemonic": "Hi + small yo",
+    "from": "ひ + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "みゃ",
+    "romaji": "mya",
+    "row": "m+y",
+    "mnemonic": "Mi + small ya",
+    "from": "み + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "みゅ",
+    "romaji": "myu",
+    "row": "m+y",
+    "mnemonic": "Mi + small yu",
+    "from": "み + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "みょ",
+    "romaji": "myo",
+    "row": "m+y",
+    "mnemonic": "Mi + small yo",
+    "from": "み + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "りゃ",
+    "romaji": "rya",
+    "row": "r+y",
+    "mnemonic": "Ri + small ya",
+    "from": "り + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "りゅ",
+    "romaji": "ryu",
+    "row": "r+y",
+    "mnemonic": "Ri + small yu",
+    "from": "り + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "りょ",
+    "romaji": "ryo",
+    "row": "r+y",
+    "mnemonic": "Ri + small yo",
+    "from": "り + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ぎゃ",
+    "romaji": "gya",
+    "row": "k+y",
+    "mnemonic": "Gi + small ya",
+    "from": "ぎ + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ぎゅ",
+    "romaji": "gyu",
+    "row": "k+y",
+    "mnemonic": "Gi + small yu",
+    "from": "ぎ + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ぎょ",
+    "romaji": "gyo",
+    "row": "k+y",
+    "mnemonic": "Gi + small yo",
+    "from": "ぎ + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "じゃ",
+    "romaji": "ja",
+    "row": "s+y",
+    "mnemonic": "Ji + small ya",
+    "from": "じ + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "じゅ",
+    "romaji": "ju",
+    "row": "s+y",
+    "mnemonic": "Ji + small yu",
+    "from": "じ + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "じょ",
+    "romaji": "jo",
+    "row": "s+y",
+    "mnemonic": "Ji + small yo",
+    "from": "じ + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "びゃ",
+    "romaji": "bya",
+    "row": "h+y",
+    "mnemonic": "Bi + small ya",
+    "from": "び + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "びゅ",
+    "romaji": "byu",
+    "row": "h+y",
+    "mnemonic": "Bi + small yu",
+    "from": "び + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "びょ",
+    "romaji": "byo",
+    "row": "h+y",
+    "mnemonic": "Bi + small yo",
+    "from": "び + ょ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ぴゃ",
+    "romaji": "pya",
+    "row": "h+y",
+    "mnemonic": "Pi + small ya",
+    "from": "ぴ + ゃ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ぴゅ",
+    "romaji": "pyu",
+    "row": "h+y",
+    "mnemonic": "Pi + small yu",
+    "from": "ぴ + ゅ"
+  },
+  {
+    "kind": "yoon",
+    "char": "ぴょ",
+    "romaji": "pyo",
+    "row": "h+y",
+    "mnemonic": "Pi + small yo",
+    "from": "ぴ + ょ"
+  },
+  {
+    "kind": "katakana",
+    "char": "ア",
+    "romaji": "a",
+    "row": "vowel",
+    "mnemonic": "Apple — sharp (katakana)"
+  },
+  {
+    "kind": "katakana",
+    "char": "イ",
+    "romaji": "i",
+    "row": "vowel",
+    "mnemonic": "Two strokes"
+  },
+  {
+    "kind": "katakana",
+    "char": "ウ",
+    "romaji": "u",
+    "row": "vowel",
+    "mnemonic": "Wings wide"
+  },
+  {
+    "kind": "katakana",
+    "char": "エ",
+    "romaji": "e",
+    "row": "vowel",
+    "mnemonic": "Energy — double-cross"
+  },
+  {
+    "kind": "katakana",
+    "char": "オ",
+    "romaji": "o",
+    "row": "vowel",
+    "mnemonic": "Olympic — open box"
+  },
+  {
+    "kind": "katakana",
+    "char": "カ",
+    "romaji": "ka",
+    "row": "k",
+    "mnemonic": "Single prong"
+  },
+  {
+    "kind": "katakana",
+    "char": "キ",
+    "romaji": "ki",
+    "row": "k",
+    "mnemonic": "Two prongs"
+  },
+  {
+    "kind": "katakana",
+    "char": "ク",
+    "romaji": "ku",
+    "row": "k",
+    "mnemonic": "Beak"
+  },
+  {
+    "kind": "katakana",
+    "char": "ケ",
+    "romaji": "ke",
+    "row": "k",
+    "mnemonic": "Keg tap"
+  },
+  {
+    "kind": "katakana",
+    "char": "コ",
+    "romaji": "ko",
+    "row": "k",
+    "mnemonic": "Two corners"
+  },
+  {
+    "kind": "katakana",
+    "char": "サ",
+    "romaji": "sa",
+    "row": "s",
+    "mnemonic": "Sideways triangle"
+  },
+  {
+    "kind": "katakana",
+    "char": "シ",
+    "romaji": "shi",
+    "row": "s",
+    "mnemonic": "Hook + dot"
+  },
+  {
+    "kind": "katakana",
+    "char": "ス",
+    "romaji": "su",
+    "row": "s",
+    "mnemonic": "Swing — single sweep"
+  },
+  {
+    "kind": "katakana",
+    "char": "セ",
+    "romaji": "se",
+    "row": "s",
+    "mnemonic": "Two crosses"
+  },
+  {
+    "kind": "katakana",
+    "char": "ソ",
+    "romaji": "so",
+    "row": "s",
+    "mnemonic": "Single slash"
+  },
+  {
+    "kind": "katakana",
+    "char": "タ",
+    "romaji": "ta",
+    "row": "t",
+    "mnemonic": "Crossed fold"
+  },
+  {
+    "kind": "katakana",
+    "char": "チ",
+    "romaji": "chi",
+    "row": "t",
+    "mnemonic": "Hook + two dots"
+  },
+  {
+    "kind": "katakana",
+    "char": "ツ",
+    "romaji": "tsu",
+    "row": "t",
+    "mnemonic": "Three hooks"
+  },
+  {
+    "kind": "katakana",
+    "char": "テ",
+    "romaji": "te",
+    "row": "t",
+    "mnemonic": "T-bar"
+  },
+  {
+    "kind": "katakana",
+    "char": "ト",
+    "romaji": "to",
+    "row": "t",
+    "mnemonic": "Crossed bar"
+  },
+  {
+    "kind": "katakana",
+    "char": "ナ",
+    "romaji": "na",
+    "row": "n",
+    "mnemonic": "Square with crossbar"
+  },
+  {
+    "kind": "katakana",
+    "char": "ニ",
+    "romaji": "ni",
+    "row": "n",
+    "mnemonic": "Two slashes"
+  },
+  {
+    "kind": "katakana",
+    "char": "ヌ",
+    "romaji": "nu",
+    "row": "n",
+    "mnemonic": "Long zigzag"
+  },
+  {
+    "kind": "katakana",
+    "char": "ネ",
+    "romaji": "ne",
+    "row": "n",
+    "mnemonic": "Wide net"
+  },
+  {
+    "kind": "katakana",
+    "char": "ノ",
+    "romaji": "no",
+    "row": "n",
+    "mnemonic": "Single slash"
+  },
+  {
+    "kind": "katakana",
+    "char": "ハ",
+    "romaji": "ha",
+    "row": "h",
+    "mnemonic": "Three prongs"
+  },
+  {
+    "kind": "katakana",
+    "char": "ヒ",
+    "romaji": "hi",
+    "row": "h",
+    "mnemonic": "Single side stroke"
+  },
+  {
+    "kind": "katakana",
+    "char": "フ",
+    "romaji": "fu",
+    "row": "h",
+    "mnemonic": "Hook"
+  },
+  {
+    "kind": "katakana",
+    "char": "ヘ",
+    "romaji": "he",
+    "row": "h",
+    "mnemonic": "Mountain peak"
+  },
+  {
+    "kind": "katakana",
+    "char": "ホ",
+    "romaji": "ho",
+    "row": "h",
+    "mnemonic": "Bird over frame"
+  },
+  {
+    "kind": "katakana",
+    "char": "マ",
+    "romaji": "ma",
+    "row": "m",
+    "mnemonic": "Tusk + ear"
+  },
+  {
+    "kind": "katakana",
+    "char": "ミ",
+    "romaji": "mi",
+    "row": "m",
+    "mnemonic": "Three strokes"
+  },
+  {
+    "kind": "katakana",
+    "char": "ム",
+    "romaji": "mu",
+    "row": "m",
+    "mnemonic": "Cow snout"
+  },
+  {
+    "kind": "katakana",
+    "char": "メ",
+    "romaji": "me",
+    "row": "m",
+    "mnemonic": "X mark"
+  },
+  {
+    "kind": "katakana",
+    "char": "モ",
+    "romaji": "mo",
+    "row": "m",
+    "mnemonic": "Three lines"
+  },
+  {
+    "kind": "katakana",
+    "char": "ヤ",
+    "romaji": "ya",
+    "row": "y",
+    "mnemonic": "Single bend"
+  },
+  {
+    "kind": "katakana",
+    "char": "ユ",
+    "romaji": "yu",
+    "row": "y",
+    "mnemonic": "Fishhook"
+  },
+  {
+    "kind": "katakana",
+    "char": "ヨ",
+    "romaji": "yo",
+    "row": "y",
+    "mnemonic": "Three strokes"
+  },
+  {
+    "kind": "katakana",
+    "char": "ラ",
+    "romaji": "ra",
+    "row": "r",
+    "mnemonic": "Single ear"
+  },
+  {
+    "kind": "katakana",
+    "char": "リ",
+    "romaji": "ri",
+    "row": "r",
+    "mnemonic": "Two short strokes"
+  },
+  {
+    "kind": "katakana",
+    "char": "ル",
+    "romaji": "ru",
+    "row": "r",
+    "mnemonic": "Comb + loop"
+  },
+  {
+    "kind": "katakana",
+    "char": "レ",
+    "romaji": "re",
+    "row": "r",
+    "mnemonic": "Gentle bend"
+  },
+  {
+    "kind": "katakana",
+    "char": "ロ",
+    "romaji": "ro",
+    "row": "r",
+    "mnemonic": "Square"
+  },
+  {
+    "kind": "katakana",
+    "char": "ワ",
+    "romaji": "wa",
+    "row": "w",
+    "mnemonic": "Single hook"
+  },
+  {
+    "kind": "katakana",
+    "char": "ヲ",
+    "romaji": "wo",
+    "row": "w",
+    "mnemonic": "Double-crossed"
+  },
+  {
+    "kind": "katakana",
+    "char": "ン",
+    "romaji": "n",
+    "row": "n-alone",
+    "mnemonic": "Single curl"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ガ",
+    "romaji": "ga",
+    "row": "k",
+    "mnemonic": "Single prong voiced",
+    "from": "カ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ギ",
+    "romaji": "gi",
+    "row": "k",
+    "mnemonic": "Two prongs voiced",
+    "from": "キ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "グ",
+    "romaji": "gu",
+    "row": "k",
+    "mnemonic": "Beak voiced",
+    "from": "ク"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ゲ",
+    "romaji": "ge",
+    "row": "k",
+    "mnemonic": "Keg tap voiced",
+    "from": "ケ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ゴ",
+    "romaji": "go",
+    "row": "k",
+    "mnemonic": "Two corners voiced",
+    "from": "コ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ザ",
+    "romaji": "za",
+    "row": "s",
+    "mnemonic": "Sideways triangle voiced",
+    "from": "サ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ジ",
+    "romaji": "ji",
+    "row": "s",
+    "mnemonic": "Hook + dot voiced",
+    "from": "シ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ズ",
+    "romaji": "zu",
+    "row": "s",
+    "mnemonic": "Swing sweep voiced",
+    "from": "ス"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ゼ",
+    "romaji": "ze",
+    "row": "s",
+    "mnemonic": "Two crosses voiced",
+    "from": "セ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ゾ",
+    "romaji": "zo",
+    "row": "s",
+    "mnemonic": "Single slash voiced",
+    "from": "ソ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ダ",
+    "romaji": "da",
+    "row": "t",
+    "mnemonic": "Crossed fold voiced",
+    "from": "タ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ヂ",
+    "romaji": "di",
+    "row": "t",
+    "mnemonic": "Hook + two dots voiced (rare)",
+    "from": "チ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ヅ",
+    "romaji": "du",
+    "row": "t",
+    "mnemonic": "Three hooks voiced (rare)",
+    "from": "ツ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "デ",
+    "romaji": "de",
+    "row": "t",
+    "mnemonic": "T-bar voiced",
+    "from": "テ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ド",
+    "romaji": "do",
+    "row": "t",
+    "mnemonic": "Crossed bar voiced",
+    "from": "ト"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "バ",
+    "romaji": "ba",
+    "row": "h",
+    "mnemonic": "Three prongs voiced",
+    "from": "ハ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ビ",
+    "romaji": "bi",
+    "row": "h",
+    "mnemonic": "Side stroke voiced",
+    "from": "ヒ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ブ",
+    "romaji": "bu",
+    "row": "h",
+    "mnemonic": "Hook voiced",
+    "from": "フ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ベ",
+    "romaji": "be",
+    "row": "h",
+    "mnemonic": "Mountain peak voiced",
+    "from": "ヘ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ボ",
+    "romaji": "bo",
+    "row": "h",
+    "mnemonic": "Bird over frame voiced",
+    "from": "ホ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "パ",
+    "romaji": "pa",
+    "row": "h",
+    "mnemonic": "Three prongs half-voiced",
+    "from": "ハ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ピ",
+    "romaji": "pi",
+    "row": "h",
+    "mnemonic": "Side stroke half-voiced",
+    "from": "ヒ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "プ",
+    "romaji": "pu",
+    "row": "h",
+    "mnemonic": "Hook half-voiced",
+    "from": "フ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ペ",
+    "romaji": "pe",
+    "row": "h",
+    "mnemonic": "Mountain peak half-voiced",
+    "from": "ヘ"
+  },
+  {
+    "kind": "katakana-dakuten",
+    "char": "ポ",
+    "romaji": "po",
+    "row": "h",
+    "mnemonic": "Bird over frame half-voiced",
+    "from": "ホ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "キャ",
+    "romaji": "kya",
+    "row": "k+y",
+    "mnemonic": "Ki + small ya",
+    "from": "キ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "キュ",
+    "romaji": "kyu",
+    "row": "k+y",
+    "mnemonic": "Ki + small yu",
+    "from": "キ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "キョ",
+    "romaji": "kyo",
+    "row": "k+y",
+    "mnemonic": "Ki + small yo",
+    "from": "キ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "シャ",
+    "romaji": "sha",
+    "row": "s+y",
+    "mnemonic": "Shi + small ya",
+    "from": "シ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "シュ",
+    "romaji": "shu",
+    "row": "s+y",
+    "mnemonic": "Shi + small yu",
+    "from": "シ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ショ",
+    "romaji": "sho",
+    "row": "s+y",
+    "mnemonic": "Shi + small yo",
+    "from": "シ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "チャ",
+    "romaji": "cha",
+    "row": "t+y",
+    "mnemonic": "Chi + small ya",
+    "from": "チ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "チュ",
+    "romaji": "chu",
+    "row": "t+y",
+    "mnemonic": "Chi + small yu",
+    "from": "チ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "チョ",
+    "romaji": "cho",
+    "row": "t+y",
+    "mnemonic": "Chi + small yo",
+    "from": "チ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ニャ",
+    "romaji": "nya",
+    "row": "n+y",
+    "mnemonic": "Ni + small ya",
+    "from": "ニ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ニュ",
+    "romaji": "nyu",
+    "row": "n+y",
+    "mnemonic": "Ni + small yu",
+    "from": "ニ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ニョ",
+    "romaji": "nyo",
+    "row": "n+y",
+    "mnemonic": "Ni + small yo",
+    "from": "ニ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ヒャ",
+    "romaji": "hya",
+    "row": "h+y",
+    "mnemonic": "Hi + small ya",
+    "from": "ヒ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ヒュ",
+    "romaji": "hyu",
+    "row": "h+y",
+    "mnemonic": "Hi + small yu",
+    "from": "ヒ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ヒョ",
+    "romaji": "hyo",
+    "row": "h+y",
+    "mnemonic": "Hi + small yo",
+    "from": "ヒ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ミャ",
+    "romaji": "mya",
+    "row": "m+y",
+    "mnemonic": "Mi + small ya",
+    "from": "ミ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ミュ",
+    "romaji": "myu",
+    "row": "m+y",
+    "mnemonic": "Mi + small yu",
+    "from": "ミ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ミョ",
+    "romaji": "myo",
+    "row": "m+y",
+    "mnemonic": "Mi + small yo",
+    "from": "ミ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "リャ",
+    "romaji": "rya",
+    "row": "r+y",
+    "mnemonic": "Ri + small ya",
+    "from": "リ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "リュ",
+    "romaji": "ryu",
+    "row": "r+y",
+    "mnemonic": "Ri + small yu",
+    "from": "リ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "リョ",
+    "romaji": "ryo",
+    "row": "r+y",
+    "mnemonic": "Ri + small yo",
+    "from": "リ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ギャ",
+    "romaji": "gya",
+    "row": "k+y",
+    "mnemonic": "Gi + small ya",
+    "from": "ギ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ギュ",
+    "romaji": "gyu",
+    "row": "k+y",
+    "mnemonic": "Gi + small yu",
+    "from": "ギ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ギョ",
+    "romaji": "gyo",
+    "row": "k+y",
+    "mnemonic": "Gi + small yo",
+    "from": "ギ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ジャ",
+    "romaji": "ja",
+    "row": "s+y",
+    "mnemonic": "Ji + small ya",
+    "from": "ジ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ジュ",
+    "romaji": "ju",
+    "row": "s+y",
+    "mnemonic": "Ji + small yu",
+    "from": "ジ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ジョ",
+    "romaji": "jo",
+    "row": "s+y",
+    "mnemonic": "Ji + small yo",
+    "from": "ジ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ビャ",
+    "romaji": "bya",
+    "row": "h+y",
+    "mnemonic": "Bi + small ya",
+    "from": "ビ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ビュ",
+    "romaji": "byu",
+    "row": "h+y",
+    "mnemonic": "Bi + small yu",
+    "from": "ビ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ビョ",
+    "romaji": "byo",
+    "row": "h+y",
+    "mnemonic": "Bi + small yo",
+    "from": "ビ + ョ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ピャ",
+    "romaji": "pya",
+    "row": "h+y",
+    "mnemonic": "Pi + small ya",
+    "from": "ピ + ャ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ピュ",
+    "romaji": "pyu",
+    "row": "h+y",
+    "mnemonic": "Pi + small yu",
+    "from": "ピ + ュ"
+  },
+  {
+    "kind": "katakana-yoon",
+    "char": "ピョ",
+    "romaji": "pyo",
+    "row": "h+y",
+    "mnemonic": "Pi + small yo",
+    "from": "ピ + ョ"
+  }
+]

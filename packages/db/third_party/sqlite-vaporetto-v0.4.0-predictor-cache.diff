@@ -1,0 +1,51 @@
+diff --git i/src/lib.rs w/src/lib.rs
+index bdae17a..38585a9 100644
+--- i/src/lib.rs
++++ w/src/lib.rs
+@@ -109,6 +109,32 @@ thread_local! {
+         RefCell::new(HashMap::new());
+ }
+ 
++// manobu patch (TASK-49, upstream v0.4.0): FTS5 x_create rebuilds the
++// Predictor on EVERY call — one 58MB model parse per CREATE VIRTUAL TABLE
++// and per connection first-use, ~6.5s each, 5 tables = ~33s per connection.
++// Cache predictors globally keyed by their full config; x_create clones the
++// Arc. Single-keyed per config, so differing tags/wsconst never share.
++static PREDICTOR_CACHE: std::sync::Mutex<Option<HashMap<String, Arc<Predictor>>>> =
++    std::sync::Mutex::new(None);
++
++fn cached_predictor(config: &TokenizerConfig) -> Result<Arc<Predictor>, String> {
++    let key = format!(
++        "model={:?}|wsconst={}|tags={:?}|keep_untagged={}|case_sensitive={}",
++        config.model_path, config.wsconst, config.tags, config.keep_untagged, config.case_sensitive
++    );
++    let mut guard = PREDICTOR_CACHE
++        .lock()
++        .map_err(|e| format!("predictor cache poisoned: {e}"))?;
++    if let Some(hit) = guard.as_ref().and_then(|m| m.get(&key)) {
++        return Ok(std::sync::Arc::clone(hit));
++    }
++    let predictor = std::sync::Arc::new(build_predictor(config)?);
++    guard
++        .get_or_insert_with(HashMap::new)
++        .insert(key, std::sync::Arc::clone(&predictor));
++    Ok(predictor)
++}
++
+ fn build_post_filters(wsconst: &str) -> Result<Vec<Arc<dyn SentenceFilter>>, String> {
+     let mut postfilters: Vec<Arc<dyn SentenceFilter>> = vec![Arc::new(SplitLinebreaksFilter)];
+     for c in wsconst.chars() {
+@@ -452,9 +478,11 @@ unsafe extern "C" fn vaporetto_x_create(
+     let result = (|| {
+         let config = parse_config(args, n_arg)?;
+         let postfilters = build_post_filters(&config.wsconst)?;
+-        let predictor = build_predictor(&config)?;
++        // manobu patch (TASK-49): share the built predictor via the global
++        // cache instead of re-parsing the model on every table create.
++        let predictor = cached_predictor(&config)?;
+         Ok::<_, String>(Box::new(Fts5TokenizerInstance {
+-            predictor: Arc::new(predictor),
++            predictor,
+             prefilter: KyteaFullwidthFilter,
+             postfilters,
+             tags: config.tags,

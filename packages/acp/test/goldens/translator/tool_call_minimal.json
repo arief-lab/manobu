@@ -1,0 +1,20 @@
+{
+  "notification": {
+    "update": {
+      "sessionUpdate": "tool_call",
+      "toolCallId": "call-2"
+    }
+  },
+  "expectedFrame": {
+    "type": "acp_tool_call",
+    "update": {
+      "content": null,
+      "kind": null,
+      "locations": null,
+      "status": "pending",
+      "title": "",
+      "toolCallId": "call-2",
+      "sessionUpdate": "tool_call"
+    }
+  }
+}

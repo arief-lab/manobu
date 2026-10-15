@@ -1,0 +1,24 @@
+{
+  "notification": {
+    "update": {
+      "cost": {
+        "amount": 0.42,
+        "currency": "USD"
+      },
+      "sessionUpdate": "usage_update",
+      "size": 200000,
+      "used": 630
+    }
+  },
+  "expectedFrame": {
+    "data": {
+      "cost": {
+        "amount": 0.42,
+        "currency": "USD"
+      },
+      "size": 200000,
+      "used": 630
+    },
+    "type": "acp_context_usage"
+  }
+}

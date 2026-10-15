@@ -1,0 +1,74 @@
+[
+  {
+    "judge": "bunshou-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/bunshou-validator.md",
+    "runDate": "2026-10-11",
+    "note": "Two independent blind passes over the authored 文章の文法 candidates. Packets were shuffled INDEPENDENTLY per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key sentence. AMBIGUOUS means two of the four candidates continue the passage's flow, which is the defect this 大問's store cannot carry: 流れ must have one answer.",
+    "rejectedIds": ["n2-b-02", "n2-b-14", "n2-b-28"],
+    "verdicts": {
+      "pass": 27,
+      "ambiguous": 3,
+      "unanswerable": 0,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n2-b-02",
+        "level": "N2",
+        "why": ["pass1 AMBIGUOUS"],
+        "passes": {
+          "pass1": {
+            "verdict": "AMBIGUOUS",
+            "pick": [1, 2],
+            "picked_text": null,
+            "is_key": false
+          },
+          "pass2": {
+            "verdict": "PASS",
+            "pick": 3,
+            "picked_text": "速さで負けたことは、手紙が消えていく理由にはならない",
+            "is_key": true
+          }
+        }
+      },
+      {
+        "id": "n2-b-14",
+        "level": "N2",
+        "why": ["pass1 AMBIGUOUS"],
+        "passes": {
+          "pass1": {
+            "verdict": "AMBIGUOUS",
+            "pick": [2, 3],
+            "picked_text": null,
+            "is_key": false
+          },
+          "pass2": {
+            "verdict": "PASS",
+            "pick": 3,
+            "picked_text": "だが失われるのは読書の量だけではないのかもしれない",
+            "is_key": true
+          }
+        }
+      },
+      {
+        "id": "n2-b-28",
+        "level": "N2",
+        "why": ["pass2 AMBIGUOUS"],
+        "passes": {
+          "pass1": {
+            "verdict": "PASS",
+            "pick": 4,
+            "picked_text": "ところが、正確な研究はこの考えを必ずしも裏付けない",
+            "is_key": true
+          },
+          "pass2": {
+            "verdict": "AMBIGUOUS",
+            "pick": [1, 2],
+            "picked_text": null,
+            "is_key": false
+          }
+        }
+      }
+    ]
+  }
+]

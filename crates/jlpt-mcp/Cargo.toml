@@ -1,0 +1,45 @@
+[package]
+name = "jlpt-mcp"
+version = "0.6.0"
+edition = "2021"
+rust-version = "1.88"
+description = "Stdio MCP server exposing the JLPT vocabulary, grammar, conjugation, kanji, and pitch-accent corpora"
+license = "CC-BY-SA-4.0"
+
+[build-dependencies]
+flate2 = "1"
+
+[dependencies]
+anyhow = "1"
+flate2 = "1"
+rmcp = { version = "3.1", features = ["transport-io"] }
+schemars = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "io-std"] }
+# TASK-23.1: word-aware Japanese tokenization for the search ranking path;
+# zstd decompresses the .model.zst shipped via apps/desktop/src-tauri/resources/
+# (the env-var path SQLITE_VAPORETTO_MODEL overrides the default when set).
+# Optional feature keeps the ~5 MB sidecar contract when the model is absent.
+# Pinned to an exact patch (`=0.6.5`) so a fresh cargo build can't drift the
+# tokenizer across the 0.6.x line — keep tests/golden.json in sync on bump.
+vaporetto = { version = "=0.6.5", optional = true, default-features = true }
+zstd = { version = "0.13", optional = true }
+
+[features]
+default = []
+vaporetto = ["dep:vaporetto", "dep:zstd"]
+
+[[example]]
+name = "gen-cache"
+required-features = ["vaporetto"]
+
+[dev-dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "z"
+panic = "abort"
+strip = true

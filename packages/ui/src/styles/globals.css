@@ -1,0 +1,229 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@source "../../../apps/**/*.{ts,tsx}";
+@source "../**/*.{ts,tsx}";
+
+/*
+ * manobu design tokens — ONE theme: 墨・紙・藍・朱 (sumi / kibari / ai /
+ * shu), adopted 2026-09-13. The Edo craft reading, not the tourist one:
+ * almost no color, and the little there is carries meaning. All tokens
+ * oklch(). Area budget is part of the contract — ink + paper ≥ 90%,
+ * ai (--primary) ≤ 8%, shu (--mark) ≤ 2%. A component that breaks the
+ * budget changes shape, not hue.
+ *
+ *   地 ground  生成り kibari #f4efe3 (unbleached hemp) · 胡粉 gofun
+ *              #fbf8f1 (raised) · 鼠 nezu #8b857a (hairlines, chrome)
+ *   文 text    墨 sumi #2b2a26 (lamp black; never #000)
+ *   作 work    藍 ai #26406e (the vat-dyed workcloth: practice,
+ *              progress, the learner's own output) · 浅葱 asagi #7ba7b0
+ *   印 mark    朱 shu #c2402a (the seal: completion, due, the one red
+ *              mark — rare because that is what makes it mean anything)
+ *   正/誤/慎    松 matsuiro #3d6b4a · 赤錆 aka-sabi #8a4a2e ·
+ *              山吹 yamabuki #7f610f
+ *
+ * Contrast contract (WCAG 2.2 AA, antislop audit-001), computed not
+ * eyeballed: sumi on kibari 12.52 / gofun 13.54 / sand 11.45; ai on
+ * kibari 8.97, gofun 9.70; white on ai 9.70; muted-foreground #67614f
+ * 5.38 / 5.82 / 4.92; --input nezu 3.19 (≥3 for UI components);
+ * shu 4.51 on kibari — LARGE text, fills and marks only, never 13px
+ * link text; pine 5.38, rust 5.90, kerria 5.06. No dark palette, no
+ * theme toggle, no `dark:` variants.
+ */
+:root {
+  --background: oklch(0.953 0.017 88);
+  --foreground: oklch(0.285 0.007 95.3);
+  --card: oklch(0.98 0.01 87.5);
+  --card-foreground: oklch(0.285 0.007 95.3);
+  --popover: oklch(0.98 0.01 87.5);
+  --popover-foreground: oklch(0.285 0.007 95.3);
+  --primary: oklch(0.375 0.085 261);
+  --primary-foreground: oklch(0.98 0.01 87.5);
+  --secondary: oklch(0.923 0.023 87.2);
+  --secondary-foreground: oklch(0.285 0.007 95.3);
+  --muted: oklch(0.923 0.023 87.2);
+  --muted-foreground: oklch(0.493 0.029 91.8);
+  --accent: oklch(0.923 0.023 87.2);
+  --accent-foreground: oklch(0.285 0.007 95.3);
+  --mark: oklch(0.554 0.17 32.1);
+  --mark-foreground: oklch(0.98 0.01 87.5);
+  --asagi: oklch(0.7 0.049 211.6);
+  --destructive: oklch(0.481 0.096 43.6);
+  --destructive-foreground: oklch(0.98 0.01 87.5);
+  --border: oklch(0.875 0.026 86.9);
+  --input: oklch(0.619 0.018 82.8);
+  --ring: oklch(0.375 0.085 261);
+  --success: oklch(0.485 0.074 151.9);
+  --success-foreground: oklch(0.98 0.01 87.5);
+  --warning: oklch(0.509 0.099 86.1);
+  --warning-foreground: oklch(0.98 0.01 87.5);
+  --error: oklch(0.481 0.096 43.6);
+  --error-foreground: oklch(0.98 0.01 87.5);
+  --focus-ring: 2px;
+  --radius: 0.5rem;
+  --radius-card: 0.5rem;
+  --radius-chip: 1.25rem;
+  --font-size-xs: 0.6875rem; /* 11px */
+  --font-size-sm: 0.8125rem; /* 13px */
+  --font-size-base: 0.9375rem; /* 15px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.375rem; /* 22px */
+  --chart-1: oklch(0.375 0.085 261);
+  --chart-2: oklch(0.485 0.074 151.9);
+  --chart-3: oklch(0.554 0.17 32.1);
+  --chart-4: oklch(0.509 0.099 86.1);
+  --chart-5: oklch(0.619 0.018 82.8);
+  --sidebar: oklch(0.98 0.01 87.5);
+  --sidebar-foreground: oklch(0.285 0.007 95.3);
+  --sidebar-primary: oklch(0.375 0.085 261);
+  --sidebar-primary-foreground: oklch(0.98 0.01 87.5);
+  --sidebar-accent: oklch(0.923 0.023 87.2);
+  --sidebar-accent-foreground: oklch(0.285 0.007 95.3);
+  --sidebar-border: oklch(0.875 0.026 86.9);
+  --sidebar-ring: oklch(0.375 0.085 261);
+  color-scheme: light;
+}
+
+/*
+ * Responsive breakpoints (spec §Global Systems + Tailwind resp-custom-breakpoints)
+ *   sm:  640px  — small screens, stacked cards
+ *   md:  768px  — tablets, side-by-side layouts
+ *   lg:  1024px — desktop, expanded sidebar
+ *   xl:  1280px — large desktop
+ *   2xl: 1536px — ultra-wide
+ * Container queries preferred over viewport media queries for component-level
+ * responsiveness. Use useLayoutBreakpoint only for JS-driven layout decisions
+ * (sidebar collapse, drawer visibility) that CSS cannot express.
+ */
+@theme inline {
+  --font-sans: "Inter Variable", sans-serif;
+  /* Custom breakpoints for responsive design */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-error: var(--error);
+  --color-error-foreground: var(--error-foreground);
+  /* 朱 the seal · 浅葱 the diluted bath (DESIGN.md roles: mark / secondary work) */
+  --color-mark: var(--mark);
+  --color-mark-foreground: var(--mark-foreground);
+  --color-asagi: var(--asagi);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --radius-card: var(--radius-card);
+  --radius-chip: var(--radius-chip);
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-base);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply font-sans bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+  /* Global focus ring per spec §Global Systems: 2px accent, never browser default */
+  :where(a, button, [role="button"], input, select, textarea):focus-visible {
+    outline: var(--focus-ring) solid var(--ring);
+    outline-offset: 2px;
+    border-radius: calc(var(--radius) - 4px);
+  }
+  /* prefers-reduced-motion → instant transitions */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  /* Skip-link for keyboard a11y */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:rounded-md focus:bg-primary focus:px-3 focus:py-2 focus:text-primary-foreground;
+  }
+  /* Reserve red #b42318 for errors only — never for accents */
+  [data-tone="error"] {
+    color: var(--error);
+  }
+  [data-tone="error"].border-destructive {
+    border-color: var(--destructive);
+  }
+  .shake {
+    animation: shake 200ms;
+  }
+  /* Container query example: dashboard cards stack below 768px container width */
+  @container placement_cards (max-width: 767px) {
+    [data-testid="dashboard-cards"] {
+      flex-direction: column;
+    }
+  }
+  /* CardHeader container query: single-column layout below 400px card width */
+  @container card_header (max-width: 399px) {
+    .group\/card-header {
+      grid-template-columns: 1fr;
+    }
+  }
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-4px);
+    }
+    75% {
+      transform: translateX(4px);
+    }
+  }
+}

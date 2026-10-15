@@ -1,0 +1,100 @@
+[
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "verdicts": {
+      "pass": 11,
+      "ambiguous": 7,
+      "unanswerable": 6
+    },
+    "rejectedIds": [
+      "n4m-5120",
+      "n4m-5230",
+      "n4m-74032",
+      "n4m-74415",
+      "n4m-74697",
+      "n4m-74992",
+      "n4m-75941",
+      "n4m-76561",
+      "n4m-77160",
+      "n4m-77408",
+      "n4m-77598",
+      "n4m-77928",
+      "n4m-78489"
+    ]
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "second pass over the regenerated batch; verdicts accumulate with pass 1",
+    "verdicts": {
+      "pass": 10,
+      "ambiguous": 10,
+      "unanswerable": 4
+    },
+    "rejectedIds": [
+      "n4m-5120",
+      "n4m-74032",
+      "n4m-74415",
+      "n4m-74697",
+      "n4m-74920",
+      "n4m-74992",
+      "n4m-75012",
+      "n4m-75941",
+      "n4m-77160",
+      "n4m-77408",
+      "n4m-77598",
+      "n4m-77922",
+      "n4m-77928",
+      "n4m-78489"
+    ]
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "second judge FAMILY: format supports appending further families; verdicts accumulate",
+    "verdicts": {
+      "pass": 15,
+      "ambiguous": 6,
+      "unanswerable": 3
+    },
+    "rejectedIds": [
+      "n4m-77410",
+      "n4m-77803",
+      "n4m-77925",
+      "n4m-78581",
+      "n4m-78685",
+      "n4m-78886",
+      "n4m-78887",
+      "n4m-79009",
+      "n4m-79037"
+    ]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from it, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Packet: .cache/judge/tanbun-n4-keys-withheld.md, verdicts: .cache/judge/tanbun-n4-A.md",
+    "runDate": "2026-10-09",
+    "note": "Round A, pass A over the 16-row AUTHORED N4 短文 batch (n4s-1..n4s-16). All 16 rows PASS on exactly one option and the option each row passed on is the frozen key (16/16). This batch replaces the 24 masked-slot rows (n4m-*) that the three records above judged: those printed ＿＿ in a licensed 環境省 sentence and asked the reader to supply a word the 短文 ねらい never asks of, which is why doc-27 §11 closes that route and doc-26 §4 gives N4 大問4 four 内容理解 (短文) 小問 over a 書き下ろし page. The 16 rows are now the whole store; no n4m- row is left in it, so the ids the records above burned are unreachable from here.",
+    "verdicts": {
+      "pass": 16,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 16 items, run as an independent second pass with the 指示語 (「その人数」「それ」) and 気持ち items named as the places a second defensible option is likeliest to hide: answer, then try to build the case for each of the other three options from the printed lines and report every option that survives. Verdicts: .cache/judge/tanbun-n4-B.md",
+    "runDate": "2026-10-09",
+    "note": "Round A, pass B: all 16 rows PASS, and its surviving option equals pass A's pick and the frozen key on every row (16/16 three-way). Nothing is burned. THE LIMIT, stated so this file is not read as stronger than it is: both judges are qoder/general-purpose, the same model family that authored the passages and the 小問, so their agreement is correlated error rather than independent confirmation, and no human reader has checked them. The mechanical screens in scripts/reading-authored-corpus.ts are the independent leg; these passes are the reading leg.",
+    "verdicts": {
+      "pass": 16,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

@@ -1,0 +1,207 @@
+@import "@manobu/ui/globals.css";
+@source "../node_modules/streamdown/dist/*.js";
+/* @manobu/chat-session renders its own Tailwind classes (chat cards, the
+ * thinking strip). globals.css scans apps/** and packages/ui/** only, so
+ * without this line a chat-session utility lands in the CSS solely by
+ * coincidence — whenever an app or ui file happens to use the same class. */
+@source "../../../packages/chat-session/src/**/*.{ts,tsx}";
+/* The scanner is purely lexical, so test fixtures leak: chat-engine-golden
+ * .test.ts contains msg_id strings like "start-1" that parse as utility
+ * classes and emit dead CSS rules. Keep tests out of the scan. */
+@source not "../../../packages/chat-session/src/**/*.test.{ts,tsx}";
+
+/* TASK-23.5.2: KanjiVG stroke draw animation — pathLength="1" normalizes
+ * each path's length; dashoffset 1→0 reveals it progressively. */
+@keyframes kanjivg-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.kanjivg-drawing {
+  animation-name: kanjivg-draw;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  /* duration is set inline per stroke (STROKE_DURATION_MS). */
+}
+
+/* SCR-06 morph card (conjugate redesign): the reward moment. The old
+ * ending strikes through in 朱 while the new one lands in ai — the
+ * transformation is shown, not told. Compositor-friendly (opacity/
+ * transform), dies under prefers-reduced-motion via the global rule. */
+@keyframes conj-strike {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes conj-land {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.conj-strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.conj-land {
+  animation: conj-land 320ms ease-out;
+}
+
+/* First-run setup bento scenes (features/setup/setup.tsx). All motion is
+ * compositor-friendly (transform/opacity/stroke-dashoffset) and dies
+ * wholesale under prefers-reduced-motion. */
+@keyframes setup-march {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+@keyframes setup-bob {
+  0%,
+  100% {
+    transform: translate(166px, 58px) rotate(38deg);
+  }
+  50% {
+    transform: translate(166px, 52px) rotate(34deg);
+  }
+}
+
+@keyframes setup-flicker {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  42% {
+    opacity: 0.55;
+  }
+  47% {
+    opacity: 0.15;
+  }
+  52% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes setup-sparkle {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes setup-fill {
+  0%,
+  12% {
+    opacity: 0.15;
+  }
+  30%,
+  88% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+.setup-march {
+  animation: setup-march 2.4s linear infinite;
+}
+
+.setup-bob {
+  animation: setup-bob 3.2s ease-in-out infinite;
+}
+
+.setup-flicker {
+  animation: setup-flicker 2.8s ease-in-out infinite;
+}
+
+.setup-sparkle {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: setup-sparkle 2.2s ease-in-out infinite;
+}
+
+.setup-fill {
+  animation: setup-fill 6.4s ease-in-out infinite;
+}
+
+@keyframes setup-tumble {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes setup-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  40%,
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.setup-tumble {
+  transform-box: fill-box;
+  animation: setup-tumble 3.6s ease-in-out infinite;
+}
+
+.setup-rise {
+  animation: setup-rise 3s ease-in-out infinite;
+}
+
+@keyframes setup-sound-bar {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.setup-sound-bar {
+  transform-origin: bottom;
+  animation: setup-sound-bar 0.7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .setup-march,
+  .setup-bob,
+  .setup-flicker,
+  .setup-sparkle,
+  .setup-fill,
+  .setup-tumble,
+  .setup-rise,
+  .setup-sound-bar {
+    animation: none;
+  }
+}

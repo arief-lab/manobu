@@ -1,0 +1,134 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "inline review prompt: for each row, flag any option a competent N1 reader could defend as printed by BOTH documents, counting paraphrase (活用/利用, 地域/地方, 協力/協働, 産業/業種, 展開/促進, hypernym-for-hyponym) as a hit.",
+    "runDate": "2026-10-07",
+    "note": "Round A, judge family 1 over the 9-row N1 統合理解 batch. Seven rows PASS. Two REJECT: n1t-r05-1-3-1-20+r07-2-6-5-16 (options 1 and 3 defensible from both documents) and n1t-r05-1-3-1-51+r07-2-1-1-94 (options 1, 2 and 3). Both sit in the same corner of the corpus where 開発/開拓, 主体/自立 and 資源/燃料 print near each other, which is exactly the residue the deterministic 産業/業種-style screen cannot see.",
+    "verdicts": {
+      "pass": 7,
+      "ambiguous": 2,
+      "unanswerable": 0
+    },
+    "rejectedIds": [
+      "n1t-r05-1-3-1-20+r07-2-6-5-16",
+      "n1t-r05-1-3-1-51+r07-2-1-1-94"
+    ]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same as the first family; the two families run independently and the union of their rejections is what ships.",
+    "runDate": "2026-10-07",
+    "note": "Round A, judge family 2 over the same 9 rows: the same two rows REJECT, on the same options (1 and 3; 1, 2 and 4). Families agreeing on the identical rows and near-identical option sets is what makes these DATA rather than a reviewer's preference, so both ids are burned and their paragraphs return to the walk.",
+    "verdicts": {
+      "pass": 7,
+      "ambiguous": 2,
+      "unanswerable": 0
+    },
+    "rejectedIds": [
+      "n1t-r05-1-3-1-20+r07-2-6-5-16",
+      "n1t-r05-1-3-1-51+r07-2-1-1-94"
+    ]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same screens as round A: flag any option a reader could defend from BOTH documents once paraphrase counts.",
+    "runDate": "2026-10-07",
+    "rejectedIds": [
+      "n1t-r05-3-6-3-5+r07-2-1-1-94",
+      "n1t-r07-2-6-5-16+r07-3-2-7-1"
+    ],
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 2,
+      "unanswerable": 0
+    },
+    "note": "Round B, judge family 1 over the two replacement rows the N1 regeneration produced: both REJECT (option 1 defensible from both texts for n1t-r05-3-6-3-5+r07-2-1-1-94, options 1 and 3 for n1t-r07-2-6-5-16+r07-3-2-7-1). Only one row of the three round-B candidates is N1-carried here; the N2 replacement was clean."
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same screens as round A: flag any option a reader could defend from BOTH documents once paraphrase counts.",
+    "runDate": "2026-10-07",
+    "rejectedIds": [
+      "n1t-r05-3-6-3-5+r07-2-1-1-94",
+      "n1t-r07-2-6-5-16+r07-3-2-7-1"
+    ],
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 2,
+      "unanswerable": 0
+    },
+    "note": "Round B, judge family 2 over the same two rows: both REJECT again, on options 1/3/4 and 1/3. Two independent readers rejecting the same replacements is the corpus telling us what it is: the 白書 paragraphs left at N1 coverage keep 開発/産業/資源 close enough together that pair-specificity alone cannot separate them, so the N1 store stays small and the 大問11 reports its shortfall rather than shipping them."
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same screens as round A: flag any option a reader could defend from BOTH documents once paraphrase counts.",
+    "runDate": "2026-10-07",
+    "rejectedIds": ["n1t-r05-3-6-5-12+r07-2-1-1-94"],
+    "verdicts": {
+      "pass": 0,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "note": "Round C, judge family 1: n1t-r05-3-6-5-12+r07-2-1-1-94 REJECT on option 3 資源. 供給 is the both-document topic, but B is saturated with エネルギー (再生可能エネルギー, 自立・分散型エネルギー設備) and 資源 reads as its hypernym, so a reader can defend two answers. This is the class the deterministic screen is blind to: 資源 and エネルギー do not share a dominant English sense token, so no token collision can fire."
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same screens as round A: flag any option a reader could defend from BOTH documents once paraphrase counts.",
+    "runDate": "2026-10-07",
+    "rejectedIds": ["n1t-r05-3-6-5-12+r07-2-1-1-94"],
+    "verdicts": {
+      "pass": 0,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "note": "Round C, judge family 2: the same REJECT on the same option, with the same 資源/エネルギー reasoning. Two families agreeing twice in a row on the same paraphrase says the N1 統合理解 supply at this coverage floor is thin, and the honest answer is a small store plus a named shortfall, not a loosened screen."
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass A over the 12-row AUTHORED N1 統合理解 batch (n1to-1..n1to-12, packet .cache/judge/n1/tougou.md, verdicts tougou-A.md). All 12 rows PASS and every blind pick equals the frozen key (12/12). This batch is the one the four 白書 rounds above could not fill: those records are the 統合 store's failure history, and the shipped rows are written pairs now, 300-400 runes per document with the pair inside MAX_PAIR_RUNES, the key a relation printed by NEITHER document and each distractor lifted verbatim from exactly one. Pass A checked the four 前提 rows hardest and found the near-miss distractor in each is disqualified because it is printed prose, which is what a 前提 item asks the reader to refuse.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, adapted to the two-document shape: classify each option A-only / B-only / both / neither against 文章1 and 文章2, then apply the stem, counting paraphrase (hypernym-for-hyponym, 協力/協働-style pairs) as a hit.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 12,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass B over the same 12 authored rows (verdicts tougou-B.md). 12 PASS, 0 AMBIGUOUS, picks equal to the shipped key on every row (12/12 across both passes). One caveat it raised and this record keeps rather than buries: the four 相違 rows lean on the authoring convention, because 「内容が一致しないものはどれか」 can also be read as 'which statement contradicts the documents', and under that alternative reading their three verbatim single-document quotes would all be consistent with one document and no option would match. Both passes keyed the rows the same way under the relation-naming reading, and the real 大問11 小問 does ask the reader to hold both texts at once, but the stem's second meaning is a live risk for those four rows and belongs to whoever revisits this block. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "same 12 items, deliberately different procedure: for each item write one line on what each writer wants changed and one on what each names as the cause, then one line on what the two documents share and one on where they point opposite, and answer the stem only from those last two lines before touching the options.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 12,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass A over the 4 rows of this store the prose round touched (n1to-1, n1to-2, n1to-3, n1to-6; packet .cache/judge/n1/tougou-rejudge.md, verdicts tougou-rejudge-A.md, store sha256 b8de0fc48a5f… then e885e57df35e65db). 4 PASS and all 4 picks equal the frozen key. Prose round: a separate blind proofread of the authored Japanese (particle case, subject/predicate fit, non-existent verb forms, Chinese counters, truncated compounds) flagged the spans; each one was checked against the store before it was applied, and only the spans the author agreed with were edited. Edits were mirrored into every field of the same row, because a distractor may lift a passage sentence verbatim and the gate requires the evidence span to stay a literal substring. Repairs here: 海図が書き換わった→書き換えられた and 小河川の大返し→折り返し (in the passage and in the evidence span that quotes it), the dangling 市は…支えられない given its predicate and ままなら→ままでは (which also moves the option that lifts the sentence verbatim, so the lift stays a lift), 縮小が打つのは→削るのは (again mirrored into the evidence), 肥育は立った→上がった, 事実が論の裏に置いてある→置かれている.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 4,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass B over the same 4 repaired rows (verdicts tougou-rejudge-B.md): 4 PASS, 0 AMBIGUOUS, every pick equal to the shipped key, so the store ships as repaired at 12 rows. The 相違-stem caveat from Round A was not re-raised by either procedure and still stands. The 8 rows the prose round did not touch (n1to-4, n1to-5, n1to-7..n1to-12) are carried byte-identically: diffing a packet of them against tougou.md shows text diffs NONE. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 4,
+      "unanswerable": 0
+    }
+  }
+]

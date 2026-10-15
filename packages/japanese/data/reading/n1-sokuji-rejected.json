@@ -1,0 +1,121 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N1 candidates; a row ships only when BOTH passes return PASS and both picks are the frozen key. Unlike N2, the authored surplus alone covered every floor after the burns, so no replacement packet was needed. Packets were shuffled INDEPENDENTLY per row per pass (.cache/judge/n1-listening), so the key never sat in the same option slot twice and position could not leak the answer. N1 ships authored-only: JLPTSuccess ships listening at N5 only (LICENSE §29), so every N1 row is composed.",
+    "rejectedIds": [
+      "n1-sj-104",
+      "n1-sj-123",
+      "n1-sj-143",
+      "n1-sj-148",
+      "n1-sj-149",
+      "n1-sj-152"
+    ],
+    "verdicts": {
+      "pass": 114,
+      "ambiguous": 7,
+      "unanswerable": 0,
+      "unfit": 2,
+      "distractor_picked": 1
+    },
+    "detail": [
+      {
+        "id": "n1-sj-104",
+        "level": "N1",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: both the generic you-are-welcome reply and the modest host deflection answer the thanks appropriately.",
+          "pass2 PASS picked the frozen key."
+        ]
+      },
+      {
+        "id": "n1-sj-123",
+        "level": "N1",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: the scenario never fixes who answers the phone, so はい、杉本です and ただいま外出しております… are both exactly what a native would say.",
+          "pass2 AMBIGUOUS: same caller-identity hole; both poles fully natural."
+        ]
+      },
+      {
+        "id": "n1-sj-143",
+        "level": "N1",
+        "passes": {
+          "pass1": {
+            "verdict": "pass"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass1 PASS picked the frozen key.",
+          "pass2 UNFIT: 座ったまま続けてください binds the staying-seated state to the addressee and is not a native compliance reply (something like すみません、座ったまま聞きます would be), leaving no option a native would actually say."
+        ]
+      },
+      {
+        "id": "n1-sj-148",
+        "level": "N1",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: to a plain thank-you both どういたしまして and the host deflection are natural immediate replies.",
+          "pass2 UNFIT: the intended deflection いいえ、よう熱くならないうちに、どうぞ is broken Japanese (よう is non-standard here and the phrasing reverses the natural 冷めないうちに)."
+        ]
+      },
+      {
+        "id": "n1-sj-149",
+        "level": "N1",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: nothing fixes the responder availability, so the polite refusal and the acceptance are both what a native would say.",
+          "pass2 AMBIGUOUS: yes/no availability question with two fully natural cooperative answers."
+        ]
+      },
+      {
+        "id": "n1-sj-152",
+        "level": "N1",
+        "passes": {
+          "pass1": {
+            "verdict": "distractor_picked"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 PASS but picked a distractor (an apology uptake) rather than the frozen key.",
+          "pass2 AMBIGUOUS: the straightforward agreement and the cooperative calendar correction both answer the wrap-up proposal; nothing heard rules either out."
+        ]
+      }
+    ]
+  }
+]

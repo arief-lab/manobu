@@ -1,0 +1,49 @@
+{
+  "notification": {
+    "update": {
+      "availableCommands": [
+        {
+          "description": "Review the diff",
+          "name": "review"
+        },
+        {
+          "input": {
+            "hint": "topic"
+          },
+          "name": "explain"
+        }
+      ],
+      "sessionUpdate": "available_commands_update"
+    }
+  },
+  "expectedFrame": {
+    "commands": [
+      {
+        "description": "Review the diff",
+        "input": null,
+        "name": "review"
+      },
+      {
+        "input": {
+          "hint": "topic"
+        },
+        "name": "explain"
+      }
+    ],
+    "type": "available_commands"
+  },
+  "expectedHandle": {
+    "slashCommands": [
+      {
+        "description": "Review the diff",
+        "name": "review"
+      },
+      {
+        "input": {
+          "hint": "topic"
+        },
+        "name": "explain"
+      }
+    ]
+  }
+}

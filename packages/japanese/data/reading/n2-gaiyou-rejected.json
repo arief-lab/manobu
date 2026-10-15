@@ -1,0 +1,34 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N2 gaiyou candidates; the burned row was replaced by a newly authored row judged in its own packet under the same protocol (.cache/judge/n2-listening/rep). Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. N2 ships authored-only: JLPTSuccess ships listening at N5 only (LICENSE §29), so every N2 row is composed (LICENSE §30).",
+    "rejectedIds": ["n2-gy-106"],
+    "verdicts": {
+      "pass": 39,
+      "ambiguous": 1,
+      "unanswerable": 0,
+      "unfit": 0,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n2-gy-106",
+        "level": "N2",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: key C (とうもろこし売りの担当) is the talk's real topic, but option B (秋の祭りの会場について) names a venue the opening clause does state (この商店街で秋の祭りがあります); the gist rule burns an option that names a passing detail the talk states.",
+          "pass2 AMBIGUOUS: same venue-in-passing pair, both defensible from what is spoken."
+        ]
+      }
+    ]
+  }
+]

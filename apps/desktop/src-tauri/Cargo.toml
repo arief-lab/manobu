@@ -1,0 +1,56 @@
+[package]
+name = "app"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["you"]
+license = ""
+repository = ""
+edition = "2021"
+rust-version = "1.85"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+tauri = { version = "2.11.5", features = [] }
+tauri-plugin-log = "2.9.1"
+sherpa-onnx = { version = "1.13.7", default-features = false, features = ["static"] }
+tokio = { version = "1", features = ["sync", "rt", "rt-multi-thread", "macros", "fs"] }
+ureq = { version = "2", features = ["tls"] }
+tar = "0.4"
+bzip2 = "0.4"
+flate2 = "1.0"
+sysinfo = "0.39.6"
+fsrs = "6.6.2"
+chrono = { version = "0.4", features = ["clock"] }
+# TASK-22 Tier B — cron scheduler: 5-field expressions + IANA timezones.
+cron = "0.17"
+chrono-tz = "0.10"
+# Sidecars: spawns the bun-compiled `apps/server` binary on app boot. WebView
+# fetches it at http://localhost:4317/ai. The actual binary is built by
+# `bun run compile:linux` and dropped at apps/server/dist/server-x86_64-unknown-linux-gnu;
+# copied/renamed by Tauri's bundle.externalBin rule at AppImage time. The
+# `jlpt-mcp` binary (crates/jlpt-mcp, cargo release build) is bundled the same
+# way and its path is passed to the server via ACP_MCP_SERVERS for the ACP
+# agent to spawn.
+# TASK-153: SIGTERM the sidecar on graceful exit so its own handler can reap
+# agent child process groups. Unix-only (TASK-177): `kill(2)` has no Windows
+# equivalent, so the msvc build must not link or import libc for it; see the
+# `[target]` table at the end of this file.
+tauri-plugin-shell = "2.3.6"
+# TASK-177: `cron.rs` needs the IANA zone name on Windows too, where
+# `/etc/localtime` does not exist. Backends are per-platform inside the crate
+# (windows_sys, core-foundation, `TZ`), already vendored via `chrono-tz`.
+iana-time-zone = "0.1"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"

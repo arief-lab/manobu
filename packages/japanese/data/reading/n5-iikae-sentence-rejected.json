@@ -1,0 +1,7 @@
+{
+  "rejectedIds": ["n5-is-007", "n5-is-016"],
+  "reasons": {
+    "n5-is-007": "pass B says unfit: Two answers: たのしい and つまらなくない both keep おもしろい.",
+    "n5-is-016": "pass A says unfit: Cars do not climb stairs. No Japanese speaker would write this sentence.; pass B says unfit: Cars cannot climb stairs; no speaker would state the passage."
+  }
+}

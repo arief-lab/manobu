@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "bundle": {
+    "targets": ["nsis"],
+    "windows": {
+      "webviewInstallMode": {
+        "type": "offlineInstaller",
+        "silent": true
+      }
+    },
+    "resources": {
+      "../../../node_modules/.bun/@libsql+win32-x64-msvc@0.5.29/node_modules/@libsql/win32-x64-msvc": "node_modules/@libsql/win32-x64-msvc"
+    }
+  }
+}

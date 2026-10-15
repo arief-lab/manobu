@@ -1,0 +1,16 @@
+# fallow:audit-gate v1 (moved from pre-commit: the graph audit charges the
+# whole branch, so batching it per-push instead of per-commit keeps the
+# analysis without the mid-change whack-a-mole)
+command -v fallow >/dev/null 2>&1 || exit 0
+UPSTREAM="$(git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}' 2>/dev/null || true)"
+if [ -n "$UPSTREAM" ]; then
+  BASE="$(git merge-base "$UPSTREAM" HEAD 2>/dev/null || echo "$UPSTREAM")"
+else
+  BASE="main"
+fi
+fallow audit --base "$BASE"
+
+# Rust parity + unit tests (~110s). Batching per-push rather than per-commit
+# matches the fallow reasoning above: the suite is the most expensive gate, and
+# the one that broke in 3ba8c36 was the one nothing ran automatically.
+bun run test:rust

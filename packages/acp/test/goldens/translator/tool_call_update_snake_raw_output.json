@@ -1,0 +1,23 @@
+{
+  "notification": {
+    "update": {
+      "raw_output": "snake-case-out",
+      "sessionUpdate": "tool_call_update",
+      "status": "completed",
+      "toolCallId": "call-3"
+    }
+  },
+  "expectedFrame": {
+    "type": "acp_tool_call",
+    "update": {
+      "content": null,
+      "kind": null,
+      "locations": null,
+      "rawOutput": "snake-case-out",
+      "status": "completed",
+      "title": null,
+      "toolCallId": "call-3",
+      "sessionUpdate": "tool_call_update"
+    }
+  }
+}

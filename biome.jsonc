@@ -1,0 +1,36 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": [
+    "ultracite/biome/core",
+    "ultracite/biome/react",
+    "ultracite/biome/tanstack"
+  ],
+  "files": {
+    "maxSize": 8388608,
+    "includes": [
+      "!packages/japanese/data/kanji.json",
+      "!packages/japanese/data/pitch-accent.json",
+      "!crates/jlpt-mcp/tests/golden.json",
+      "!apps/desktop/src/assets/cli/*.svg"
+    ]
+  },
+  "overrides": [
+    {
+      "includes": [
+        "packages/agent/src/index.ts",
+        "packages/chat-session/src/chat-engine/index.ts",
+        "packages/ui/src/components/acp-tool-call-card.tsx"
+      ],
+      "linter": {
+        "rules": {
+          "performance": {
+            "noBarrelFile": "off"
+          }
+        }
+      }
+    }
+  ],
+  "javascript": {
+    "globals": ["Bun"]
+  }
+}

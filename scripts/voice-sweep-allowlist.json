@@ -1,0 +1,57 @@
+[
+  {
+    "file": "apps/server/src/assistant-loader.ts",
+    "category": "prompt",
+    "reason": "model-facing prompt text, not learner-visible (doc-20 §1)"
+  },
+  {
+    "file": "apps/server/src/context.ts",
+    "category": "diagnostic",
+    "reason": "log::info diagnostic, not learner copy"
+  },
+  {
+    "file": "apps/server/src/index.ts",
+    "category": "diagnostic",
+    "reason": "server log diagnostic"
+  },
+  {
+    "file": "apps/desktop/src-tauri/src/lib.rs",
+    "category": "diagnostic",
+    "reason": "log::info diagnostic"
+  },
+  {
+    "file": "packages/acp/src/mcp.ts",
+    "category": "diagnostic",
+    "reason": "log diagnostic for MCP wiring"
+  },
+  {
+    "file": "packages/db/src/migrate.ts",
+    "category": "diagnostic",
+    "reason": "migration log + tooling"
+  },
+  {
+    "file": "crates/jlpt-mcp/src/tokenize.rs",
+    "category": "diagnostic",
+    "reason": "eprintln diagnostic"
+  },
+  {
+    "file": "packages/japanese/scripts/fetch-sentences.ts",
+    "category": "tooling",
+    "reason": "fetch tooling log"
+  },
+  {
+    "file": "packages/japanese/scripts/fetch-kanjivg.ts",
+    "category": "tooling",
+    "reason": "fetch tooling log"
+  },
+  {
+    "file": "packages/japanese/scripts/fetch-vocab.ts",
+    "category": "tooling",
+    "reason": "fetch tooling log"
+  },
+  {
+    "file": "packages/db/scripts/fetch-vaporetto.ts",
+    "category": "tooling",
+    "reason": "fetch tooling log"
+  }
+]

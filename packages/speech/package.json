@@ -1,0 +1,41 @@
+{
+  "name": "@manobu/speech",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./tts": {
+      "default": "./src/tts.ts"
+    },
+    "./stt": {
+      "default": "./src/stt.ts"
+    },
+    "./vad": {
+      "default": "./src/vad.ts"
+    },
+    "./models": {
+      "default": "./src/models.ts"
+    },
+    "./hooks": {
+      "default": "./src/hooks.ts"
+    },
+    "./types": {
+      "default": "./src/types.ts"
+    }
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "react": "catalog:"
+  },
+  "devDependencies": {
+    "@manobu/config": "workspace:*",
+    "@types/react": "catalog:",
+    "typescript": "catalog:"
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "TASK-173.9.8 appended-rows pass, extended at N3 to the WHOLE store: `n3-chuubun.json` first shipped in 6f090c1 with no judge record at all (unlike N2's 16 and N1's 10), so all 27 rows are judged here rather than only the 12 the page-set widening appended. Two rows AMBIGUOUS, both on a frame the deterministic screen cannot decide: n3c-2-6-1-4, where the masked slot admits the distractor 今後 as well as the key 地球, and n3c-r05-1-3-1-47, where it admits キャンプ as well as the key 参加. The other 25 rows agreed with the shipped key.",
+    "verdicts": {
+      "pass": 25,
+      "ambiguous": 2,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n3c-2-6-1-4", "n3c-r05-1-3-1-47"]
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY over the same 27-row N3 store. Every row PASS, but n3c-1-1-1-54 was keyed differently from the shipped key (the judge picked option 1 共通 against the key 3 始め), which rejects it: a row two readers key differently is a row the passage does not decide. The other 26 rows agreed with the shipped key.",
+    "verdicts": {
+      "pass": 27,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n3c-1-1-1-54"]
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "SECOND pass on the regeneration the rejections above forced: the 3 N3 rows rejected above were replaced by exactly ONE new row (n3c-r05-2-6-1-5), because the rejections freed answer words that pulled earlier-skipped paragraphs back in and the N3 eligible supply is now exhausted (the store is 25 rows and asking for 27 yields 25). The new row PASS, keyed as shipped (4/4).",
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY on the same single replacement row (n3c-r05-2-6-1-5): PASS, and it picked the SAME option 4 as the shipped key and as the first family, so the replacement enters the store with both families' agreement.",
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "TASK-173.9.10 appended-rows pass over the 令和7年版 regeneration (supply 25 -> 32): the 7 new N3 rows were judged blind, key withheld. Every row PASS and keyed as shipped (7/7).",
+    "verdicts": {
+      "pass": 7,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY over the same 7 appended N3 rows: every row PASS and keyed as shipped (7/7).",
+    "verdicts": {
+      "pass": 7,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item over .cache/judge/chuubun-n3-keys-withheld.md: read the passage alone, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS: a distractor the passage leaves undecided survives and rejects the row even when another option is more central.",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.18 round A, judge family 1, over the 24-row AUTHORED N3 中文 store (n3m-1..n3m-24). The store's 32 masked-slot rows are gone: N3 converted to authored composition (doc-27 §10), so this record judges comprehension items, not noun-restoration cloze. What is being judged is whether the passage defends exactly one option; all 24 rows PASS and each surviving option equals the frozen key (24/24).",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 24 items, deliberately different procedure: answer once as a test-taker, then switch sides and build the strongest case the page alone allows for each of the other three options, and report every option that survives that argument.",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.18 round A, judge family 2 over the same batch: all 24 rows PASS and its single surviving option equals the frozen key on every row (24/24 across both families and both procedures). No row is burned, so the store ships as written with no regeneration round. THE LIMIT OF THIS RECORD, stated so a later reader does not over-trust it: both judges are qoder/general-purpose, the same model family that authored the rows, so their agreement is correlated error rather than independent confirmation; the mechanical screens and this double pass are the whole certification, and no human reader has reviewed these rows.",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

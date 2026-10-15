@@ -1,0 +1,61 @@
+{
+  "notification": {
+    "update": {
+      "configOptions": [
+        {
+          "category": "model",
+          "currentValue": "opus",
+          "id": "model",
+          "name": "Model",
+          "options": [
+            {
+              "name": "Opus",
+              "value": "opus"
+            }
+          ],
+          "type": "select"
+        }
+      ],
+      "sessionUpdate": "config_option_update"
+    }
+  },
+  "expectedFrame": {
+    "configOptions": [
+      {
+        "category": "model",
+        "currentValue": "opus",
+        "description": null,
+        "id": "model",
+        "name": "Model",
+        "options": [
+          {
+            "description": null,
+            "name": "Opus",
+            "value": "opus"
+          }
+        ],
+        "type": "select"
+      }
+    ],
+    "type": "acp_config_option"
+  },
+  "expectedHandle": {
+    "configOptions": [
+      {
+        "category": "model",
+        "currentValue": "opus",
+        "description": null,
+        "id": "model",
+        "name": "Model",
+        "options": [
+          {
+            "description": null,
+            "name": "Opus",
+            "value": "opus"
+          }
+        ],
+        "type": "select"
+      }
+    ]
+  }
+}

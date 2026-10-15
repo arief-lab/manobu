@@ -1,0 +1,33 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N5 point-rikai candidates; the 1 burned rows were replaced by newly authored rows judged in their own packets under the same protocol. Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. AMBIGUOUS means two of the four responses are what a native speaker would actually give, which is the defect a 聴解 store cannot carry: the heard scenario must decide ONE answer.",
+    "rejectedIds": ["n5-pt-103"],
+    "verdicts": {
+      "ambiguous": 0,
+      "distractor_picked": 0,
+      "pass": 19,
+      "unanswerable": 0,
+      "unfit": 1
+    },
+    "detail": [
+      {
+        "id": "n5-pt-103",
+        "level": "N5",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: A native speaker would not decline a movie invitation because their friend is not coming; the stated reason is a non-sequitur that makes no causal sense in the situation, even though option B matches the words spoken."
+        ]
+      }
+    ]
+  }
+]

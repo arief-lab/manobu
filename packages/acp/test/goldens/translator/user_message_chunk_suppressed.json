@@ -1,0 +1,16 @@
+{
+  "notification": {
+    "update": {
+      "content": {
+        "text": "echo",
+        "type": "text"
+      },
+      "sessionUpdate": "user_message_chunk"
+    }
+  },
+  "expectedFrame": {
+    "payload": null,
+    "tag": "acp_update:user_message_chunk",
+    "type": "adapter_specific"
+  }
+}

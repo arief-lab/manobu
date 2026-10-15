@@ -1,0 +1,29 @@
+{
+  "name": "@manobu/jlpt-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JLPT corpora MCP server (npx shim over the Rust binary) — stdio, offline, no Tauri required",
+  "license": "SEE LICENSE IN packages/japanese/data/LICENSE.md",
+  "type": "commonjs",
+  "bin": {
+    "jlpt-mcp": "./bin/jlpt-mcp.js"
+  },
+  "files": [
+    "bin/jlpt-mcp.js"
+  ],
+  "scripts": {
+    "check-types": "echo 'no TS in shim'"
+  },
+  "manobu": {
+    "acpRegistry": {
+      "connectionType": "stdio",
+      "healthCheck": {
+        "note": "binary speaks stdio MCP only (no --version yet); hosts should health-check via an initialize handshake",
+        "versionCommand": null
+      },
+      "mcpCapabilities": {
+        "stdio": true
+      }
+    }
+  }
+}

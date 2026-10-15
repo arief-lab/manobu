@@ -1,0 +1,381 @@
+[
+  {
+    "id": "n5-pt-001",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "学生は どうして おそく なりましたか。",
+    "passage": "学校で 先生と 学生が 話しています。学生は どうして おそく なりましたか。\n先生：今日は どうして おそく 来ましたか。\n学生：すみません。あさ、でんしゃが おくれました。\n先生：そうですか。だいじょうぶですか。\n学生：はい、もう だいじょうぶです。",
+    "options": [
+      "でんしゃが おくれたから",
+      "あたまが いたかったから",
+      "バスが おくれたから",
+      "おきるのが おそかったから"
+    ],
+    "answerIndex": 0,
+    "key": ["でんしゃが おくれたから"]
+  },
+  {
+    "id": "n5-pt-002",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "本は どこに ありますか。",
+    "passage": "女の人が 男の人と 話しています。本は どこに ありますか。\n女：日本語の 本は どこですか。\n男：あの たなの 上です。\n女：上ですか。下では ありませんか。\n男：はい、上です。一番 大きい 本です。\n女：わかりました。ありがとう。",
+    "options": ["たなの 上", "たなの 下", "つくえの 下", "つくえの 上"],
+    "answerIndex": 0,
+    "key": ["たなの 上"]
+  },
+  {
+    "id": "n5-pt-003",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "男の人は どの きせつが いちばん すきですか。",
+    "passage": "男の人が はなしています。男の人は どの きせつが いちばん すきですか。\nぼくは きせつの 中で あきが いちばん すきです。あきは あつくないです。さむくないです。たべものも おいしいです。なつは あついですから、すきじゃありません。ふゆは さむいですから、すきじゃありません。はるも すきですが、あきが いちばん すきです。",
+    "options": ["あき", "はる", "なつ", "ふゆ"],
+    "answerIndex": 0,
+    "key": ["あき"]
+  },
+  {
+    "id": "n5-pt-004",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "男の人は たんじょうびに 何が ほしいですか。",
+    "passage": "女の人と 男の人が 話しています。男の人は たんじょうびに 何が ほしいですか。\n女：たんじょうび、何が ほしいですか。本ですか。\n男：本も いいですが、もっと ほしい ものが あります。\n女：何ですか。とけいですか。\n男：いいえ、新しい カメラが ほしいです。\n女：そうですか。",
+    "options": ["カメラ", "本", "とけい", "ペン"],
+    "answerIndex": 0,
+    "key": ["カメラ"]
+  },
+  {
+    "id": "n5-pt-005",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "学生は どうして しゅくだいを しませんでしたか。",
+    "passage": "先生： しゅくだいは しましたか。\n学生： すみません。 きのう しゅくだいを しませんでした。\n先生： どうしてですか。\n学生： あたまが いたかったです。",
+    "options": [
+      "あたまが いたかったから",
+      "いそがしかったから",
+      "わすれたから",
+      "本が なかったから"
+    ],
+    "answerIndex": 0,
+    "key": ["あたまが いたかったから"]
+  },
+  {
+    "id": "n5-pt-006",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "本は いくらでしたか。",
+    "passage": "A： その 本は いくらでしたか。\nB： 千五百円でした。\nA： 高いですね。\nB： でも、おもしろい 本ですよ。",
+    "options": ["千五百円", "五百円", "千円", "二千円"],
+    "answerIndex": 0,
+    "key": ["千五百円"]
+  },
+  {
+    "id": "n5-pt-007",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "月よう日の としょかんは 何時から 何時までですか。",
+    "passage": "学生： としょかんは 何時から 何時までですか。\n先生： 月よう日から 金よう日までは 九時から 五時までです。 土ようびは 一時から 四時までです。",
+    "options": [
+      "9時から 5時まで",
+      "8時から 4時まで",
+      "1時から 4時まで",
+      "9時から 4時まで"
+    ],
+    "answerIndex": 0,
+    "key": ["9時から 5時まで"]
+  },
+  {
+    "id": "n5-pt-008",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "あしたの 天気は どうですか。",
+    "passage": "女： あしたの 天気は どうですか。\n男： あしたは 雨です。 でも、あさっては 天気が いいです。\n女： そうですか。",
+    "options": ["雨", "天気が いい", "ゆき", "つめたい"],
+    "answerIndex": 0,
+    "key": ["雨"]
+  },
+  {
+    "id": "n5-pt-009",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "しゅくだいは 何よう日に ありますか。",
+    "passage": "男： しゅくだいは いつですか。\n女： 火よう日と 木よう日です。\n男： 水よう日は ありませんか。\n女： ありません。",
+    "options": [
+      "火よう日と 木よう日",
+      "月よう日と 水よう日",
+      "水よう日と 金よう日",
+      "月よう日と 金よう日"
+    ],
+    "answerIndex": 0,
+    "key": ["火よう日と 木よう日"]
+  },
+  {
+    "id": "n5-pt-010",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "今日は だれが 来ますか。",
+    "passage": "母： 今日は だれが 来ますか。\n子： 父の 先生と、母の 友だちが 来ます。 父も 六時に 来ます。\n母： わかりました。",
+    "options": [
+      "父の 先生・母の 友だち・父",
+      "父・母・先生",
+      "父の 先生・母・先生",
+      "先生と 友だちだけ"
+    ],
+    "answerIndex": 0,
+    "key": ["父の 先生・母の 友だち・父"]
+  },
+  {
+    "id": "n5-pt-011",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "クラスに 中国人は 何人 いますか。",
+    "passage": "女の学生が 話して います。\nわたしの クラスには 二十人 います。日本人は 五人です。中国人は 四人で、かんこく人も 四人 います。アメリカ人は 二人です。",
+    "options": ["四人", "二人", "三人", "五人"],
+    "answerIndex": 0,
+    "key": ["四人"]
+  },
+  {
+    "id": "n5-pt-012",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "りょこうは 何日間ですか。",
+    "passage": "男の人が しごとの あとで 話して います。\n来月の 七日から 九日まで、おおさかに 行きます。三日間の りょこうです。新かんせんで 行きます。",
+    "options": ["三日間", "二日間", "四日間", "一週間"],
+    "answerIndex": 0,
+    "key": ["三日間"]
+  },
+  {
+    "id": "n5-pt-013",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "大きい 本は きょう いくらですか。",
+    "passage": "店員が 話して います。\nこの 本は 千五百円です。あの 大きい 本は 二千円です。きょうは セールで、ぜんぶ 半分の ねだんです。",
+    "options": ["千円", "五百円", "千五百円", "二千円"],
+    "answerIndex": 0,
+    "key": ["千円"]
+  },
+  {
+    "id": "n5-pt-014",
+    "block": "point-rikai",
+    "level": "N5",
+    "provenance": "licensed",
+    "stem": "もんだい2： えきへ 行くには どうしたら いいですか。",
+    "passage": "男：すみません、あの…えきは どこですか？\n女：えーと、まっすぐ 行って、はじめの しんごうを 右に まがって ください。\n男：あ、はい。ありがとうございます。\n女：いえいえ、どういたしまして。",
+    "options": [
+      "まっすぐ 行って 右に まがる",
+      "まっすぐ 行って 左に まがる",
+      "はじめの しんごうで まつ",
+      "バスに のる"
+    ],
+    "answerIndex": 0,
+    "key": ["まっすぐ 行って 右に まがる"]
+  },
+  {
+    "id": "n5-pt-101",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "学生は どうして おそく なりましたか。",
+    "passage": "先生と 学生が 話しています。学生は どうして おそく なりましたか。\n先生：今日は どうして おそく きましたか。\n学生：すみません。バスが こなかったです。\n先生：そうですか。たいへんですね。\n学生：はい、あしたは はやく でます。",
+    "options": [
+      "バスが こなかったから",
+      "ねぼうを したから",
+      "宿題が おおかったから",
+      "天気が わるかったから"
+    ],
+    "answerIndex": 0,
+    "key": ["バスが こなかったから"],
+    "evidence": "学生は バスが こなかったから おそく なりました。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-102",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "男の人は どうして 学校を やすみましたか。",
+    "passage": "男の人と 女の人が 話しています。男の人は どうして 学校を やすみましたか。\n女：きのう 学校を やすんでいましたね。どうしましたか。\n男：すみません、かぜを ひいたんです。\n女：そうですか。もう だいじょうぶですか。\n男：はい、くすりを のみました。",
+    "options": [
+      "かぜを ひいたから",
+      "テストが あったから",
+      "約束が あったから",
+      "電車が こなかったから"
+    ],
+    "answerIndex": 0,
+    "key": ["かぜを ひいたから"],
+    "evidence": "男の人は かぜを ひいたから 学校を やすみました。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-104",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "女の人は なにを わすれましたか。",
+    "passage": "男の人と 女の人が 話しています。女の人は なにを わすれましたか。\n女：あ、かさを わすれました。あめが ふっていますね。\n男：どうぞ、いっしょに いきましょう。わたしの かさは おおきいです。\n女：ありがとうございます。",
+    "options": ["かさ", "ほん", "でんわ", "しゅくだい"],
+    "answerIndex": 0,
+    "key": ["かさ"],
+    "evidence": "女の人は かさを わすれました。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-105",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "女の人は どうして 電話を かけましたか。",
+    "passage": "女の人と 男の人が 話しています。女の人は どうして 電話を かけましたか。\n女：もしもし、やまださんですか。こんしゅうの どようび、さとうさんのたんじょうびです。\n男：あ、そうですか。\n女：いっしょに いきませんか。たんじょうびの はなしを したいです。\n男：いいですね。",
+    "options": [
+      "たんじょうびの はなしを したいから",
+      "テストの はなしを したいから",
+      "天気の はなしを したいから",
+      "宿題の はなしを したいから"
+    ],
+    "answerIndex": 0,
+    "key": ["たんじょうびの はなしを したいから"],
+    "evidence": "女の人は たんじょうびの はなしを したいから 電話を かけました。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-106",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "男の人は どうして あした いけませんか。",
+    "passage": "女の人と 男の人が 話しています。男の人は どうして あした いけませんか。\n女：あした いっしょに どうぶつえんへ いきませんか。\n男：ごめんなさい。こんしゅうは おかねが ありません。\n女：そうですか。じゃ、らいしゅうは どうですか。\n男：いいですね。",
+    "options": [
+      "おかねが ないから",
+      "あめが ふっているから",
+      "宿題が あるから",
+      "テストが あるから"
+    ],
+    "answerIndex": 0,
+    "key": ["おかねが ないから"],
+    "evidence": "男の人は おかねが ないから あした いけません。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-107",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "男の人の もんだいは なんですか。",
+    "passage": "男の人と 女の人が 話しています。男の人の もんだいは なんですか。\n女：どうしましたか。\n男：ホテルが みつかりません。ちずも よく わかりません。\n女：あ、それは たいへんですね。じゃ、駅で きいてみましょう。\n男：ありがとうございます。",
+    "options": [
+      "ホテルが みつからないこと",
+      "ちずが みつかること",
+      "駅が とおいこと",
+      "電車が こないこと"
+    ],
+    "answerIndex": 0,
+    "key": ["ホテルが みつからないこと"],
+    "evidence": "男の人の もんだいは ホテルが みつからないことです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-108",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "にほんごの じゅぎょうは どうして 時間が かわりましたか。",
+    "passage": "女の人と 男の人が 話しています。にほんごの じゅぎょうは どうして 時間が かわりましたか。\n女：先生、あしたの じゅぎょうは なんじですか。\n男：じゅういちじから じゅうじに なりました。じゅういちじは きょうしつを ほかの 人が つかいますから。\n女：わかりました。",
+    "options": [
+      "じゅういちじに ほかの 人が きょうしつを つかうから",
+      "あめが ふるから",
+      "テストが あるから",
+      "先生が びょうきだから"
+    ],
+    "answerIndex": 0,
+    "key": ["じゅういちじに ほかの 人が きょうしつを つかうから"],
+    "evidence": "じゅういちじに ほかの 人が きょうしつを つかうから 時間が かわりました。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-109",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "男の人は なにを しますか。",
+    "passage": "男の人と 女の人が 話しています。男の人は なにを しますか。\n女：テストの けっかは わかりましたか。\n男：いいえ。いまから 先生に でんわを かけます。\n女：はい。わたしも おねがいします。\n男：わかりました。",
+    "options": [
+      "でんわを かけます",
+      "テストを みます",
+      "学校へ いきます",
+      "先生に あいます"
+    ],
+    "answerIndex": 0,
+    "key": ["でんわを かけます"],
+    "evidence": "男の人は いまから 先生に でんわを かけます。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n5-pt-110",
+    "block": "point-rikai",
+    "level": "N5",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "女の人は どうして にほんごが すきですか。",
+    "passage": "男の人と 女の人が 話しています。女の人は どうして にほんごが すきですか。\n男：どうして にほんごを べんきょうしますか。\n女：先生が おもしろいですから。まいにち たのしいです。\n男：いいですね。まいにち なんじから しますか。\n女：3じか 4じです。",
+    "options": [
+      "先生が おもしろいから",
+      "テストが やさしいから",
+      "ともだちが おおいいから",
+      "まちが きれいだから"
+    ],
+    "answerIndex": 0,
+    "key": ["先生が おもしろいから"],
+    "evidence": "女の人は 先生が おもしろいから にほんごが すきです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 0,
+    "block": "point-rikai",
+    "construction": "authored",
+    "evidence": "男の人は あした おなかが いたいから やすみます。",
+    "id": "n5-pt-111",
+    "key": ["おなかが いたいから"],
+    "level": "N5",
+    "options": [
+      "おなかが いたいから",
+      "なつやすみだから",
+      "ともだちの たんじょうびだから",
+      "でんしゃが おくれたから"
+    ],
+    "passage": "男の人と 女の人が 話しています。男の人は あした なぜ やすみますか。\n男：あした、がっこうを やすみます。\n女：どうしてですか。\n男：おなかが いたいですから。\n女：そうですか。たいへんですね。",
+    "provenance": "composed",
+    "stem": "男の人は あした なぜ やすみますか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  }
+]

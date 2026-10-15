@@ -1,0 +1,18 @@
+{
+  "notification": {
+    "update": {
+      "content": {
+        "text": "pondering",
+        "type": "text"
+      },
+      "sessionUpdate": "agent_thought_chunk"
+    }
+  },
+  "expectedFrame": {
+    "content": {
+      "text": "pondering",
+      "type": "text"
+    },
+    "type": "thinking"
+  }
+}

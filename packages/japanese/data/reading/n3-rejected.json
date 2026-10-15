@@ -1,0 +1,50 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS: two nouns completing the same compound or the same particle-frame is a reject even when one fits better.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 1 over the 24-row N3 短文 batch (.cache/judge/tanbun-n3.md, keys withheld). All 24 rows PASS, each on exactly one option. The rows are cloze rather than comprehension questions, so the thing being judged is whether the passage licenses a second noun in the blank; it never did.",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 24 items, deliberately different procedure: first answer as a test-taker, then switch sides and build the strongest case the page alone allows for each of the other three options, and report every option that survives that argument.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 2 over the same batch: all 24 rows PASS, and its single surviving option equals the frozen key on every row (24/24 agreement across both families and both procedures). No row is burned, so the N3 store ships as generated with no regeneration round.",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from it, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. These are 内容理解 comprehension 小問, so the thing judged is whether the passage defends a second meaning, not a second noun in a slot.",
+    "runDate": "2026-10-09",
+    "note": "Round A, pass A over the 16-row AUTHORED N3 短文 batch (.cache/judge/tanbun-n3-keys-withheld.md, keys withheld). All 16 rows PASS on exactly one option, and the option each row passed on is the frozen key (16/16). This batch replaces the 24 masked-slot rows the two records above judged; those rows are no longer in the store.",
+    "verdicts": {
+      "pass": 16,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same file, same per-item procedure, run as a second independent judge, with the 指示語 (「それ」「こっち」) and 気持ち items named as the places a second defensible option is likeliest to hide.",
+    "runDate": "2026-10-09",
+    "note": "Round A, pass B: all 16 rows PASS and its pick equals pass A's and the frozen key on every row (16/16 three-way). LIMIT, stated because it is the whole weight of this record: both judges are qoder/general-purpose, the same model family that authored the rows, so agreement between them is correlated error and cannot rule out a mistake the author and the judges would all make. The mechanical screens in scripts/reading-authored-corpus.ts are the independent leg; these passes are the reading leg.",
+    "verdicts": {
+      "pass": 16,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

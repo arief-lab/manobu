@@ -1,0 +1,34 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N3 hatsuwa candidates; the burned rows were replaced by newly authored rows judged in its own packet under the same protocol (.cache/judge/n3-listening/rep). Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. N3 ships authored-only: JLPTSuccess ships listening at N5 only (LICENSE §29), so every N3 row is composed (LICENSE §30).",
+    "rejectedIds": ["n3-hw-109"],
+    "verdicts": {
+      "pass": 32,
+      "ambiguous": 2,
+      "unanswerable": 0,
+      "unfit": 0,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n3-hw-109",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both A (用意が間に合いませんでしたが、誕生日おめでとうございます) and B (誕生日おめでとうございます) are complete, natural things to say when you remember a colleague's birthday on the day; the situation does not force the apology.",
+          "pass2 AMBIGUOUS: Same pair survives the per-option test; the moment admits both the apology-plus-congrats and the plain congrats."
+        ]
+      }
+    ]
+  }
+]

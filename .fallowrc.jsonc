@@ -1,0 +1,349 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
+  // ── Entry points ─────────────────────────────────────────────
+  // bun test runs test files without static imports (bun test test/*.test.ts),
+  // so they must be declared reachable or they all report as unused files.
+  // Scripts are spawned by package.json scripts / Tauri hooks, not imported.
+  "entry": [
+    "**/test/**/*.test.{ts,tsx,mjs}",
+    "**/src/**/*.test.{ts,tsx}",
+    "**/scripts/**",
+    "packages/jlpt-mcp/bin/jlpt-mcp.js",
+    // Manual stdio ACP fixture: spawned directly (`bun test/fake-agent.ts
+    // <script>`) by packages/acp/test/session.test.ts and docs, never imported.
+    "packages/acp/test/fake-agent.ts"
+  ],
+  // routeTree.gen.ts is TanStack Router plugin output — regenerated, never
+  // hand-edited; keep it out of analysis entirely.
+  "ignorePatterns": ["**/routeTree.gen.ts"],
+  // ── Architecture boundaries (TASK-71) ────────────────────────
+  // Monorepo pattern from docs: `root`-scoped zones keep patterns relative;
+  // repo-root globs where several packages share one zone. First-match
+  // classification — test zone patterns precede broader package zones.
+  "boundaries": {
+    "zones": [
+      // Tests import from any layer. Must precede broader zones that would
+      // otherwise swallow co-located test files (first-match wins). Patterns
+      // are ROOT-relative, so the packages zone needs the `*/` segment: bare
+      // `test/**` means `packages/test/**` and classifies nothing (0 files,
+      // silently dead rule — verified 2026-09-27).
+      {
+        "name": "test",
+        "root": "apps/desktop/",
+        "patterns": ["test/**", "src/**/*.test.ts", "src/**/*.test.tsx"]
+      },
+      {
+        "name": "test-server",
+        "root": "apps/server/",
+        "patterns": ["test/**", "src/**/*.test.ts", "src/**/*.test.tsx"]
+      },
+      {
+        "name": "test-packages",
+        "root": "packages/",
+        "patterns": ["*/test/**", "*/src/**/*.test.ts", "*/src/**/*.test.tsx"]
+      },
+      // Desktop bulletproof layout (TASK-71 phase 5): routes are the app tier,
+      // features/<scr> the feature tier. src/components/** is gone — every
+      // compound moved to features/ or shared/.
+      {
+        "name": "desktop-app",
+        "root": "apps/desktop/",
+        "patterns": ["src/routes/**", "src/main.tsx", "src/index.css"]
+      },
+      {
+        "name": "desktop-features",
+        "root": "apps/desktop/",
+        "patterns": ["src/features/**"]
+      },
+      {
+        "name": "desktop-shared",
+        "root": "apps/desktop/",
+        "patterns": ["src/lib/**", "src/hooks/**", "src/shared/**"]
+      },
+      // API contract (TASK-71): isolated leaf — no import is allowed out of it.
+      // A `fallow audit --base <ref>` run against a checkout predating the
+      // package prints "zone 'api-contract' matched 0 reachable files"; that
+      // warning is about the BASE tree, not this one.
+      {
+        "name": "api-contract",
+        "root": "packages/api-contract/",
+        "patterns": ["src/**"]
+      },
+      // Server surface: Hono app, route handlers, and internal infra.
+      {
+        "name": "server",
+        "root": "apps/server/",
+        "patterns": ["src/**"]
+      },
+      // Shared design system — consumed by desktop, imports nothing local.
+      {
+        "name": "ui-ds",
+        "root": "packages/ui/",
+        "patterns": ["src/**"]
+      },
+      // Domain libraries: no cross-package imports; they are leaf layers.
+      // (One zone per package keeps the rule "domain-libs imports nothing"
+      // while allowing same-zone imports within each package.)
+      { "name": "lib-acp", "root": "packages/acp/", "patterns": ["src/**"] },
+      {
+        "name": "lib-agent",
+        "root": "packages/agent/",
+        "patterns": ["src/**"]
+      },
+      {
+        "name": "lib-chat-session",
+        "root": "packages/chat-session/",
+        "patterns": ["src/**"]
+      },
+      { "name": "lib-db", "root": "packages/db/", "patterns": ["src/**"] },
+      { "name": "lib-env", "root": "packages/env/", "patterns": ["src/**"] },
+      {
+        "name": "lib-item-engine",
+        "root": "packages/item-engine/",
+        "patterns": ["src/**"]
+      },
+      {
+        "name": "lib-japanese",
+        "root": "packages/japanese/",
+        "patterns": ["src/**", "data/**"]
+      },
+      {
+        "name": "lib-skills",
+        "root": "packages/skills/",
+        "patterns": ["src/**"]
+      },
+      {
+        "name": "lib-speech",
+        "root": "packages/speech/",
+        "patterns": ["src/**"]
+      },
+      { "name": "lib-srs", "root": "packages/srs/", "patterns": ["src/**"] }
+    ],
+    "rules": [
+      // Lowest layers first: contract is pure types+zod, imports nothing local.
+      { "from": "api-contract", "allow": [] },
+      { "from": "lib-acp", "allow": [] },
+      // lib-skills: the Skill type is a shared leaf contract; lib-srs:
+      // subagents call previewIntervals() for grammar-check scoring.
+      {
+        "from": "lib-agent",
+        "allow": ["lib-japanese", "lib-skills", "lib-srs"]
+      },
+      // ui-ds: message-transcript renders the chat surface on DS
+      // primitives (Bubble/Message/ToolCallCard). lib-env: env/web for
+      // the orpc base URL.
+      // lib-acp: chat-engine folds ACP wire events; acp-events.ts is the
+      // canonical event-name vocabulary both sides share (TASK-80.2).
+      {
+        "from": "lib-chat-session",
+        "allow": [
+          "lib-env",
+          "lib-db",
+          "lib-speech",
+          "api-contract",
+          "lib-acp",
+          "ui-ds"
+        ]
+      },
+      // lib-env: db/index.ts reads env/server for the database URL.
+      { "from": "lib-db", "allow": ["lib-env", "lib-item-engine"] },
+      { "from": "lib-env", "allow": [] },
+      { "from": "lib-item-engine", "allow": [] },
+      // lib-japanese: scripts/check-reading-n4.ts (TASK-173.9.6 AC#2) runs the
+      // item-engine structural validator over the frozen composed-N4 store.
+      // item-engine is a dependency-free leaf, so this edge cannot create a cycle.
+      { "from": "lib-japanese", "allow": ["lib-item-engine"] },
+      { "from": "lib-skills", "allow": [] },
+      { "from": "lib-speech", "allow": ["lib-env"] },
+      { "from": "lib-srs", "allow": ["lib-db"] },
+      // Server composes the contract (implements it) and may use domain libs
+      // + the DS for SSR-able primitives. Never desktop zones.
+      {
+        "from": "server",
+        "allow": [
+          "api-contract",
+          "lib-acp",
+          "lib-agent",
+          "lib-chat-session",
+          "lib-db",
+          "lib-env",
+          "lib-item-engine",
+          "lib-japanese",
+          "lib-skills",
+          "lib-speech",
+          "lib-srs",
+          "ui-ds"
+        ]
+      },
+      // Desktop features build on shared utils + contract + DS.
+      // lib-chat-session: the ask-sensei surfaces (widget/rail/panel) and
+      // the setup rail's CLI chooser read the chat-session persistence
+      // contract, so the zone legitimately depends on it.
+      {
+        "from": "desktop-features",
+        "allow": [
+          "desktop-shared",
+          "api-contract",
+          "ui-ds",
+          "lib-japanese",
+          "lib-srs",
+          "lib-speech",
+          "lib-env",
+          "lib-chat-session"
+        ]
+      },
+      // Routes (app layer) compose features, shared, DS, contract client.
+      // NOT server — desktop reaches the server only through the contract.
+      {
+        "from": "desktop-app",
+        "allow": [
+          "desktop-features",
+          "desktop-shared",
+          "api-contract",
+          "ui-ds",
+          "lib-japanese",
+          "lib-srs",
+          "lib-speech",
+          "lib-chat-session",
+          "lib-env"
+        ]
+      },
+      // Shared utilities may use the DS + leaf libs.
+      // lib-chat-session: TASK-80.8 AC#9 — apps/desktop/src/lib/orpc.ts is
+      // the ONE re-export point of the shared fetch/WS client factories
+      // (packages/chat-session/src/orpc.ts owns the sidecar URL).
+      {
+        "from": "desktop-shared",
+        "allow": [
+          "ui-ds",
+          "api-contract",
+          "lib-japanese",
+          "lib-srs",
+          "lib-speech",
+          "lib-env",
+          "lib-db",
+          "lib-chat-session"
+        ]
+      },
+      // Test zones may import everything.
+      {
+        "from": "test",
+        "allow": [
+          "desktop-app",
+          "desktop-features",
+          "desktop-shared",
+          "api-contract",
+          "server",
+          "ui-ds",
+          "lib-acp",
+          "lib-agent",
+          "lib-chat-session",
+          "lib-db",
+          "lib-env",
+          "lib-item-engine",
+          "lib-japanese",
+          "lib-skills",
+          "lib-speech",
+          "lib-srs"
+        ]
+      },
+      {
+        "from": "test-server",
+        "allow": [
+          "desktop-app",
+          "desktop-features",
+          "desktop-shared",
+          "api-contract",
+          "server",
+          "ui-ds",
+          "lib-acp",
+          "lib-agent",
+          "lib-chat-session",
+          "lib-db",
+          "lib-env",
+          "lib-item-engine",
+          "lib-japanese",
+          "lib-skills",
+          "lib-speech",
+          "lib-srs"
+        ]
+      },
+      {
+        "from": "test-packages",
+        "allow": [
+          "desktop-app",
+          "desktop-features",
+          "desktop-shared",
+          "api-contract",
+          "server",
+          "ui-ds",
+          "lib-acp",
+          "lib-agent",
+          "lib-chat-session",
+          "lib-db",
+          "lib-env",
+          "lib-item-engine",
+          "lib-japanese",
+          "lib-skills",
+          "lib-speech",
+          "lib-srs"
+        ]
+      }
+    ],
+    "coverage": {
+      "requireAllFiles": true,
+      "allowUnmatched": [
+        "packages/config/**",
+        "packages/jlpt-mcp/**",
+        "crates/**"
+      ]
+    }
+  },
+  // Repo policy: CRAP without real coverage data punishes ?? fallback chains
+  // (CC inflation) — 30 assumes accurate cov. 100 = genuinely complex AND
+  // untested. Revisit when Istanbul coverage lands in CI.
+  "health": {
+    "maxCrap": 100.0
+  },
+  // Rollout: warn first, promote to error after cleanup (TASK-71). Promoted
+  // 2026-09-27 with `fallow dead-code --boundary-violations` at 0 findings —
+  // including the 62 files the two fixes above newly classified.
+  "rules": {
+    "boundary-violation": "error",
+    // The contract's z.infer type aliases are its ergonomic public surface —
+    // server implementations + desktop call sites consume them from phase 3
+    // on. They read as "unused" until then; warn, don't delete.
+    "unused-types": "warn"
+  },
+  // __test__ is a per-module test seam by repo convention (TASK-23.2.1,
+  // tts-surfaces pattern): every module may export one, tests consume them
+  // via namespace imports fallow can't trace. Policy, not accident.
+  "ignoreExports": [{ "file": "**/*", "exports": ["__test__"] }],
+  // Deps fallow cannot observe (exact names, repo-wide):
+  // - @manobu/japanese: consumed via JSON subpath imports
+  //   (`@manobu/japanese/data/*.json`) and a dynamic template import in
+  //   packages/agent — neither is traceable by the static graph.
+  // - @libsql/linux-x64-gnu and @libsql/win32-x64-msvc: runtime native
+  //   addons pinned to libsql's version and copied by the Tauri sidecar
+  //   script, never imported. The win32 one is the TASK-177 leg of the same
+  //   computed-specifier stack (`require("@libsql/${target}")`), required by
+  //   a cross-built Windows sidecar.
+  // - ai: hoisted to v6 for the acp workspace so the bundled
+  //   @mcpc-tech/acp-ai-provider resolves its own `import "ai"`; the
+  //   dep is load-bearing at runtime without a callsite.
+  "ignoreDependencies": [
+    "@manobu/japanese",
+    "@libsql/linux-x64-gnu",
+    "@libsql/win32-x64-msvc",
+    "ai"
+  ],
+  // compounds.test.tsx builds a scan root with
+  // `resolve(new URL("../../src", import.meta.url))` — a path string,
+  // not an import; the resolver sees it as one.
+  "ignoreUnresolvedImports": ["../../src"],
+  "duplicates": {
+    // Hide pair-only clones; focus on widespread copy-paste
+    // worth refactoring. Lower to 2 to report every duplicate pair.
+    "minOccurrences": 3
+  }
+}

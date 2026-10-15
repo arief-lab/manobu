@@ -1,0 +1,14 @@
+{
+  "extends": "@manobu/config/tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "composite": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "strictNullChecks": true
+  },
+  "include": ["src/**/*.ts", "../../packages/db/src/**/*.d.ts"]
+}

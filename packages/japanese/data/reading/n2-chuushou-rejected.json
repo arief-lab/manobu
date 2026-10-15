@@ -1,0 +1,50 @@
+[
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "first 主張理解 pass over the frozen 9-row N2 batch, key withheld. Every row judged PASS: the key is the option the passage states, and each distractor was marked as contradicting explicit text. Zero rejections.",
+    "verdicts": {
+      "pass": 9,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "second judge FAMILY, blind pass over the same frozen 9-row batch. Agreed with the shipped key on every row (9/9). Zero rejections, so no regeneration was needed.",
+    "verdicts": {
+      "pass": 9,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: state the 筆者's claim in one Japanese sentence from the passage alone, then classify each option 主張 / 詳細 / 反対 / UNCERTAIN. Packet: .cache/judge/chuushou-n2-keys-withheld.md, verdicts: .cache/judge/chuushou-n2-A.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass A over the 12-row AUTHORED N2 主張理解 batch (n2sh-1..n2sh-12). All 12 PASS and every one was keyed exactly as shipped (12/12). Two rows were flagged as weak inside their PASS: n2sh-7's option names the condition as its literal reverse of the passage's wording, and n2sh-8's key compresses the author's either/or at renewal into one demand. The pass also noted that in 8 of 12 rows the key sits in the closing paragraph, which is the shape this ねらい has in a real paper. Correlated-error limit: both passes ran on the author model family, so agreement here is not independence. The two passes differ in procedure only, and the key was withheld from the packet, so the pairing tests whether a reader who cannot see the key lands on one option, not whether a second model would.",
+    "verdicts": {
+      "pass": 12,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 12 items, deliberately different procedure: answer from the first and last paragraphs only, record the provisional choice, then read the middle paragraphs and re-answer, then run the elimination test on every option. Packet: .cache/judge/chuushou-n2-keys-withheld.md, verdicts: .cache/judge/chuushou-n2-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass B over the same batch. 12 PASS, no provisional answer differed from the final one, and every choice matched the shipped key. The pass recorded that no key is printed verbatim, though several are close paraphrases of the author's own closing sentence (n2sh-1 and n2sh-11 being the nearest). The 詳細 trap works as designed: in each row exactly one distractor is a verbatim printed statistic or finding, and the pass named it correctly every time.",
+    "verdicts": {
+      "pass": 12,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

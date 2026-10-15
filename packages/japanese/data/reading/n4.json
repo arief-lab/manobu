@@ -1,0 +1,296 @@
+[
+  {
+    "answerIndex": 0,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "今週の日曜日に部屋の掃除をするため、一日中閉まる。",
+    "id": "n4s-1",
+    "level": "N4",
+    "options": [
+      "掃除をする日は、本を受け取ることができない。",
+      "月曜からは九時より前に開く。",
+      "日曜は午前中だけ開いている。",
+      "閉まっている間、ウェブサイトでは予約できない。"
+    ],
+    "passage": "市立図書館は、今週の日曜日に部屋の掃除をするため、一日中閉まる。翌日の月曜から、いつもどおり九時に開く。予約した本は、閉まっている間もウェブサイトで受け付けているが、受け取りは月曜以降になる。掃除をする日は、本の返却箱も使えない。",
+    "provenance": "composed",
+    "stem": "この文の内容に合っているものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 1,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "家の近くでバスが止まってしまい、歩いて来るという。",
+    "id": "n4s-2",
+    "level": "N4",
+    "options": [
+      "電車が遅れたから。",
+      "家の近くでバスが止まったから。",
+      "道のりを間違えたから。",
+      "会議の時間が変わったから。"
+    ],
+    "passage": "会議の前に、高橋さんから電話があった。今日は遅れるという。電車はいつもどおり動いていたが、家の近くでバスが止まってしまい、歩いて来るという。それでも二十分ほどで着くそうだ。高橋さんは会議の資料をもうメールで送ったと言っていた。",
+    "provenance": "composed",
+    "stem": "高橋さんが会議に遅れるのはなぜか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 2,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "客席から父が手を振っているのを見て、山田さんは目に涙がたまった。",
+    "id": "n4s-3",
+    "level": "N4",
+    "options": [
+      "練習が大変で、発表会を休みたいと思った。",
+      "先生に注意されて、悲しいと思った。",
+      "続けてきたことが伝わって、泣きたくなった。",
+      "先生に続きを頼まれて、こまった。"
+    ],
+    "passage": "三年間ピアノを習っている山田さんの発表会が昨日終わって、会場が静かになった。練習が大変で、やめたいと思うこともあったが、先生が毎回つき合ってくれた。客席から父が手を振っているのを見て、山田さんは目に涙がたまった。弾いた曲は、三年前に父が選んでくれたものだった。",
+    "provenance": "composed",
+    "stem": "発表会のあとに山田さんが感じた気持ちはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 3,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "前は一台だけだったので、朝の時間には並ぶ人が多かった。",
+    "id": "n4s-4",
+    "level": "N4",
+    "options": ["店に置く商品", "朝の時間", "並ぶ人", "お金を払う機械"],
+    "passage": "駅の前のコンビニは、今朝からお金を払う機械を二台に増やした。前は一台だけだったので、朝の時間には並ぶ人が多かった。増やしたことで、待つ人は半分になったと店長が言っていた。店長は、来月もう一台増やすことを考えている。店は、客が多い時間に備えたのだと言った。",
+    "provenance": "composed",
+    "stem": "「増やした」が指しているものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 2,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "ゴミを出すのは、今朝の七時から九時までにしてください。",
+    "id": "n4s-5",
+    "level": "N4",
+    "options": [
+      "ゴミを次の週まで置くこと",
+      "回収車を待つこと",
+      "決められた時間にゴミを出すこと",
+      "ゴミを出す場所を変えること"
+    ],
+    "passage": "管理人からのお願いです。ゴミを出すのは、今朝の七時から九時までにしてください。昨日は九時を過ぎてから出した家があり、回収車は次の週まで持ち帰ることになった。部屋に置いておくとにおいが強くなるので、必ず時間内にお願いします。",
+    "provenance": "composed",
+    "stem": "この文章は、住民に何を頼んでいるか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 0,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "体を動かすことより、そのことのほうが毎日が続く理由になっている。",
+    "id": "n4s-6",
+    "level": "N4",
+    "options": [
+      "歩き続けるのは、近所の人と会うからである。",
+      "歩くのは体が丈夫になるためだけである。",
+      "会社の同僚と歩くほうがいいである。",
+      "道ですれ違う人を増やすべきである。"
+    ],
+    "passage": "毎朝歩く人は多い。筆者もその一人だが、歩く目的は健康のためだけではないと思っている。道で会う人に軽く会釈をするうち、会社の同僚より近所の人のほうが多く声をかけてくれるようになった。体を動かすことより、そのことのほうが毎日が続く理由になっている。",
+    "provenance": "composed",
+    "stem": "筆者の考えに最も合っているものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 1,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "入会金はいらず、払うのは一回千円だけだ。",
+    "id": "n4s-7",
+    "level": "N4",
+    "options": [
+      "休んだ回の材料代は返ってくる。",
+      "回ごとに千円を払えば参加できる。",
+      "開いているのは毎週火曜だけである。",
+      "毎月まとめて会費を払う。"
+    ],
+    "passage": "絵の教室についてのお知らせです。教室は火曜と金曜の午後七時から開いている。入会金はいらず、払うのは一回千円だけだ。休んだ回の分を後でまとめて払う必要はないが、その回の材料代は返さない。材料は教室で配るので、持って来る物は要らない。",
+    "provenance": "composed",
+    "stem": "この教室の説明として正しいものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 3,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "ただし土曜は配達の手続きだけで、年賀状の引き受けは月曜からになる。",
+    "id": "n4s-8",
+    "level": "N4",
+    "options": [
+      "日曜と祝日も窓口が開くことになった。",
+      "土曜は年賀状も出すことができる。",
+      "窓口が閉まるのは祝日だけである。",
+      "土曜に開くのは配達の手続きのためである。"
+    ],
+    "passage": "郵便局の窓口は、今月から土曜も開けることになった。日曜と祝日は今までどおり閉まっている。ただし土曜は配達の手続きだけで、年賀状の引き受けは月曜からになる。窓口の開く時間は今までどおり九時から十七時だ。切手と葉書は、土曜もいつもどおり買える。",
+    "provenance": "composed",
+    "stem": "この文の内容に合っているものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 2,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "明日は雨なので、予定していた山登りをやめて、美術館に行くことになった。",
+    "id": "n4s-9",
+    "level": "N4",
+    "options": [
+      "バスの出発が遅いから。",
+      "美術館が閉まっているから。",
+      "明日は雨が降るから。",
+      "山登りの人が多すぎるから。"
+    ],
+    "passage": "明日の社員旅行について連絡します。明日は雨なので、予定していた山登りをやめて、美術館に行くことになった。バスはいつもより遅い八時半に出ます。山より館内のほうが、雨でも楽しめるからです。集合の時間は六時のまま変更はない。道具は要らないので、手ぶらで大丈夫です。",
+    "provenance": "composed",
+    "stem": "山登りをやめるのはなぜか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 0,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "何も無い部屋を見た佐藤さんは、もっと大事に住めばよかったと思った。",
+    "id": "n4s-10",
+    "level": "N4",
+    "options": [
+      "もっと丁寧に使っておけばよかったと思っている。",
+      "新しい部屋に移れて安心した。",
+      "掃除が終わってさっぱりした。",
+      "三年間が短すぎて残念だ。"
+    ],
+    "passage": "引っ越しの日、最後に部屋を掃除したのは佐藤さんだった。三年住んだ部屋は空になり、机のあとが壁に白いまま残っている。何も無い部屋を見た佐藤さんは、もっと大事に住めばよかったと思った。新しい部屋は今の部屋よりずっと狭い。段ボールは明日の朝、業者が取りに来る。",
+    "provenance": "composed",
+    "stem": "空の部屋を見たときの佐藤さんの気持ちはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 1,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "四月から、七時発の通勤バスは一本増える。",
+    "id": "n4s-11",
+    "level": "N4",
+    "options": [
+      "八時発の便もそのまま残る。",
+      "働く人向けの朝の便が変わること。",
+      "時刻表は今月から使えること。",
+      "通勤バスは一本減ること。"
+    ],
+    "passage": "四月から、七時発の通勤バスは一本増える。代わりに、八時発の便はなくなる。新しい時刻表は停留所の掲示板に今週中に張るが、確認が済んでいない項目があるので、変わる可能性がある。変わらない便の時刻はそのままで使う。分からない人は掲示板の前で係に聞いてください。",
+    "provenance": "composed",
+    "stem": "この文の内容に合っているものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 3,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "十二人いたうち五人が来週引っ越すという。",
+    "id": "n4s-12",
+    "level": "N4",
+    "options": ["十二人", "五人", "八人", "七人"],
+    "passage": "先週、合唱の教室に通う人の数を調べた。十二人いたうち五人が来週引っ越すという。残る人に聞くと、みんな続けたいと言った。来週から、この人数で練習をやり直すことにする。残る人には、来月の発表のことも相談する。新しい人も歓迎すると貼り紙を出した。",
+    "provenance": "composed",
+    "stem": "「この人数」が指している人数は何人か。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 0,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "来週の月曜までに、各自の結果をまとめて持ってきてください。",
+    "id": "n4s-13",
+    "level": "N4",
+    "options": [
+      "結果をまとめて月曜までに持ってくること",
+      "水曜の放課後に教室へ来ないこと",
+      "アンケートを一人で書くこと",
+      "水曜に教室へ行くこと"
+    ],
+    "passage": "では、宿題についてお願いがあります。来週の月曜までに、各自の結果をまとめて持ってきてください。書き方が分からない人は、水曜の放課後に教室にいますので、そのとき来て大丈夫です。まとめて書く用紙は今日の授業で配る。用紙は三枚ずつあるから、なくさないでほしい。",
+    "provenance": "composed",
+    "stem": "先生は生徒に何を頼んでいるか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 2,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "毎日使えると、寝る時間が減って、次の日の授業に影響するからだ。",
+    "id": "n4s-14",
+    "level": "N4",
+    "options": [
+      "子どもに機械を全く持たせないべきだ。",
+      "家では毎日使わせるべきだ。",
+      "学校が配った機械は決められた日にだけ使うべきだ。",
+      "学校が機械を配るべきではない。"
+    ],
+    "passage": "子どもが機械を持つ年齢は、年々早くなっている。筆者は、学校が配った機械を家に持ち帰る日だけ使えばよいと考えている。毎日使えると、寝る時間が減って、次の日の授業に影響するからだ。家で使う時間を決めている家庭も多い。宿題で調べることも増えているそうだ。",
+    "provenance": "composed",
+    "stem": "筆者の考えに最も合っているものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 1,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "この店の会員は、商品を二つ買うと二つ目が半額になる。",
+    "id": "n4s-15",
+    "level": "N4",
+    "options": [
+      "三つ買うと三つとも安くなる。",
+      "二つ買うと、そのうち一つが安くなる。",
+      "半額になるのは最初に選んだ物である。",
+      "会費を払えばいつでも半額になる。"
+    ],
+    "passage": "この店の会員は、商品を二つ買うと二つ目が半額になる。三つ以上買っても同じ割引は一回だけだ。割引は一日に一回までで、他の券とは一緒に使えない。会員の更新は毎年必要で、年会費は千二百円かかる。レジで会員番号を見せて計算してもらう。",
+    "provenance": "composed",
+    "stem": "この割引の説明として正しいものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "answerIndex": 3,
+    "block": "naiyou-rikai-tanbun",
+    "construction": "authored",
+    "evidence": "そのせいで、今朝も一部の電車がいつもより遅れている。",
+    "id": "n4s-16",
+    "level": "N4",
+    "options": [
+      "昨日の午後、電車が止まったこと。",
+      "点検が三時間で終わったこと。",
+      "運輸会社が同じ路線を使うよう勧めていること。",
+      "風のため今朝も電車が遅れていること。"
+    ],
+    "passage": "昨日の午後、風が強く吹いて、線路のまわりの点検に時間がかかった。そのせいで、今朝も一部の電車がいつもより遅れている。会社へ行く人は、同じ駅の別路線を使ったほうがいいと、運輸会社が言っている。点検は昨日の夜に終わった。風は昼には弱くなった。",
+    "provenance": "composed",
+    "stem": "この文の内容に合っているものはどれか。",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged"
+  }
+]

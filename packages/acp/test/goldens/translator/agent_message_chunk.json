@@ -1,0 +1,20 @@
+{
+  "notification": {
+    "update": {
+      "content": {
+        "text": "hello",
+        "type": "text"
+      },
+      "messageId": "msg-1",
+      "sessionUpdate": "agent_message_chunk"
+    }
+  },
+  "expectedFrame": {
+    "content": {
+      "text": "hello",
+      "type": "text"
+    },
+    "message_id": "msg-1",
+    "type": "text"
+  }
+}

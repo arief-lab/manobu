@@ -1,0 +1,50 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the 情報素材 alone, answer the stem the way the 大問 asks it, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 1 over the 12-row composed 情報検索 batch (6 N2 + 6 N1; keys withheld; transcript saved to .cache/judge/jouhou-family1.md). All 12 rows PASS, 0 AMBIGUOUS, 0 UNANSWERABLE, and every pick equals the frozen key by option content. The 6 N1 rows: n1j-minchou-1 reads the max of the 答申された改定額 column (東京 1,280, with 全国加重平均 1,177 excluded because the stem says 都道府県) and n1j-minchou-2 reads 神奈川 1,279 against the adjacent 1,280; n1j-zenno-1 and n1j-zenno-2 separate 口座振替 from 現金納付 and ６ヶ月前納 from １年/２年; n1j-zairyu-1 pins the 文化活動 row's 在留期間 against the rows that share ５年，３年，１年又は３月, and n1j-zairyu-2 pins the 介護 row's 該当例. No row is burned, so the store ships as generated. This record counts the 6 rows of THIS level; the batch and the verdicts above cover all 12.",
+    "verdicts": {
+      "pass": 6,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 12 items, deliberately different procedure: locate the table row or line the stem points at, then check that the stem's own qualifier (都道府県・金額の種別, 納付方法, 在留資格) isolates exactly one location, and report any other option the 素材 still leaves open.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 2 over the same batch (transcript in .cache/judge/jouhou-family2.md): all 12 rows PASS and every pick equals the frozen key by option content. It named the traps and dismissed each on 素材 text: 神奈川's 1,279 sits 1 円 under 東京's 1,280, which is what makes n1j-minchou-1 a read rather than a glance; １０６，６５０円 answers the same period for 現金納付, so n1j-zenno-1 depends on the method qualifier; １７，８６０円 is true of the 素材 but is the 早割 total (its 割引 is 60円), not a 前納 割引額, so it is a different-question option rather than a competing answer; the option \"３年，１年，６月，３月又は３０日\" of n1j-zairyu-1 is printed nowhere, and the 短期滞在 row's ９０日、３０日又は１５日 is excluded by the 文化活動 qualifier. This record was frozen BEFORE the authored option order was spread across positions 0-3; the option SETS and the 素材 are byte-identical to what the judges read, and decidability is a property of the set, so no verdict moves. This record counts the 6 rows of THIS level; the batch and the verdicts above cover all 12.",
+    "verdicts": {
+      "pass": 6,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass A over the 2 rows TASK-173.9.21 grew the N1 情報検索 store with (n1j-minchou-3 from 最低賃金 全国一覧, n1j-zenno-3 from 国民年金 前納額; packet .cache/judge/n1/jouhou-new.md, verdicts .cache/judge/n1/jouhou-new-A.md). Both PASS and both picks equal the frozen keys (2/2): the first reads the 都道府県 with the latest 発効日, the second reads ２年前納の現金納付額 ４１８，５１０円 out of a table that also prints the 口座振替 and the １年/６ヶ月前納 figures for the same period.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 2,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass B over the same 2 rows (verdicts .cache/judge/n1/jouhou-new-B.md): both PASS, both keyed as shipped (2/2 across both passes). It named the competing cells it had to exclude rather than assume them: the 口座振替 line prints ４１７，１５０円 for the same period, so the 現金納付 qualifier is doing the work, and 北海道's 令和8年10月1日 is the latest 発効日 only once 全国加重平均 is read out of the 都道府県 column. This store's rows are vendored 素材 tables, not composed prose, so the prose round above did not touch it: the deciding fact is a cell, and a reader either finds it or does not.",
+    "prompt": "same 2 items, deliberately different procedure: locate the table row the stem points at, then check the stem's own qualifier (都道府県・発効日, 納付方法・期間) isolates exactly one cell, and report any other option the 素材 still leaves open.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 2,
+      "unanswerable": 0
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "judge": "bunshou-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/bunshou-validator.md",
+    "runDate": "2026-10-15",
+    "note": "TASK-179 文章の文法 batch for N5. Packets were shuffled INDEPENDENTLY per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key sentence. AMBIGUOUS means two of the four candidates continue the passage's flow, which is the defect this 大問's store cannot carry: 流れ must have one answer.",
+    "rejectedIds": [],
+    "verdicts": {
+      "pass": 28,
+      "ambiguous": 0,
+      "unanswerable": 0,
+      "distractor_picked": 0
+    },
+    "detail": []
+  },
+  {
+    "judge": "check-bunshou.ts deterministic shape gate (no judge run involved)",
+    "prompt": "packages/japanese/scripts/check-bunshou.ts",
+    "runDate": "2026-10-15",
+    "note": "Five N5 rows cleared BOTH blind passes (all 28 candidates were PASS and each pass picked its own frozen key) and were then refused by the length bands, which the passes do not screen. N5 prints its 流れ with word spacing, and check-word-shared.ts measures runes as [...text].length, so the spaces count against the 70-150 passage and 5-35 option bands. The rows are not solubility rejects; they are simply too long for the level. They are NOT re-cut to fit: trimming a passage or option changes the exact bytes the two blind passes certified, and validated: true on the shipped row is a claim about those bytes. Rejected ids are burned so the same text cannot be re-adopted later.",
+    "rejectedIds": ["n5-b-14", "n5-b-21", "n5-b-24", "n5-b-26", "n5-b-28"],
+    "verdicts": {
+      "pass": 28,
+      "ambiguous": 0,
+      "unanswerable": 0,
+      "distractor_picked": 0,
+      "shape-band": 5
+    },
+    "detail": [
+      {
+        "id": "n5-b-14",
+        "level": "N5",
+        "why": ["option-38runes-outside-5-35"],
+        "passage": "来週の 日曜に、友だちと 山へ のぼる 予定でした。でも、天気 予報で、その 日は 一日中 あめが 降ると 言って いました。＿＿。友だちも 「それで いい」と 言って くれました。二人は いま、その つぎの 日曜を たのしみに 待って います。",
+        "options": [
+          "だから、私は 友だちに その つぎの 日曜に 変えて もらうことに しました",
+          "雨でも 山へ のぼる つもりに して います",
+          "山は まちの なかから 見えて、とても 大きな 山です",
+          "それから、山へ のぼる 服や くつを かいに 行きました"
+        ]
+      },
+      {
+        "id": "n5-b-21",
+        "level": "N5",
+        "why": ["option-39runes-outside-5-35"],
+        "passage": "去年の 十月、はじめて 一人で 新幹線で 東京へ 行きました。途中の えきで、大きな 荷物を もって いる おばあさんに あって、席を ゆずりました。＿＿。その ことがあってから、私は 知らない 人にも よく こえを かけるように なりました。今では 旅先の ふれあいが 私の 宝です。",
+        "options": [
+          "おばあさんは 「ありがとう」と やさしく 言って、心が あたたかく なりました",
+          "新幹線は とても 速く、二時間で 東京に つきました",
+          "乗る まえに、駅で おやつと 東京の 地図を 買いました",
+          "疲れて いて、席に ずっと すわって いました"
+        ]
+      },
+      {
+        "id": "n5-b-24",
+        "level": "N5",
+        "why": ["option-36runes-outside-5-35"],
+        "passage": "毎晩、夜ごはんの あとで、家族と いっしょに 話を して いました。でも、父も 母も しごとで いそがしく、夜ごはんの 時間が だんだん 短く なりました。＿＿。今は ごはんの あとで、いっしょに 三十分、まちを あるいて 話を します。家族が いっしょに いる 時が ふえて、うれしいです。",
+        "options": [
+          "そこで、母が 「ごはんの あとで みんなで あるこう」と 言い出しました",
+          "私は 夜ごはんより あさごはんのほうが 大すきです",
+          "父と 母は 若い ころ、よく いっしょに さんぽして いたそうです",
+          "それで、私は ひとりで テレビを 見るように なりました"
+        ]
+      },
+      {
+        "id": "n5-b-26",
+        "level": "N5",
+        "why": ["passage-163runes-outside-70-150"],
+        "passage": "きのう、デパートで 母の 日の おくりものを さがして いました。赤い マフラーを 見つけて、今に でも かいたいと おもって いました。＿＿。すると、みせの 人が 「お母さんは あおい 色が 大すきでしたか」と たずねて くれました。その ことばを きいて、私は 赤い マフラーを やめて、あおい マフラーを えらびました。",
+        "options": [
+          "でも、赤が 母に あうか どうかが まだ わかりませんでした",
+          "その フロアでは 服も 靴も 半額で 売って いました",
+          "母の 日は いつも 五月の 二番目の 日曜です",
+          "あかい マフラーは 高すぎて、もう あきらめて いました"
+        ]
+      },
+      {
+        "id": "n5-b-28",
+        "level": "N5",
+        "why": ["passage-156runes-outside-70-150"],
+        "passage": "きのう、でんしゃの なかに 赤い かばんを わすれて しまいました。中には しごとで 使う お金と 家の かぎが 入って いて、とても あせりました。＿＿。すると、「赤い かばんは ここに ありますよ」と 言われて、ほっと しました。今日、駅へ 行って、お金も かぎも 全部 もらい、お礼も 言って 帰りました。",
+        "options": [
+          "すぐ 駅に でんわを かけて、しらべて もらいました",
+          "会社の 机の 下を 探しましたが、どこにも ありませんでした",
+          "父は いつも 何かを 落として、探して いました",
+          "そのまま あきらめて、会社で 晩ごはんを 食べて 帰りました"
+        ]
+      }
+    ]
+  }
+]

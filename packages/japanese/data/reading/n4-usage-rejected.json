@@ -1,0 +1,30 @@
+[
+  {
+    "judge": "usage-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/usage-validator.md",
+    "runDate": "2026-10-15",
+    "note": "TASK-179 N4 用法 batch. Candidates were offered with options shuffled independently per pass so position never leaks the key, and a row is kept only when every judge pass returns PASS and each pick is that pass's frozen key slot. Pass 1 was run twice by two separate judge agents and pass 2 once; the survivor set is identical under both readings (19 rows), which is the value of the intersection rather than a single agreement. AMBIGUOUS means two of the four forms both complete the sentence, which a 用法 小問 cannot carry: 用法 asks which form the sentence REQUIRES, and 後で/から or やすい/にくい pairs where nothing in the sentence fixes the direction are not items.",
+    "rejectedIds": [
+      "n4-u-01",
+      "n4-u-03",
+      "n4-u-07",
+      "n4-u-13",
+      "n4-u-18",
+      "n4-u-20",
+      "n4-u-22",
+      "n4-u-23",
+      "n4-u-24",
+      "n4-u-26",
+      "n4-u-27",
+      "n4-u-28",
+      "n4-u-29",
+      "n4-u-30",
+      "n4-u-33"
+    ],
+    "verdicts": {
+      "pass": 19,
+      "ambiguous": 15,
+      "unanswerable": 0
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "prompts/reading-validator.md, applied per item: answer the blank from the passage alone, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 1 over the 12-row N4 stitched-in-level batch (TASK-173.9.15). Eleven rows PASS and every one was keyed exactly as shipped. One AMBIGUOUS: n4c-77613, where 「彼は＿＿に木にのぼる」 takes both the temporal 夜に and the manner 簡単に, with nothing elsewhere in the 木 document deciding between them. The judge called this the noun-vs-na-adjective-stem gap the 「＿に+verb」 frame cannot close, which is true and is a real limit of the frame screen at N4: the frame is unique corpus-wide here, yet two nouns read naturally into it.",
+    "verdicts": {
+      "pass": 11,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n4c-77613"]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 12 items, deliberately different procedure: name the noun the document is built around, read ONLY the sentence that holds the blank and try all four options in it, then re-read it with the whole passage; PASS only if one option survives both steps.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 2 over the same 12 rows. Eleven rows PASS, and the one REJECT is the same row family 1 named (n4c-77613) - and the two families did not even agree on the KEY: family 1 picked 簡単, family 2 picked 夜. A row two blind readers key differently is a row the passage does not decide, so it is burned regardless of the AMBIGUOUS verdict. Family 2 also flagged that the batch's answer words print inside sibling passages (部屋, 下手, 仕事). That is an artifact of reviewing 12 items as one file, not a defect of the store: each 中文 row IS its own document, and the exam prints one document per 小問, so a learner never reads a sibling passage to answer this one. The per-item screens (the key occurs once in the source, no distractor occurs in it) still hold row by row.",
+    "verdicts": {
+      "pass": 11,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n4c-77613"]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "prompts/reading-validator.md, applied per item: answer the blank from the passage alone, then mark each option CORRECT / WRONG / UNCERTAIN.",
+    "runDate": "2026-10-08",
+    "note": "Round B, judge family 1 over the single replacement row the rejection above pulled in (n4c-77922). PASS, keyed 4 (先生) exactly as shipped: the blank's own sentence prints 姉を＿＿にして習う, a frame that admits only a role noun, and 先生 is the only role noun among the four.",
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same item, the family-2 procedure: name the noun the document is built around, judge the blank's own sentence with all four options in it, then re-judge it with the whole passage.",
+    "runDate": "2026-10-08",
+    "note": "Round B, judge family 2 over the same replacement row: PASS, same key (4/4). The store therefore ships 12 rows, of which the 11 round-A survivors and this one all carry both families' agreement. Family 2 also recorded the honest limit of the construction, which the deterministic screens cannot see: the deciding evidence is the case frame of the ONE blanked sentence, since a 28-sentence single-noun collage adds nothing across sentences. That is why a thin frame (もっと＿＿が必要だ) survives only when three of four options are semantically impossible in it, and why the round-A rejection above is the batch's real warning.",
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from it, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Packet: .cache/judge/chuubun-n4-keys-withheld.md, verdicts: .cache/judge/chuubun-n4-A.md",
+    "runDate": "2026-10-09",
+    "note": "Round A, pass A over the 16-row AUTHORED N4 中文 batch (n4c-1..n4c-16, which replace the 12 stitched-in-level rows this store carried: a 中文 id printed over a 28-sentence single-noun collage, i.e. a document the 大問's own 450字程度 does not describe). Fifteen rows PASS keyed exactly as shipped. One AMBIGUOUS: n4c-4, where 「正しい時間」 hangs on 「閉まる十分前まで」 plus 「その日の開館時間が八時までだったからだ」 and therefore reads as BOTH the printed 八時 and the derived 七時五十分, which the page never prints. This is not a distractor that is merely tempting: the referent requires a time the reader must compute and the two candidates sit in different paragraphs, so the 問 does not have one answer on the page. Rejected.",
+    "verdicts": {
+      "pass": 15,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n4c-4"]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 16 items, deliberately different procedure: answer as a test-taker, then switch sides and try to make the passage defend each of the other three options out of its own lines, reporting every option that survives. Packet: .cache/judge/chuubun-n4-keys-withheld.md, verdicts: .cache/judge/chuubun-n4-B.md",
+    "runDate": "2026-10-09",
+    "note": "Round A, pass B: fifteen PASS and the single AMBIGUOUS is the same row pass A named (n4c-4), and it names the same two surviving options (七時五十分 and 八時). Two independent procedures agreeing on the row and on the pair is what makes the burn final: a 中文 小問 whose 指示語 has two defensible referents cannot be scored. Pass B additionally raised two defects WITHOUT burning, because they do not affect which option the passage decides: n4c-12 prints 「分からない人は金曜の午後に事務所で 受け付けるとあった」, whose subject reads as the residents doing the accepting, and n4c-15 tells 先月 / 三月 / 四月 out of a clear order. Both were fixed in place along with n4c-14's option particle, and the changed rows plus the n4c-4 replacement went to round B below. THE LIMIT, stated so this file is not read as stronger than it is: both judges are qoder/general-purpose, the same model family that authored the passages and the 小問, so their agreement is correlated error rather than independent confirmation, and no human reader has checked them. The mechanical screens in scripts/reading-authored-corpus.ts are the independent leg; these passes are the reading leg.",
+    "verdicts": {
+      "pass": 15,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n4c-4"]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "round B, pass A over the five rows whose text moved after round A (n4c-12, n4c-14, n4c-15 as revised, and n4c-17, the fresh-id replacement for the burned n4c-4): the reading-validator per-item procedure, key withheld. Packet: .cache/judge/chuubun-n4-roundB-keys-withheld.md, verdicts: .cache/judge/chuubun-n4-roundB-A.md",
+    "runDate": "2026-10-09",
+    "note": "Round B, pass A: 4 PASS, 0 AMBIGUOUS, 0 UNANSWERABLE, and each row's single correct option equals the frozen key (n4c-12→1, n4c-14→3, n4c-15→4, n4c-17→2). The replacement is the row this round needed to prove: 「そのためには部屋を一つ片付けなければなりません」 gives 『それ』 exactly one printed antecedent in the immediately preceding clause, which is the property n4c-4 lacked. No new rejection.",
+    "verdicts": {
+      "pass": 4,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same four items, the family-2 procedure: answer as a test-taker, then try to make the passage defend each of the other three options out of its own lines. Verdicts: .cache/judge/chuubun-n4-roundB-B.md",
+    "runDate": "2026-10-09",
+    "note": "Round B, pass B: 4 PASS on the same keys (4/4 with pass A). The only flags left are cosmetic and both passes say so: 「手紙は二枚添えてあって」 and 「大人の書き方の教室が開く」 read slightly stiff, and n4c-15's 「行けない用事があったのではなく」 is an odd collocation. None changes which option the page decides, and the store's reading leg is the 問, not the prose style, so no row is burned on them. The batch therefore ships 16 rows, every one of them carrying both passes' agreement on the key; n4c-4 stays rejected and its id is never reused, because the gate rejects by id.",
+    "verdicts": {
+      "pass": 4,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

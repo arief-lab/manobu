@@ -1,0 +1,96 @@
+[
+  {
+    "judge": "bunshou-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/bunshou-validator.md",
+    "runDate": "2026-10-15",
+    "note": "TASK-179 文章の文法 batch for N4. Packets were shuffled INDEPENDENTLY per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key sentence. AMBIGUOUS means two of the four candidates continue the passage's flow, which is the defect this 大問's store cannot carry: 流れ must have one answer.",
+    "rejectedIds": ["n4-b-03", "n4-b-05", "n4-b-15", "n4-b-17"],
+    "verdicts": {
+      "pass": 21,
+      "ambiguous": 2,
+      "unanswerable": 1,
+      "distractor_picked": 1
+    },
+    "detail": [
+      {
+        "id": "n4-b-03",
+        "level": "N4",
+        "why": ["pass1 AMBIGUOUS picked slot [2, 4], key was 2", "pass2 PASS"],
+        "passes": {
+          "pass1": {
+            "verdict": "AMBIGUOUS",
+            "pick": [2, 4],
+            "picked_text": null,
+            "is_key": false
+          },
+          "pass2": {
+            "verdict": "PASS",
+            "pick": 4,
+            "picked_text": "それで私は当日は晴れるものとばかり思っていた",
+            "is_key": true
+          }
+        }
+      },
+      {
+        "id": "n4-b-05",
+        "level": "N4",
+        "why": ["pass1 UNANSWERABLE picked slot None, key was 1", "pass2 PASS"],
+        "passes": {
+          "pass1": {
+            "verdict": "UNANSWERABLE",
+            "pick": null,
+            "picked_text": null,
+            "is_key": false
+          },
+          "pass2": {
+            "verdict": "PASS",
+            "pick": 1,
+            "picked_text": "もう一方の店は小さいが、そのぶん値段が安い",
+            "is_key": true
+          }
+        }
+      },
+      {
+        "id": "n4-b-15",
+        "level": "N4",
+        "why": [
+          "pass1 PASS picked slot 4, key was 1",
+          "pass2 PASS picked slot 2, key was 3"
+        ],
+        "passes": {
+          "pass1": {
+            "verdict": "PASS",
+            "pick": 4,
+            "picked_text": "次の予定の資料はもう準備してあった",
+            "is_key": false
+          },
+          "pass2": {
+            "verdict": "PASS",
+            "pick": 2,
+            "picked_text": "次の予定の資料はもう準備してあった",
+            "is_key": false
+          }
+        }
+      },
+      {
+        "id": "n4-b-17",
+        "level": "N4",
+        "why": ["pass1 PASS", "pass2 AMBIGUOUS picked slot [1, 2], key was 1"],
+        "passes": {
+          "pass1": {
+            "verdict": "PASS",
+            "pick": 2,
+            "picked_text": "私はその場でこれがいいと決めて箱を受け取った",
+            "is_key": true
+          },
+          "pass2": {
+            "verdict": "AMBIGUOUS",
+            "pick": [1, 2],
+            "picked_text": null,
+            "is_key": false
+          }
+        }
+      }
+    ]
+  }
+]

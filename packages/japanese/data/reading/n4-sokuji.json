@@ -1,0 +1,642 @@
+[
+  {
+    "id": "n4-sj-101",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "すみません、まどを しめて いただけませんか。",
+    "options": [
+      "はい、今、しめます",
+      "いいえ、かぎが ついて います",
+      "ええ、外は あついです",
+      "いいえ、まどは 二つ あります"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、今、しめます"],
+    "evidence": "すみません、まどを しめて いただけませんか という しつもんには、はい、今、しめます が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-102",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "お客様に お水を ついで いただけませんか。",
+    "options": [
+      "はい、すぐ もって いきます",
+      "ええ、この ぽんすいには みずが はいって います",
+      "いいえ、たべて みました",
+      "ええ、ぽんすいは あそこに あります"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、すぐ もって いきます"],
+    "evidence": "お客様に お水を ついで いただけませんか という しつもんには、はい、すぐ もって いきます が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-104",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "この かばん、すごく おもいですね。",
+    "options": [
+      "はい、もって あげますよ",
+      "ええ、かばんは 二つ あります",
+      "いいえ、ここで 買いました",
+      "この かばんは 安いです"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、もって あげますよ"],
+    "evidence": "この かばん、すごく おもいですね という しつもんには、はい、もって あげますよ が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-105",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "この じしょ、どこで 買いましたか。",
+    "options": [
+      "駅の 中の 本屋で 買いました",
+      "ええ、もう 読みました",
+      "いいえ、一時間 使いました",
+      "この じしょは 安いです"
+    ],
+    "answerIndex": 0,
+    "key": ["駅の 中の 本屋で 買いました"],
+    "evidence": "この じしょ、どこで 買いましたか という しつもんには、駅の 中の 本屋で 買いました が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-106",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "あたまが いたいときは どうしたら いいと 思いますか。",
+    "options": [
+      "すこし ねたほうが いいと 思います",
+      "ええ、くすりは もう のみました",
+      "いいえ、まいにち しごとが あります",
+      "はい、えいごが すこし わかります"
+    ],
+    "answerIndex": 0,
+    "key": ["すこし ねたほうが いいと 思います"],
+    "evidence": "あたまが いたいときは どうしたら いいと 思いますか という しつもんには、すこし ねたほうが いいと 思います が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-107",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "すごく つかれたときは なにを したら いいと 思いますか。",
+    "options": [
+      "はやめに ねたほうが いいと 思います",
+      "ええ、きのうは 日曜では ありません",
+      "いいえ、会社は あそこに あります",
+      "はい、いつも かいしゃへ いきます"
+    ],
+    "answerIndex": 0,
+    "key": ["はやめに ねたほうが いいと 思います"],
+    "evidence": "すごく つかれたときは なにを したら いいと 思いますか という しつもんには、はやめに ねたほうが いいと 思います が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-109",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "コーヒーは つめたいのと あたたかいのと、どっちが いいですか。",
+    "options": [
+      "あたたかいほうが いいです",
+      "ええ、まいにち コーヒーを のみます",
+      "はい、コーヒーが すきです",
+      "いいえ、なべは ふゆに にん気が あります"
+    ],
+    "answerIndex": 0,
+    "key": ["あたたかいほうが いいです"],
+    "evidence": "コーヒーは つめたいのと あたたかいのと、どっちが いいですか という しつもんには、あたたかいほうが いいです が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-112",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "ただいま 帰りました。",
+    "options": [
+      "おかえりなさい",
+      "いってらっしゃい",
+      "お先に 失礼します",
+      "おやすみなさい"
+    ],
+    "answerIndex": 0,
+    "key": ["おかえりなさい"],
+    "evidence": "ただいま 帰りました という しつもんには、おかえりなさい が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-113",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "あしたは 雨が ふると 思いますか。",
+    "options": [
+      "ええ、あめだと 思います",
+      "いいえ、かさを持って 行きます",
+      "ええ、あしたは 日曜では ありません",
+      "雨は きらいです"
+    ],
+    "answerIndex": 0,
+    "key": ["ええ、あめだと 思います"],
+    "evidence": "あしたは 雨が ふると 思いますか という しつもんには、ええ、あめだと 思います が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-114",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "ちょっと 一休み しませんか。",
+    "options": [
+      "ええ、いいですね",
+      "コーヒーは いかがですか",
+      "ええ、しごとは たいへんです",
+      "休憩は いっしょに しませんか"
+    ],
+    "answerIndex": 0,
+    "key": ["ええ、いいですね"],
+    "evidence": "ちょっと 一休み しませんか という しつもんには、ええ、いいですね が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-115",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "会議は こないらの へやで よろしいでしょうか。",
+    "options": [
+      "はい、そこで おねがいします",
+      "ええ、会議は 毎週 あります",
+      "いいえ、へやは 二つ あります",
+      "会議は じゅうご じに 始まります"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、そこで おねがいします"],
+    "evidence": "会議は こないらの へやで よろしいでしょうか という しつもんには、はい、そこで おねがいします が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-116",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "すみません、この コピーを おねがいします。",
+    "options": [
+      "はい、すぐ やりますね",
+      "コピー機は 今、つかえますか",
+      "一枚 百えんで す",
+      "ええ、もう コピーが あります"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、すぐ やりますね"],
+    "evidence": "すみません、この コピーを おねがいします という しつもんには、はい、すぐ やりますね が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-117",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "あしたの よる、ひまですか。",
+    "options": [
+      "ええ、あいて います",
+      "ええ、まいしゅう 日曜に かえります",
+      "コーヒーは いかがですか",
+      "いいえ、きょうは しごとは ありません"
+    ],
+    "answerIndex": 0,
+    "key": ["ええ、あいて います"],
+    "evidence": "あしたの よる、ひまですか という しつもんには、ええ、あいて います が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-118",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "きょうは あついですね。",
+    "options": [
+      "ええ、三十度だと 言っていました",
+      "いいえ、外は さむく ありません",
+      "いいえ、かさは ありません",
+      "明日は はれると 思います"
+    ],
+    "answerIndex": 0,
+    "key": ["ええ、三十度だと 言っていました"],
+    "evidence": "きょうは あついですね という しつもんには、ええ、三十度だと 言っていました が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-119",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "それでは、これから 授業を はじめましょう。",
+    "options": [
+      "はい、よろしくお願いします",
+      "ええ、授業は 水曜日に あります",
+      "いいえ、教室は ３階です",
+      "はい、テキストは もう もって います"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、よろしくお願いします"],
+    "evidence": "それでは、これから 授業を はじめましょう という しつもんには、はい、よろしくお願いします が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-120",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "すみません、道を 聞きたいのですが。",
+    "options": [
+      "ええ、どこへ 行きたいんですか",
+      "いいえ、私は 道を おしえる しごとは ありません",
+      "はい、駅まで 電車で いきます",
+      "ううん、今日は みちが こみあって いません"
+    ],
+    "answerIndex": 0,
+    "key": ["ええ、どこへ 行きたいんですか"],
+    "evidence": "すみません、道を 聞きたいのですが という しつもんには、ええ、どこへ 行きたいんですか が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-121",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "明日の 会議は ８時からですね。",
+    "options": [
+      "はい、じゃ、７時５０分に あいましょう",
+      "会議室は ３階です",
+      "資料は １０枚あります",
+      "会議は １時間ぐらいです"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、じゃ、７時５０分に あいましょう"],
+    "evidence": "明日の 会議は ８時からですね という しつもんには、はい、じゃ、７時５０分に あいましょう が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-122",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "今、ちょっと いいですか。",
+    "options": [
+      "ええ、どうしましたか",
+      "はい、名前は 田中です",
+      "いいえ、今日は 木曜日では ありません",
+      "ええ、毎日 ３時に ここに います"
+    ],
+    "answerIndex": 0,
+    "key": ["ええ、どうしましたか"],
+    "evidence": "今、ちょっと いいですか という しつもんには、ええ、どうしましたか が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-123",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "この コピー、とって きましたよ。",
+    "options": [
+      "あっ、どうも ありがとう",
+      "はい、コピーは １０枚あります",
+      "うん、来週も また とるよ",
+      "ええ、これは １枚 １０円です"
+    ],
+    "answerIndex": 0,
+    "key": ["あっ、どうも ありがとう"],
+    "evidence": "この コピー、とって きましたよ という しつもんには、あっ、どうも ありがとう が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-124",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "駅までの 道を おしえて ください。",
+    "options": [
+      "はい、まっすぐ 行って、次の かどを 右です",
+      "いいえ、電車には のりません",
+      "ええ、駅は 毎日 こみました",
+      "はい、仕事は １１時に おわります"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、まっすぐ 行って、次の かどを 右です"],
+    "evidence": "駅までの 道を おしえて ください という しつもんには、はい、まっすぐ 行って、次の かどを 右です が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-125",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "論文の よていは どのへんですか。",
+    "options": [
+      "来月の おわりごろに 出す つもりです",
+      "ええ、もう 書きました",
+      "いいえ、論文は 図書館に あります",
+      "はい、毎週 土曜日に 書きます"
+    ],
+    "answerIndex": 0,
+    "key": ["来月の おわりごろに 出す つもりです"],
+    "evidence": "論文の よていは どのへんですか という しつもんには、来月の おわりごろに 出す つもりです が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-126",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "着てみた かんじは いかがでしたか。",
+    "options": [
+      "思っていたより ゆるかったです",
+      "うん、毎週 着て います",
+      "ええ、店は 駅の 前に あります",
+      "いいえ、いま 着替える ところです"
+    ],
+    "answerIndex": 0,
+    "key": ["思っていたより ゆるかったです"],
+    "evidence": "着てみた かんじは いかがでしたか という しつもんには、思っていたより ゆるかったです が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-127",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "テニスコートの よやくが うまらないですね。",
+    "options": [
+      "本当ですね、ほかの こうえんも みてみましょうか",
+      "いいえ、テニスは した ことが ありません",
+      "ええ、コートは ４つあります",
+      "ううん、土曜は お金が ありません"
+    ],
+    "answerIndex": 0,
+    "key": ["本当ですね、ほかの こうえんも みてみましょうか"],
+    "evidence": "テニスコートの よやくが うまらないですね という しつもんには、本当ですね、ほかの こうえんも みてみましょうか が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-129",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "来週の 日曜日、パーティーに 行きますか。",
+    "options": [
+      "はい、ぜひ 行きます",
+      "ええ、始まるのは ７時からです",
+      "いいえ、駅まで 遠くは ありません",
+      "うん、自転車では 行きません"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、ぜひ 行きます"],
+    "evidence": "来週の 日曜日、パーティーに 行きますか という しつもんには、はい、ぜひ 行きます が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-130",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "冷たいのが いいですか、あたたかいのが いいですか。",
+    "options": [
+      "あたたかいものが いいです",
+      "はい、ごはんは もう たべました",
+      "いいえ、これは ３００円です",
+      "ううん、毎日 お茶を のみます"
+    ],
+    "answerIndex": 0,
+    "key": ["あたたかいものが いいです"],
+    "evidence": "冷たいのが いいですか、あたたかいのが いいですか という しつもんには、あたたかいものが いいです が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-131",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "では、私は 先に 帰りますね。",
+    "options": [
+      "お疲れさまでした、気をつけて おかえり ください",
+      "はい、いってきます",
+      "明日の １０時に 帰ります",
+      "うん、電車で 帰るの"
+    ],
+    "answerIndex": 0,
+    "key": ["お疲れさまでした、気をつけて おかえり ください"],
+    "evidence": "では、私は 先に 帰りますね という しつもんには、お疲れさまでした、気をつけて おかえり ください が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-132",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "明日の 締め切りまでに 出せますか。",
+    "options": [
+      "はい、大丈夫です、今日 中に 出します",
+      "いいえ、資料は デスクの 上に あります",
+      "うん、来る週に 出すと おもいます",
+      "はい、１０時ごろに つきます"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、大丈夫です、今日 中に 出します"],
+    "evidence": "明日の 締め切りまでに 出せますか という しつもんには、はい、大丈夫です、今日 中に 出します が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-135",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "今日の 会議は 長かったですね。",
+    "options": [
+      "本当ですね、３時間半も ありました",
+      "うん、毎週 月曜日に やります",
+      "いいえ、会議室は ２階です",
+      "はい、資料は １０人前です"
+    ],
+    "answerIndex": 0,
+    "key": ["本当ですね、３時間半も ありました"],
+    "evidence": "今日の 会議は 長かったですね という しつもんには、本当ですね、３時間半も ありました が いちばん いい へんじです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-201",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "すみません、この いすに すわっても いいですか。",
+    "options": [
+      "もちろん、いいですよ",
+      "いいえ、まだ すわって いません",
+      "はい、毎朝 ここに 来ます",
+      "どういたしまして、どうぞ"
+    ],
+    "answerIndex": 0,
+    "key": ["もちろん、いいですよ"],
+    "evidence": "すわっても いいですかと きる ぶんには、もちろん、いいですよ が 自然な こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-202",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "すみません、この ボールペンを かしって いただけませんか。",
+    "options": [
+      "はい、どうぞ、つかって ください",
+      "いいえ、ボールペンを もって いません",
+      "はい、ボールペンは ひゃくえん でした",
+      "お先に 失礼します"
+    ],
+    "answerIndex": 0,
+    "key": ["はい、どうぞ、つかって ください"],
+    "evidence": "かしって いただけませんかという ちょうかいには、はい、どうぞ、つかって くださいが 自然な こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-205",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "今度の 休みに なにを する つもりですか。",
+    "options": [
+      "山へ キャンプに 行く つもりです",
+      "休日は 毎週 土曜と 日曜です",
+      "山は とても きれいと 思います",
+      "キャンプ道具は つくえの うえに あります"
+    ],
+    "answerIndex": 0,
+    "key": ["山へ キャンプに 行く つもりです"],
+    "evidence": "なにを する つもりですかと きく ぶんには、山へ キャンプに 行く つもりですと こたえる のが 自然です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-sj-206",
+    "block": "sokuji-outou",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "ぶんを きいて、１から ４の なかから、いちばん いい ものを ひとつ えらんで ください。",
+    "passage": "つぎの やくめは わたしが やりましょうか。",
+    "options": [
+      "じゃあ、おねがいします",
+      "はい、今 やって います",
+      "やくめは 毎月 あります",
+      "いいえ、まだ はじまって いません"
+    ],
+    "answerIndex": 0,
+    "key": ["じゃあ、おねがいします"],
+    "evidence": "てつだって くれる といっている ぶんには、じゃあ、おねがいします と こたえる のが 自然です。",
+    "validatedBy": "authored:agent-blind-judged"
+  }
+]

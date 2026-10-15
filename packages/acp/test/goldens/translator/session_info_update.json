@@ -1,0 +1,14 @@
+{
+  "notification": {
+    "update": {
+      "sessionUpdate": "session_info_update",
+      "title": "My chat",
+      "updatedAt": "2026-09-20T00:00:00Z"
+    }
+  },
+  "expectedFrame": {
+    "title": "My chat",
+    "type": "acp_session_info",
+    "updatedAt": "2026-09-20T00:00:00Z"
+  }
+}

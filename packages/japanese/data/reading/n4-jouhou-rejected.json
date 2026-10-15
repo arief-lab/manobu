@@ -1,0 +1,50 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md adapted to the lookup genre, over .cache/judge/jouhou-n4-keys-withheld.md: answer from the 素材 alone, name the printed line or cell used, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one in CORRECT-or-UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Extra flags for this genre: needs-inference, stem-ambiguous, level-too-high. Verdicts: .cache/judge/jouhou-n4-A.md",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.19, judge pass A over the 8 AUTHORED N4 情報検索 rows (n4j-1..n4j-8, four 書き下ろし 素材 x two 小問). All 8 PASS, each resolving to one printed cell, and the supported option equals the frozen key on every row (8/8). No needs-inference, stem-ambiguous or level-too-high flag was raised. The store these replace is gone: data/reading/n4-jouhou.json carried the twelve dokkai-7.* rows, which were byte-equal to data/reading/n5-jouhou.json apart from the level stamp (verified 12/12 before the swap: passage, stem, options and answerIndex, with only \"N4\" replacing \"N5\"), i.e. 160-245-rune N5 notices printed at N4 under a ねらい that budgets a 400字程度 書き下ろし 情報素材 (doc-26 §4).",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 8 items, deliberately different procedure: answer once as a test-taker and name the cell read, then switch sides and try to build the case that the printed cells answer the 問 with EACH of the other three options (a different row, column, referent such as 初級 vs 中級, or 受け付けの時間 vs 実施日), reporting every option that survives. Verdicts: .cache/judge/jouhou-n4-B.md",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.19, judge pass B over the same batch: all 8 PASS and the single surviving option equals the frozen key on every row (16/16 across the two passes). It also graded each 問 against the real paper's wording and named one row short: n4j-2's stem 「…一週間に 最低 何日 入らなければならないか」 is grammatical but mixes the plain なければならない with the passage's 入れる, which reads as a stiff stem rather than an exam 問. The stem was restated plainly and the four rows whose text moved (n4j-1, n4j-2, n4j-3, n4j-6) went to round B. THE LIMIT, stated so this file is not read as stronger than it is: both judges are qoder/general-purpose, the same model family that authored the 素材 and the questions, so their agreement is correlated error rather than independent confirmation, and no human reader has checked them. For this block that risk is smaller than it is for 中文, because the property that makes a 情報検索 item decidable is machine-checked in check-reading-jouhou.ts (the answer sits in the key line the stem names, no distractor does, and no distractor is readable from a different 素材); the judge leg is here for the half a screen cannot check, which is whether the 問 reads as the lookup it says it is.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "round B, pass A over the four rows whose text moved after pass B's stem flag (n4j-1, n4j-2, n4j-3, n4j-6): the lookup procedure, answer from the 素材 alone and name the cell read. Packet: .cache/judge/jouhou-n4-roundB-keys-withheld.md, verdicts: .cache/judge/jouhou-n4-roundB-A.md",
+    "runDate": "2026-10-09",
+    "note": "Round B, pass A: 4 PASS, 0 AMBIGUOUS, 0 UNANSWERABLE, each resolving to the cell the key names, and every stem graded stem_reads: real-exam-問, including the restated n4j-2. No needs-inference, stem-ambiguous or level-too-high flag survived. No row burned.",
+    "verdicts": {
+      "pass": 4,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same four items, the pass-B procedure: answer and name the cell, then try to make the printed cells answer the 問 with each of the other three options. Verdicts: .cache/judge/jouhou-n4-roundB-B.md",
+    "runDate": "2026-10-09",
+    "note": "Round B, pass B: 4 PASS on the same keys (4/4 with pass A), all four stems real-exam-問, and the knock-downs came from the table itself rather than from anything the reader supplies: n4j-7's 冷房 +200円 note yields 800円, which is not an option, so it cannot rescue a rival. The store therefore ships 8 rows with both passes agreeing on all 8 keys, and no rejection id was added: nothing in this batch needed burning.",
+    "verdicts": {
+      "pass": 4,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

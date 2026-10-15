@@ -1,0 +1,34 @@
+[
+  {
+    "judge": "usage-judge (two independent model passes, keys withheld)",
+    "prompt": "packages/japanese/prompts/usage-validator.md",
+    "runDate": "2026-10-10",
+    "note": "Two independent blind passes over the regenerated usage store. A row is kept only when BOTH passes PASS and both pick option 1 (the frozen key). Rows where either pass is AMBIGUOUS (two defensible forms) or where the check:usage gate finds the key is not the pattern own form are rejected and stay out of the store.",
+    "rejectedIds": [
+      "n3-u-01",
+      "n3-u-04",
+      "n3-u-05",
+      "n3-u-10",
+      "n3-u-11",
+      "n3-u-12",
+      "n3-u-15",
+      "n3-u-17",
+      "n3-u-18"
+    ]
+  },
+  {
+    "judge": "usage-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/usage-validator.md",
+    "runDate": "2026-10-11",
+    "note": "TASK-173.9.23.2 depth top-up batch. Candidates offered with options shuffled independently per pass so position never leaks the key; a row is kept only when BOTH passes PASS and both picks are the frozen key form.",
+    "rejectedIds": [
+      "n3-u-25",
+      "n3-u-28",
+      "n3-u-30",
+      "n3-u-32",
+      "n3-u-36",
+      "n3-u-37",
+      "n3-u-38"
+    ]
+  }
+]

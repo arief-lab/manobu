@@ -1,0 +1,24 @@
+{
+  "name": "@manobu/agent",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./subagents": "./src/subagents/index.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@manobu/config": "workspace:*",
+    "@manobu/japanese": "workspace:*",
+    "@manobu/skills": "workspace:*",
+    "@manobu/srs": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "catalog:",
+    "typescript": "catalog:"
+  }
+}

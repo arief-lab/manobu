@@ -1,0 +1,19 @@
+{
+  "notification": {
+    "update": {
+      "content": {
+        "text": "anon",
+        "type": "text"
+      },
+      "sessionUpdate": "agent_message_chunk"
+    }
+  },
+  "expectedFrame": {
+    "content": {
+      "text": "anon",
+      "type": "text"
+    },
+    "message_id": null,
+    "type": "text"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Default capabilities for the main Tauri window.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "shell:allow-open",
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        {
+          "name": "binaries/server",
+          "sidecar": true,
+          "args": false,
+          "env": [
+            "BUN_PORT",
+            "CORS_ORIGIN",
+            "NODE_ENV",
+            "DATABASE_URL",
+            "MANOBU_ASSISTANT_DIR",
+            "ACP_MCP_SERVERS",
+            "MANOBU_PARENT_PID",
+            "MANOBU_CACHE_DIR",
+            "MANOBU_LOG_DIR"
+          ]
+        }
+      ]
+    }
+  ]
+}

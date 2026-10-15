@@ -1,0 +1,24 @@
+{
+  "notification": {
+    "update": {
+      "rawOutput": "done",
+      "sessionUpdate": "tool_call_update",
+      "status": "completed",
+      "title": "ls",
+      "toolCallId": "call-1"
+    }
+  },
+  "expectedFrame": {
+    "type": "acp_tool_call",
+    "update": {
+      "content": null,
+      "kind": null,
+      "locations": null,
+      "rawOutput": "done",
+      "status": "completed",
+      "title": "ls",
+      "toolCallId": "call-1",
+      "sessionUpdate": "tool_call_update"
+    }
+  }
+}

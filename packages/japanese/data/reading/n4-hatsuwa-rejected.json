@@ -1,0 +1,49 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N4 hatsuwa candidates; the burned rows were replaced by newly authored rows judged in their own packets under the same protocol. Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. N4 ships authored-only: every N4 listening row upstream is a near-duplicate, English-gloss or too-short, leaving zero vendorable (TASK-173.8.1 AC#3).",
+    "rejectedIds": ["n4-hw-108", "n4-hw-114"],
+    "verdicts": {
+      "pass": 41,
+      "ambiguous": 1,
+      "unanswerable": 0,
+      "unfit": 2,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n4-hw-108",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both 大丈夫ですか and お大事に would be appropriate on meeting a pale, coughing friend, so the moment does not decide a single answer."
+        ]
+      },
+      {
+        "id": "n4-hw-114",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: Option C prints 駅まで お願います, broken Japanese for お願いします; a native speaker would never say it.",
+          "pass2 UNFIT: Option B '駅まで お願います' is broken Japanese: the humble pattern requires お願いします (or お願いします); 'お願います' mixes お- with a finite polite verb and no native text would render it this way, so the item cannot ship as written."
+        ]
+      }
+    ]
+  }
+]

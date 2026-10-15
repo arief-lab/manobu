@@ -1,0 +1,50 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the stem from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE.",
+    "runDate": "2026-10-09",
+    "note": "Round A, judge family 1 over the 8-row authored N3 長文 batch (key-less packet .cache/judge/choubun-n3-blind.md, verdicts in .cache/judge/choubun-n3-familyA.md, frozen keys .cache/judge/choubun-n3-keys.json). All 8 rows PASS and all 8 picks equal the frozen key (8/8), verified by parsing the verdict blocks rather than by reading the judge's summary. Unlike the N1 長文 batch these keys are NOT words the passage prints: each is a paraphrase of a deciding sentence the row also cites in its own `evidence` field, which is what makes a blind re-answer a real test of the item rather than a test of the mask.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 8 items, deliberately different procedure: judged in REVERSE packet order (item 8 first), and for every item all four options were argued from the passage text as steelmans before any verdict was assigned, reporting every option that survives its own steelman.",
+    "runDate": "2026-10-09",
+    "note": "Round B, judge family 2 over the same batch (verdicts in .cache/judge/choubun-n3-familyB.md): all 8 rows PASS, surviving option equal to the frozen key on every row (16/16 across both families). The adversarial pass named the near-misses and dismissed each on passage text: n3b-8's 準備を手伝う staffing reading is broken by two different printed motives plus 三人目は何も言わず, n3b-7's notebook reading by sequence (その週のあと places it after the utterance 『それ』 answers), n3b-5's 会場 option by a merge of two separate deadlines (the venue receives the PHOTOS, the reply goes to the writer), n3b-3's 三十六度 figure by belonging to the pre-planting grass measurement rather than the stated night-cooling mechanism. No row is burned. THE LIMIT OF BOTH RECORDS, stated so this file is not read as stronger than it is: these two passes are the same model family as the author of the rows, so their agreement is correlated error rather than independent confirmation, and nothing here catches a key that is wrong in a way the authoring model also believes. There is no further leg to add: nobody in this project reads Japanese, so no human can check whether a passage decides its key, and a translated review sheet would only ask a reader to agree with the model's own translation. Such a sheet existed here and was deleted as a formality, not as evidence. The mechanical screens in check-reading-choubun.ts decide shape and self-citation only; the coverage floor is deliberately not among them (doc-27 §10), because the official N3 長文 itself scores 88.9% under it.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item over .cache/judge/choubun-n3-new-keys-withheld.md: read the passage alone, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS: an option the passage leaves undecided rejects the row even when another option is more central. Verdicts: .cache/judge/choubun-n3-A.json",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.18 growth pass, judge family 1, over the 8 authored rows appended to the N3 長文 store (n3b-9..n3b-16, 8 -> 16 rows). All 8 PASS and each supported option equals the frozen key (8/8). The batch is deliberately one ねらい per row on top of the 8 already shipped, so the store now spreads 7 distinct ねらい over 16 rows.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 8 items, deliberately different procedure: answer once as a test-taker, then switch sides and build the strongest case the page alone allows for each of the other three options, and report every option that survives its own counter-argument. Verdicts: .cache/judge/choubun-n3-B.json",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.18 growth pass, judge family 2 over the same 8 rows: all 8 PASS and the single surviving option equals the frozen key on every row (16/16 across both families and both procedures). Two rows came closest to AMBIGUOUS and were dismissed on printed text, recorded rather than smoothed over: n3b-12 trades on the paragraph the anaphor sits in, defeated because 資料を各自で刷る is the CONSEQUENCE of この変更 (で marks it) and the missing コピー機 is a standing property of 第二研修室; n3b-10 recycles the real 十点 as a rise for the wrong group, defeated because the only printed rise is 下位のグループの去年より二点. No row is burned, so the store ships as written with no regeneration round. THE LIMIT, stated so this file is not read as stronger than it is: both judges are qoder/general-purpose, the same model family that authored these rows, so their agreement is correlated error rather than independent confirmation, and no human reader has checked them.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

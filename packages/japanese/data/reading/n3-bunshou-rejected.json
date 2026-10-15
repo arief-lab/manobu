@@ -1,0 +1,36 @@
+[
+  {
+    "judge": "bunshou-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/bunshou-validator.md",
+    "runDate": "2026-10-11",
+    "note": "Two independent blind passes over the authored 文章の文法 candidates. Packets were shuffled INDEPENDENTLY per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key sentence. AMBIGUOUS means two of the four candidates continue the passage's flow, which is the defect this 大問's store cannot carry: 流れ must have one answer.",
+    "rejectedIds": ["n3-b-05"],
+    "verdicts": {
+      "pass": 29,
+      "ambiguous": 0,
+      "unanswerable": 0,
+      "distractor_picked": 1
+    },
+    "detail": [
+      {
+        "id": "n3-b-05",
+        "level": "N3",
+        "why": ["pass1 picked a distractor", "pass2 picked a distractor"],
+        "passes": {
+          "pass1": {
+            "verdict": "PASS",
+            "pick": 4,
+            "picked_text": "やはり、東京は暖かすぎて雪が降らないのだろう",
+            "is_key": false
+          },
+          "pass2": {
+            "verdict": "PASS",
+            "pick": 1,
+            "picked_text": "やはり、東京は暖かすぎて雪が降らないのだろう",
+            "is_key": false
+          }
+        }
+      }
+    ]
+  }
+]

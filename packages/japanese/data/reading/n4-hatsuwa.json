@@ -1,0 +1,379 @@
+[
+  {
+    "id": "n4-hw-101",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "かいぎに おくれて いったら、みんなが まって いた。何と 言いますか。",
+    "passage": "かいぎに おくれて いったら、みんなが まって いた。",
+    "options": [
+      "すみません、おまたせ しました",
+      "お先に 失礼します",
+      "いってきます",
+      "ただいま"
+    ],
+    "answerIndex": 0,
+    "key": ["すみません、おまたせ しました"],
+    "evidence": "かいぎに おくれて 人を 待たせた ときには、すみません、おまたせ しました が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-102",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "でんしゃの なか、おばあさんが たって いる。じぶん の せきを ゆずりたい。何と 言いますか。",
+    "passage": "でんしゃの なか、おばあさんが たって いるので、じぶん の せきを ゆずることに した。",
+    "options": [
+      "どうぞ、おかけください",
+      "ごめん ください、通ります",
+      "いえ、結構です",
+      "いってらっしゃい"
+    ],
+    "answerIndex": 0,
+    "key": ["どうぞ、おかけください"],
+    "evidence": "でんしゃで せきを ゆずる ときには、どうぞ、おかけください が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-103",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "同僚が ひとりで 働いて いる へやに 入る。何と 言いますか。",
+    "passage": "同僚が ひとりで 働いて いる へやに 入る。",
+    "options": ["失礼します", "ただいま", "お先に 失礼します", "お気をつけて"],
+    "answerIndex": 0,
+    "key": ["失礼します"],
+    "evidence": "人の 働いて いる へやに 入るときは、失礼します が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-104",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "かいもの を したので 店員が 買い物袋を 差し出した。じぶん の かばんが ある。何と 言いますか。",
+    "passage": "かいもの を したので 店員が 買い物袋を 差し出してくれたが、じぶん の かばんが ある。",
+    "options": [
+      "いいえ、結構です",
+      "はい、お願いします",
+      "すみません、これを 見せて ください",
+      "いってきます"
+    ],
+    "answerIndex": 0,
+    "key": ["いいえ、結構です"],
+    "evidence": "じぶん の かばんが あって 店員の 袋を こばむ ときは、いいえ、結構です が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-105",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "貸した 本を 友達が かえして くれて、お礼を 言われた。何と 言いますか。",
+    "passage": "貸した 本を 友達が かえして くれて、お礼を 言われた。",
+    "options": ["どういたしまして", "お大事に", "いってきます", "また 来週"],
+    "answerIndex": 0,
+    "key": ["どういたしまして"],
+    "evidence": "物を かえされて 友達に 礼を 言われた ときは、どういたしまして が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-106",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "バスの中で となりの 人の 足を ふんで しまった。何と 言いますか。",
+    "passage": "バスの中で となりの 人の 足を ふんで しまった。",
+    "options": [
+      "ごめんなさい、踏んで しまいました",
+      "すみません、通ります",
+      "いただきます",
+      "いってらっしゃい"
+    ],
+    "answerIndex": 0,
+    "key": ["ごめんなさい、踏んで しまいました"],
+    "evidence": "人の 足を ふんで しまった ときは、ごめんなさい、踏んで しまいました が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-107",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "かいぎの あと、部長に みんなの 前で 仕事を ほめられた。何と 言いますか。",
+    "passage": "かいぎの あと、部長に みんなの 前で 仕事を ほめられた。",
+    "options": [
+      "いいえ、そんなことは ありません",
+      "ごちそうさまでした",
+      "いってきます",
+      "また 来週"
+    ],
+    "answerIndex": 0,
+    "key": ["いいえ、そんなことは ありません"],
+    "evidence": "部長に みんなの 前で 仕事を ほめられた ときは、いいえ、そんなことは ありません が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-109",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "もう これ以上 のめない ときに、友達が 飲み物を すすめた。何と 言いますか。",
+    "passage": "居酒屋で 友達が 飲み物を すすめて くれたが、もう これ以上 は のめない。",
+    "options": [
+      "いえ、もう 大丈夫です",
+      "はい、もう 一杯 お願いします",
+      "乾杯",
+      "ごちそうさまでした"
+    ],
+    "answerIndex": 0,
+    "key": ["いえ、もう 大丈夫です"],
+    "evidence": "もう のみすぎて 友達に 飲み物を こばむ ときは、いえ、もう 大丈夫です が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-110",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "まだ 部長が 働いて いる会社で、じぶん だけが 先に 帰る。何と 言いますか。",
+    "passage": "会社で、まだ 部長が 働いて いるのに、じぶん だけが 先に 帰ることに した。",
+    "options": [
+      "お先に 失礼します",
+      "いってきます",
+      "ただいま",
+      "おやすみ なさい"
+    ],
+    "answerIndex": 0,
+    "key": ["お先に 失礼します"],
+    "evidence": "目上の人より 先に 会社を でる ときは、お先に 失礼します が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-111",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "友達の 家に 遊びに 行って、玄関で 靴を ぬぐ。何と 言いますか。",
+    "passage": "友達の 家に 遊びに 行って、玄関で 靴を ぬぐ。",
+    "options": ["お邪魔します", "ただいま", "おかえりなさい", "いってきます"],
+    "answerIndex": 0,
+    "key": ["お邪魔します"],
+    "evidence": "人の 家に 入る ときには、お邪魔します が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-112",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "友達の 発表は とても 上手で、みんなが ほめて いた。何と 言いますか。",
+    "passage": "友達の 発表は とても 上手で、みんなが ほめて いた。",
+    "options": ["おめでとう", "失礼しました", "いってきます", "また 来週"],
+    "answerIndex": 0,
+    "key": ["おめでとう"],
+    "evidence": "友達の 発表が うまく いって みんなが ほめて いた ときは、おめでとう が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-113",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "道路の むこうに、長い間 会っていない 友達が いる。何と 言いますか。",
+    "passage": "道路の むこうに、長い間 会っていない 友達が 立って いる。",
+    "options": ["あ、久しぶり", "ただいま", "ごゆっくり", "おやすみ なさい"],
+    "answerIndex": 0,
+    "key": ["あ、久しぶり"],
+    "evidence": "長い間 会っていない 友達に 偶然 会った ときには、あ、久しぶり が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-116",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "試験の 途中で ペンが 動かなく なった。となり 席の人に 借りたい。何と 言いますか。",
+    "passage": "試験の 途中で ペンが 動かなく なったので、となり 席の人に 借りたい。",
+    "options": [
+      "すみません、鉛筆を 貸して いただけませんか",
+      "いってきます",
+      "また 明日",
+      "いただきます"
+    ],
+    "answerIndex": 0,
+    "key": ["すみません、鉛筆を 貸して いただけませんか"],
+    "evidence": "試験の 途中で となりの 人に ペンを 借りたい ときには、すみません、鉛筆を 貸して いただけませんか が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-117",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "忙しい ときに、同僚が コーヒーを 持って きてくれた。何と 言いますか。",
+    "passage": "忙しい ときに、同僚が コーヒーを 持って きてくれた。",
+    "options": [
+      "あ、ありがとう ございます",
+      "いってらっしゃい",
+      "お気をつけて",
+      "また 明日"
+    ],
+    "answerIndex": 0,
+    "key": ["あ、ありがとう ございます"],
+    "evidence": "忙しい ときに 同僚が コーヒーを 持って きてくれた ときには、あ、ありがとう ございます が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-118",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "友達の 結婚式に 招待されたが、その日は 会社で 大事な 会議が あり、行けない。何と 言いますか。",
+    "passage": "友達の 結婚式に 招待されたが、その日は 会社で 大事な 会議が あり、行けない。",
+    "options": [
+      "招待 ありがとう ございます、でも、あいにく その日は 会議が あって 行けません",
+      "どうぞ、おかけください",
+      "いってきます",
+      "また 来週"
+    ],
+    "answerIndex": 0,
+    "key": [
+      "招待 ありがとう ございます、でも、あいにく その日は 会議が あって 行けません"
+    ],
+    "evidence": "結婚式に 招待されたが その日 行けない ときには、招待 ありがとう ございます、でも、あいにく その日は 会議が あって 行けません が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-119",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "重い 袋を 持って いたら、見知らぬ 人が てつだって くれた。何と 言いますか。",
+    "passage": "重い 袋を 持って いたら、見知らぬ 人が てつだって くれた。",
+    "options": [
+      "ありがとう ございます、とても 助かりました",
+      "ごめん ください",
+      "お大事に",
+      "乾杯"
+    ],
+    "answerIndex": 0,
+    "key": ["ありがとう ございます、とても 助かりました"],
+    "evidence": "見知らぬ 人が 重い 袋を てつだって くれた ときは、ありがとう ございます、とても 助かりました が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-120",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "会社の 電話が つながった。取引先の 田中さんと 話したい。何と 言いますか。",
+    "passage": "会社の 電話が つながったので、取引先の 田中さんと 話したい。",
+    "options": [
+      "私、佐藤と 申しますが、田中さんは いらっしゃいますか",
+      "ただいま 席を はずして おります",
+      "いってきます",
+      "また かけ直します"
+    ],
+    "answerIndex": 0,
+    "key": ["私、佐藤と 申しますが、田中さんは いらっしゃいますか"],
+    "evidence": "会社の 電話で 担当者を 呼ぶ ときは、私、佐藤と 申しますが、田中さんは いらっしゃいますか が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-121",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "教授と 電話で 話を 終えた。そろそろ 電話を きる。何と 言いますか。",
+    "passage": "教授と 電話で 話を 終えて、そろそろ 電話を きる。",
+    "options": [
+      "それでは、失礼します",
+      "もしもし",
+      "ただいま",
+      "お先に 失礼します"
+    ],
+    "answerIndex": 0,
+    "key": ["それでは、失礼します"],
+    "evidence": "教授と 電話の 話を 終えて きる ときは、それでは、失礼します が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-122",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "街で 友達が はじめての 赤ちゃんと いっしょに いる。何と 言いますか。",
+    "passage": "街で 友達が はじめての 赤ちゃんと いっしょに いる。",
+    "options": [
+      "かわいい 赤ちゃんですね、おめでとうございます",
+      "お大事に",
+      "いってきます",
+      "また 来週"
+    ],
+    "answerIndex": 0,
+    "key": ["かわいい 赤ちゃんですね、おめでとうございます"],
+    "evidence": "友達の はじめての 赤ちゃんに 会った ときは、かわいい 赤ちゃんですね、おめでとうございます が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n4-hw-123",
+    "block": "hatsuwa-hyougen",
+    "level": "N4",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "事務所の 閉まった ドアを ノックすると 中から 返事が あるので、入る。何と 言いますか。",
+    "passage": "事務所の 閉まった ドアを ノックすると 中から 返事が あるので、入る。",
+    "options": [
+      "失礼 いたします",
+      "ただいま",
+      "お先に 失礼します",
+      "お気をつけて"
+    ],
+    "answerIndex": 0,
+    "key": ["失礼 いたします"],
+    "evidence": "ドアを ノックして 人の いる 部屋に 入る ときは、失礼 いたします が いちばん あう こたえです。",
+    "validatedBy": "authored:agent-blind-judged"
+  }
+]

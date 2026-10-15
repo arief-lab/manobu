@@ -1,0 +1,16 @@
+{
+  "notification": {
+    "update": {
+      "custom": "data",
+      "sessionUpdate": "brand_new_future_variant"
+    }
+  },
+  "expectedFrame": {
+    "payload": {
+      "custom": "data",
+      "sessionUpdate": "brand_new_future_variant"
+    },
+    "tag": "acp_update:brand_new_future_variant",
+    "type": "adapter_specific"
+  }
+}

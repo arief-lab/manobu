@@ -1,0 +1,64 @@
+{
+  "name": "@manobu/chat-session",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./chat-engine": {
+      "default": "./src/chat-engine/index.ts"
+    },
+    "./chat-session-contract": {
+      "default": "./src/chat-session-contract.ts"
+    },
+    "./fetcher": {
+      "default": "./src/fetcher.tsx"
+    },
+    "./history": {
+      "default": "./src/history.ts"
+    },
+    "./message-transcript": {
+      "default": "./src/message-transcript.tsx"
+    },
+    "./orpc": {
+      "default": "./src/orpc.ts"
+    },
+    "./persistence": {
+      "default": "./src/persistence.ts"
+    },
+    "./provider": {
+      "default": "./src/provider.tsx"
+    },
+    "./slash": {
+      "default": "./src/slash.ts"
+    },
+    "./types": {
+      "default": "./src/types.ts"
+    }
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "bun test --env-file=.env.test"
+  },
+  "dependencies": {
+    "@manobu/acp": "workspace:*",
+    "@manobu/api-contract": "workspace:*",
+    "@manobu/env": "workspace:*",
+    "@manobu/ui": "workspace:*",
+    "@orpc/client": "2.0.0-beta.35",
+    "@tanstack/react-query": "^5.90",
+    "lucide-react": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "streamdown": "^2.5.0"
+  },
+  "devDependencies": {
+    "@manobu/config": "workspace:*",
+    "@types/bun": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "typescript": "catalog:"
+  }
+}

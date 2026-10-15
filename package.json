@@ -1,0 +1,60 @@
+{
+  "name": "manobu",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "catalog": {
+      "dotenv": "^17.4.2",
+      "zod": "^4.5.4",
+      "typescript": "^7.0.2",
+      "@types/bun": "^1.4.2",
+      "lucide-react": "^1.27.0",
+      "react": "^19.2.8",
+      "react-dom": "^19.2.8",
+      "sonner": "^2.0.7",
+      "@types/react": "^19.2.17",
+      "@types/react-dom": "^19.2.3",
+      "tailwindcss": "^4.3.3"
+    }
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "check": "ultracite check",
+    "check:dox": "bun scripts/dox-index-check.ts",
+    "check-types": "turbo run check-types",
+    "db:generate": "turbo run db:generate -F @manobu/db",
+    "db:local": "turbo run db:local -F @manobu/db",
+    "db:migrate": "turbo run db:migrate -F @manobu/db",
+    "db:push": "turbo run db:push -F @manobu/db",
+    "db:studio": "turbo run db:studio -F @manobu/db",
+    "dev": "turbo run dev",
+    "dev:desktop": "turbo run dev -F desktop",
+    "dev:server": "turbo run dev -F server",
+    "fix": "ultracite fix",
+    "gate:mutation": "bun scripts/mutation-gate.ts",
+    "prepare": "husky",
+    "smoke:mcp": "bun run apps/server/scripts/mcp-smoke.mjs",
+    "test": "turbo run test",
+    "test:rust": "cargo test --manifest-path crates/jlpt-mcp/Cargo.toml"
+  },
+  "dependencies": {
+    "@manobu/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.12",
+    "@manobu/config": "workspace:*",
+    "@types/bun": "catalog:",
+    "husky": "latest",
+    "turbo": "^2.10.12",
+    "typescript": "catalog:",
+    "ultracite": "7.10.7"
+  },
+  "packageManager": "bun@1.4.2"
+}

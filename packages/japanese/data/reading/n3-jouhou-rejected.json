@@ -1,0 +1,26 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md adapted to the lookup genre, over .cache/judge/jouhou-n3-keys-withheld.md: answer from the 素材 alone, name the printed line or cell used, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one in CORRECT-or-UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Extra flags for this genre: needs-inference, stem-ambiguous, level-too-high. Verdicts: .cache/judge/jouhou-n3-A.json",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.18, judge family 1, over the 8 AUTHORED N3 情報検索 rows (n3j-1..n3j-8, four 書き下ろし 素材 x two 小問). All 8 PASS, each resolving to one printed cell, and each supported option equals the frozen key (8/8). No needs-inference, stem-ambiguous or level-too-high flag was raised. The store these replace is gone: data/reading/n3-jouhou.json carried the twelve dokkai-7.* rows, which were byte-identical to data/reading/n5-jouhou.json apart from the level stamp (verified 12/12 before the swap, and the N5 and N4 copies are untouched), i.e. N5-band notices printed at N3 under a ねらい that asks for 書き下ろした情報素材 600字程度.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 8 items, deliberately different procedure: answer once as a test-taker and name the cell read, then switch sides and try to build the case that the printed cells answer the 問 with EACH of the other three options (a different row, column, referent such as 団体 vs 小人, or 受付時間 vs 実施日), reporting every option that survives.",
+    "runDate": "2026-10-09",
+    "note": "TASK-173.9.18, judge family 2 over the same batch: all 8 PASS and the single surviving option equals the frozen key on every row (16/16 across both families and both procedures). The pass named the two latent soft spots without burning either: n3j-1 does not print the 70歳以上 半額 figure as an option, so the under-specified residual category cannot be reached, and n3j-5 has no 祝日振替 rule in its 素材, which a future item could exploit but this one cannot. No row is burned. THE LIMIT, stated so this file is not read as stronger than it is: both judges are qoder/general-purpose, the same model family that authored the 素材 and the questions, so their agreement is correlated error rather than independent confirmation, and no human reader has checked them. For this block that risk is smaller than it is for 長文, because the property that makes a 情報検索 item decidable is machine-checked in check-reading-jouhou.ts (the answer sits in the key line the stem names, no distractor does, and no distractor is readable from a different 素材); the judge leg is here for the half a screen cannot check, which is whether the 問 reads as the lookup it says it is.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

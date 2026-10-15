@@ -1,0 +1,74 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the multi-paragraph 白書 window alone, answer the ＿＿ from the window, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 1 over the 8-row N1 長文 batch (.cache/judge/choubun-n1.md, keys withheld; verdicts in .cache/judge/choubun-n1-family1.md). All 8 rows PASS and all 8 picks equal the frozen key (8/8). The blanks are fixed compounds and predicate frames the window itself prints (異常気象, 地域に貢献する, 国民一人一人, 全ての地方公共団体, 東日本大震災, 関係省庁, 研究開発の各主体, 地球温暖化対策), which is why no distractor survived: the window says the word, and 主張理解-style inference is not what a masked-slot 小問 asks.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 8 items, deliberately different procedure: first answer as a test-taker, then switch sides and build the strongest case the window alone allows for each of the other three options, and report every option that survives that argument.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 2 over the same batch (verdicts in .cache/judge/choubun-n1-family2.md): all 8 rows PASS, surviving option equal to the frozen key on every row (8/8 across both families). The adversarial pass named the near-misses and dismissed each on window text: 増減 is contradicted by 観測史上最高 (one-directional warming), 地元 by an audience the passage names as national, 責務 by a predicate that already carries 義務付け, 経過 by hanging on a different paragraph than the slot's 連携 frame. No row is burned, so the store ships as generated.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass A over the 16-row AUTHORED N1 長文 batch (n1b-1..n1b-16, packet .cache/judge/n1/choubun-final.md, verdicts choubun-final-A.md). 16 PASS. Batch shape measured off the store: 900-1200 runes in two or more paragraphs, the 小問 one of the 内容理解 intents, the key never a word the sentence prints next to a blank. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 16,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass B over the same 16 rows (verdicts choubun-final-B.md): 16 PASS, and 15 of 16 picks equal the frozen key. The one disagreement is n1b-10, where both procedures chose the third option and the store shipped the second, so the row was re-cut (packet choubun-keyfix.md, verdicts choubun-keyfix-{A,B}.md: 1/1 agreement in both) rather than left on a key a blind reader will not find. n1b-9's option prose was repaired in the same window (choubun-repair.md, choubun-repair-{A,B}.md).",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 16,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass A over the 14 rows of this store the prose round touched (n1b-1..n1b-8, n1b-9, n1b-10, n1b-11, n1b-12, n1b-14, n1b-16; packet .cache/judge/n1/choubun-rejudge.md, verdicts choubun-rejudge-A.md, store sha256 655b1653482f78ba… then 6d74c2b35883b55d). 14 PASS and all 14 picks equal the frozen key. Prose round: a separate blind proofread of the authored Japanese (particle case, subject/predicate fit, non-existent verb forms, Chinese counters, truncated compounds) flagged the spans; each one was checked against the store before it was applied, and only the spans the author agreed with were edited. Edits were mirrored into every field of the same row, because a distractor may lift a passage sentence verbatim and the gate requires the evidence span to stay a literal substring. Repairs here: 密度を戻っても→戻しても, ことほかならない→ことのほかならない and 予算の同一封→同じ枠, 利き→利点, the causative 三世代同居を→に and 誰の手かにある→誰の手にあるか and 蛇口が走り→蛇口から水が流れ, 申請できる→受けられる and 料率→数え and 宣伝を名乗る→掲げる and 政治的な以上→政治的である以上, 予算の構造は…支払われない→予算は…使われない (mirrored into the evidence), the reversed 置き換える frame plus a spliced dangling clause deleted, 雲一本→雲一つ and 許可が落ちる→下りる and 押し下げ→押し込み, 山積ませた→山積みにした, 記録を雇える→記録係を雇える, 一・五倍で→一・五倍 and 席を占め→位置を占め and 強化ただちに→強化をただちに, 午後の十時→午後十時 and 発った→始まった, 欠室→空白科室, このひとつ数が→このひとつの数が and 慣性が広く報じられている→指摘されている. Rejected as not defects: n1b-15's 三分の二に縮んだ (a cut to two thirds, coherent with the row's own numbers; the proposed fix would have changed the argument) and n1b-16's four 「〜という内容」 options, which answer a 何を指しているか stem in the form this block prints.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 14,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass B over the same 14 repaired 長文 rows (verdicts choubun-rejudge-B.md): 14 PASS, 0 AMBIGUOUS, every pick equal to the frozen key, so the store ships as repaired at 16 rows. Two wrinkles it recorded and this record keeps rather than buries: n1b-7's fourth option infers a town-wide majority the document only shows in two age bands, and n1b-11's 「その」 has a looser antecedent than the row needs. Neither produced a second survivor under either procedure. The two rows neither round touched (n1b-13, n1b-15) are carried byte-identically: diffing a packet of them against choubun-final.md shows text diffs NONE. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 14,
+      "unanswerable": 0
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "name": "@manobu/db",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun run scripts/fresh-dist-guard.mjs && tsc -b .",
+    "check-types": "tsc -p tsconfig.typecheck.json",
+    "db:generate": "drizzle-kit generate",
+    "db:local": "turso dev --db-file local.db",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "test": "bun test test/",
+    "verify:build-state": "bun run scripts/verify-tsbuild-state.mjs"
+  },
+  "dependencies": {
+    "@libsql/client": "0.17.4",
+    "@manobu/env": "workspace:*",
+    "@manobu/item-engine": "workspace:*",
+    "dotenv": "catalog:",
+    "drizzle-orm": "^0.45.2",
+    "libsql": "0.5.29"
+  },
+  "devDependencies": {
+    "@manobu/config": "workspace:*",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "catalog:"
+  }
+}

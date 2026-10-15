@@ -1,0 +1,48 @@
+{
+  "notification": {
+    "update": {
+      "content": [
+        {
+          "type": "content",
+          "content": {
+            "text": "listing",
+            "type": "text"
+          }
+        }
+      ],
+      "kind": "read",
+      "rawInput": {
+        "path": "/tmp/x"
+      },
+      "rawOutput": "file-a\nfile-b",
+      "sessionUpdate": "tool_call",
+      "status": "completed",
+      "title": "ls /tmp/x",
+      "toolCallId": "call-1"
+    }
+  },
+  "expectedFrame": {
+    "type": "acp_tool_call",
+    "update": {
+      "content": [
+        {
+          "type": "content",
+          "content": {
+            "text": "listing",
+            "type": "text"
+          }
+        }
+      ],
+      "kind": "read",
+      "locations": null,
+      "rawInput": {
+        "path": "/tmp/x"
+      },
+      "rawOutput": "file-a\nfile-b",
+      "status": "completed",
+      "title": "ls /tmp/x",
+      "toolCallId": "call-1",
+      "sessionUpdate": "tool_call"
+    }
+  }
+}

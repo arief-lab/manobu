@@ -1,0 +1,30 @@
+[
+  {
+    "judge": "hyouki-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/hyouki-validator.md",
+    "runDate": "2026-10-11",
+    "note": "Two independent blind passes over the authored 表記 candidates. Options were shuffled INDEPENDENTLY per pass and per row, so the key never sat in the slot the store froze. A row ships only when BOTH passes pick that key AND BOTH say the sentence genuinely reads as one word (fit). Every rejection below is a 表記 defect no mechanical screen can see: the corpus attests a spelling the paper would not print, or a second option shares the printed reading.",
+    "rejectedIds": ["n5-h-014", "n5-h-035"],
+    "verdicts": {
+      "accepted": 44,
+      "fit-false": 2,
+      "distractor-picked": 0
+    },
+    "detail": [
+      {
+        "id": "n5-h-014",
+        "level": "N5",
+        "why": [
+          "pass1-fit-false(Standard spelling is 終わる; 終る is nonstandard okurigana.), pass2-fit-false(Correct spelling is 終わる; 終る lacks required okurigana.)"
+        ]
+      },
+      {
+        "id": "n5-h-035",
+        "level": "N5",
+        "why": [
+          "pass1-fit-false(一日 is also read ふつか; two defensible spellings.)"
+        ]
+      }
+    ]
+  }
+]

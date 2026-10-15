@@ -1,0 +1,172 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N3 sokuji candidates; the burned rows were replaced by newly authored rows judged in its own packet under the same protocol (.cache/judge/n3-listening/rep). Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. N3 ships authored-only: JLPTSuccess ships listening at N5 only (LICENSE §29), so every N3 row is composed (LICENSE §30).",
+    "rejectedIds": [
+      "n3-sj-104",
+      "n3-sj-105",
+      "n3-sj-113",
+      "n3-sj-120",
+      "n3-sj-121",
+      "n3-sj-122",
+      "n3-sj-123",
+      "n3-sj-133",
+      "n3-sj-135"
+    ],
+    "verdicts": {
+      "pass": 72,
+      "ambiguous": 16,
+      "unanswerable": 0,
+      "unfit": 2,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n3-sj-104",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both A (はい、田中で予約しています) and C (いいえ、予約しませんでした) answer ご予約はありますか at the same register; nothing tells which customer you are.",
+          "pass2 AMBIGUOUS: Same yes/no pair, both poles fully natural."
+        ]
+      },
+      {
+        "id": "n3-sj-105",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both A (はい、静かにします) and B (すみません、話しすぎました) are complete, natural replies to 静かにしていただけますか; nothing decides between plain compliance and apology-with-reason.",
+          "pass2 AMBIGUOUS: Same pair survives the per-option test."
+        ]
+      },
+      {
+        "id": "n3-sj-113",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both D (私は来週なら大丈夫です) and B (来週は会議がありますよ) are complete, natural answers to 来週でどうですか; accepting and countering are both standard.",
+          "pass2 AMBIGUOUS: Same accept/counter pair, both defensible."
+        ]
+      },
+      {
+        "id": "n3-sj-120",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both C (はい、午後から雨だそうです) and B (いいえ、知りません) answer 明日の天気、調べましたか fully; nothing tells whether you checked.",
+          "pass2 AMBIGUOUS: Same yes/no pair, both poles fully natural."
+        ]
+      },
+      {
+        "id": "n3-sj-121",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both B (週末は予約したほうがよさそうですよ) and C (いいえ、予約はいりません) answer the confirmation fully; which is true is not spoken.",
+          "pass2 AMBIGUOUS: Same pair; the conditional suggestion and the flat denial are both standard replies."
+        ]
+      },
+      {
+        "id": "n3-sj-122",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both C (おかげさまで、だいぶ良くなりました) and D (いいえ、直りませんでした) answer the tag question まだ悪そうですか at the same register; whether the PC recovered is not stated.",
+          "pass2 AMBIGUOUS: Same healed/not-healed pair, both natural."
+        ]
+      },
+      {
+        "id": "n3-sj-123",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: The keyed option では、ごゆっくりお帰りください tells the speaker to go home slowly; it is said to a GUEST leaving, not to someone reporting they will be home late. The keyed option is not a natural reply.",
+          "pass2 UNFIT: Same register defect; the guest-leaving form cannot be the reply to a late-home report."
+        ]
+      },
+      {
+        "id": "n3-sj-133",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both B (はい、二つありますよ) and D (いいえ、ありません) answer 駅車場はありますか at the same register; nothing tells whether lots exist here.",
+          "pass2 AMBIGUOUS: Same yes/no pair, both poles fully natural."
+        ]
+      },
+      {
+        "id": "n3-sj-135",
+        "level": "N3",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Both C (特に何もありませんが、どうしましたか) and A (いいえ、予定はありません) answer the Sunday-plan question fully; both are standard replies.",
+          "pass2 AMBIGUOUS: Same pair, both defensible."
+        ]
+      }
+    ]
+  }
+]

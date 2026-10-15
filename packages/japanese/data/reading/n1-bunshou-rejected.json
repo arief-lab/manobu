@@ -1,0 +1,55 @@
+[
+  {
+    "judge": "bunshou-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/bunshou-validator.md",
+    "runDate": "2026-10-11",
+    "note": "Two independent blind passes over the authored 文章の文法 candidates. Packets were shuffled INDEPENDENTLY per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key sentence. AMBIGUOUS means two of the four candidates continue the passage's flow, which is the defect this 大問's store cannot carry: 流れ must have one answer.",
+    "rejectedIds": ["n1-b-05", "n1-b-19"],
+    "verdicts": {
+      "pass": 28,
+      "ambiguous": 2,
+      "unanswerable": 0,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n1-b-05",
+        "level": "N1",
+        "why": ["pass2 AMBIGUOUS"],
+        "passes": {
+          "pass1": {
+            "verdict": "PASS",
+            "pick": 4,
+            "picked_text": "その意味で、写真は証明ではなく証言に近い記録である",
+            "is_key": true
+          },
+          "pass2": {
+            "verdict": "AMBIGUOUS",
+            "pick": [2, 3],
+            "picked_text": null,
+            "is_key": false
+          }
+        }
+      },
+      {
+        "id": "n1-b-19",
+        "level": "N1",
+        "why": ["pass2 AMBIGUOUS"],
+        "passes": {
+          "pass1": {
+            "verdict": "PASS",
+            "pick": 1,
+            "picked_text": "もっとも、規格化が大量に生産するのは安心の感覚である",
+            "is_key": true
+          },
+          "pass2": {
+            "verdict": "AMBIGUOUS",
+            "pick": [1, 3],
+            "picked_text": null,
+            "is_key": false
+          }
+        }
+      }
+    ]
+  }
+]

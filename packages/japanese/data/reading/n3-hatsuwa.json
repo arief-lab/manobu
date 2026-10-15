@@ -1,0 +1,328 @@
+[
+  {
+    "id": "n3-hw-101",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは職場の上司の結婚式に招待されたが、当日は遠方の出張で出席できない。上司にその旨を伝える。",
+    "options": [
+      "あいにく当日は出張のため伺えませんが、心からお祝い申し上げます",
+      "すみませんが、出張がありますので行けません",
+      "出張なので、また後で伺います",
+      "結婚式には行けませんが、プレゼントは受け取ります"
+    ],
+    "answerIndex": 0,
+    "key": ["あいにく当日は出張のため伺えませんが、心からお祝い申し上げます"],
+    "evidence": "上司の結婚式を辞退するときには、あいにく当日は出張のため伺えませんが、心からお祝い申し上げます が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-102",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "図書館で本を借りようとしたが、あなたの学生証は自宅に忘れてきた。司書に相談する。",
+    "options": [
+      "学生証を忘れてきましたが、他に借りる方法はありますか",
+      "学生証がありませんが、貸してくれませんか",
+      "本を借りたいのですが、どうすればいいですか",
+      "学生証を忘れたので、今日は諦めます"
+    ],
+    "answerIndex": 0,
+    "key": ["学生証を忘れてきましたが、他に借りる方法はありますか"],
+    "evidence": "図書館で学生証を忘れたときには、学生証を忘れてきましたが、他に借りる方法はありますか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-103",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "会議の準備中、同僚があなたの資料をコーヒーで汚れさせてしまった。同僚が謝っている。",
+    "options": [
+      "大丈夫ですよ、急いで別の紙に写しましょう",
+      "もう気をつけてください",
+      "困りましたね",
+      "汚れたので、買ってきてください"
+    ],
+    "answerIndex": 0,
+    "key": ["大丈夫ですよ、急いで別の紙に写しましょう"],
+    "evidence": "同僚が資料を汚れさせて謝っているときには、大丈夫ですよ、急いで別の紙に写しましょう が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-104",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは駅で道に迷っている外国人から、美術館への行き方を尋ねられた。自分も美術館の場所を知らない。",
+    "options": [
+      "私もこの辺りは詳しくありませんが、案内所で聞いてみてください",
+      "すみません、私も知らないんです",
+      "美術館は知りませんが、駅は知っています",
+      "道は聞かれません"
+    ],
+    "answerIndex": 0,
+    "key": ["私もこの辺りは詳しくありませんが、案内所で聞いてみてください"],
+    "evidence": "道を聞かれて場所を知らないときには、私もこの辺りは詳しくありませんが、案内所で聞いてみてください が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-105",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "静かな電車の中で、前の席の人が電話で大きな声で話している。あなたがそれを注意する。",
+    "options": [
+      "すみませんが、電車では電話を控えていただけませんか",
+      "静かにしてください",
+      "うるさいです",
+      "電話はやめてください"
+    ],
+    "answerIndex": 0,
+    "key": ["すみませんが、電車では電話を控えていただけませんか"],
+    "evidence": "電車で大きな声の電話を注意するときには、すみませんが、電車では電話を控えていただけませんか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-106",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは新しい町に引っ越してきた。挨拶のために、隣の家を訪ねる。",
+    "options": [
+      "先日この町に引っ越してきましたので、今後ともよろしくお願いいたします",
+      "こんにちは。暇ですか",
+      "引っ越し終わりました",
+      "何かあれば言ってください"
+    ],
+    "answerIndex": 0,
+    "key": [
+      "先日この町に引っ越してきましたので、今後ともよろしくお願いいたします"
+    ],
+    "evidence": "引っ越した挨拶に隣の家を訪ねるときには、先日この町に引っ越してきましたので、今後ともよろしくお願いいたします が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-107",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたはレストランで注文した料理と違う料理が運ばれてきた。店員に伝える。",
+    "options": [
+      "注文したのは別の料理のようですが、確認していただけませんか",
+      "これは注文していないんですが",
+      "間違っています",
+      "交換してください"
+    ],
+    "answerIndex": 0,
+    "key": ["注文したのは別の料理のようですが、確認していただけませんか"],
+    "evidence": "注文と違う料理が来たときには、注文したのは別の料理のようですが、確認していただけませんか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-108",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは会議に15分遅れて到着した。会議室に入ったときに、その旨を伝える。",
+    "options": [
+      "遅れましてすみません、始めるようにさせてください",
+      "すみません、遅くなりました",
+      "電車が遅れました",
+      "まだ話していませんよね"
+    ],
+    "answerIndex": 0,
+    "key": ["遅れましてすみません、始めるようにさせてください"],
+    "evidence": "会議に遅れて入るときには、遅れましてすみません、始めるようにさせてください が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-110",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは駅の窓口で、落下物として届いている傘を探している。財布ではなく傘である。",
+    "options": [
+      "茶色の折りたたみ傘を預かっていませんか",
+      "財布をなくしたんですが",
+      "傘をなくしました",
+      "傘は見つかりましたか"
+    ],
+    "answerIndex": 0,
+    "key": ["茶色の折りたたみ傘を預かっていませんか"],
+    "evidence": "駅の窓口で落下物の傘を尋ねるときには、茶色の折りたたみ傘を預かっていませんか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-111",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは上司に企画書を提出した。上司がその場で読んでくれることを願って伝える。",
+    "options": [
+      "お忙しいところすみませんが、目を通していただけませんでしょうか",
+      "企画書を書きました。見てください",
+      "企画書はこれです",
+      "読んでみてください"
+    ],
+    "answerIndex": 0,
+    "key": ["お忙しいところすみませんが、目を通していただけませんでしょうか"],
+    "evidence": "上司に企画書を見てもらうときには、お忙しいところすみませんが、目を通していただけませんでしょうか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-112",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは図書館で大きな音を立てる子どもがいるのを見た。母親がまだ気づいていない。",
+    "options": [
+      "すみませんが、ここは図書館ですので、少しお静かにお願いできませんか",
+      "子どもを静かにしてください",
+      "ここは静かにしてください",
+      "子どもがうるさいです"
+    ],
+    "answerIndex": 0,
+    "key": [
+      "すみませんが、ここは図書館ですので、少しお静かにお願いできませんか"
+    ],
+    "evidence": "図書館で声を大きくする子どもに注意するときには、すみませんが、ここは図書館ですので、少しお静かにお願いできませんか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-113",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは同僚に仕事を手伝ってもらった。仕事が終わったので感謝を伝える。",
+    "options": [
+      "お忙しい中、ありがとうございました",
+      "ありがとう",
+      "助かりました",
+      "手伝ってくれて、よかった"
+    ],
+    "answerIndex": 0,
+    "key": ["お忙しい中、ありがとうございました"],
+    "evidence": "同僚に手伝ってもらった仕事を終えるときには、お忙しい中、ありがとうございました が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-114",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは病院の受付で予約時間を過ぎてしまった。その旨を伝えて診てもらえるか聞く。",
+    "options": [
+      "予約の時間を過ぎてしまったのですが、今から診ていただけませんか",
+      "予約に遅れました",
+      "時間を過ぎてしまいました",
+      "まだ診てもらえますか"
+    ],
+    "answerIndex": 0,
+    "key": ["予約の時間を過ぎてしまったのですが、今から診ていただけませんか"],
+    "evidence": "病院で予約時間に遅れたときには、予約の時間を過ぎてしまったのですが、今から診ていただけませんか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-115",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは会議の日程変更を他の参加者に知らせなければならないが、メールはまだ書いていない。",
+    "options": [
+      "新しい日程は明日の午後ですので、ご連絡いたします",
+      "会議の日程が変わりました",
+      "明日の午後になりました",
+      "日程を変えてください"
+    ],
+    "answerIndex": 0,
+    "key": ["新しい日程は明日の午後ですので、ご連絡いたします"],
+    "evidence": "会議の中止や日程変更を知らせるときには、新しい日程は明日の午後ですので、ご連絡いたします が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-116",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "あなたは駅前の店で買った商品に不具合があった。店員に返品を申し出る。",
+    "options": [
+      "昨日ここで買ったのですが、使いたいところが動かないので、返品していただけませんか",
+      "返品したいのですが",
+      "商品が壊れています",
+      "昨日買った商品です"
+    ],
+    "answerIndex": 0,
+    "key": [
+      "昨日ここで買ったのですが、使いたいところが動かないので、返品していただけませんか"
+    ],
+    "evidence": "買った商品に不具合があって返品を申し出るときには、昨日ここで買ったのですが、使いたいところが動かないので、返品していただけませんか が適切な発話です。",
+    "validatedBy": "authored:agent-blind-judged"
+  },
+  {
+    "id": "n3-hw-117",
+    "block": "hatsuwa-hyougen",
+    "level": "N3",
+    "construction": "authored",
+    "provenance": "composed",
+    "validated": true,
+    "validatedBy": "authored:agent-blind-judged",
+    "stem": "状況を聞いて、１から４の中から、いちばん適切な発話を一つえらびなさい。",
+    "passage": "上司が明日の会議に間に合わないかもしれないと電話してきた。あなたは参加者に、会議の開始を十分待ってほしいと伝える。",
+    "options": [
+      "開始を十分待ってほしいのですが",
+      "明日の会議は九時です",
+      "すみません、間違えました",
+      "明日の資料はできています"
+    ],
+    "answerIndex": 0,
+    "key": ["開始を十分待ってほしいのですが"],
+    "evidence": "参加者に会議の開始を十分待ってほしいと伝える場面なので、開始を十分待ってほしいのですが が適切な発話です。"
+  }
+]

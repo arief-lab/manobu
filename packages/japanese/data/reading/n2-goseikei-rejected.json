@@ -1,0 +1,47 @@
+[
+  {
+    "judge": "goseikei-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/goseikei-validator.md",
+    "runDate": "2026-10-11",
+    "note": "Blind two-pass certification of the authored 語形成 compound-completion rows, the shape of the 2018 N2V sample paper: a sentence prints a compound's fragment beside a （　） blank and four single kanji, exactly one of which completes the compound the sentence means. A row ships only when BOTH passes pick the frozen key AND both say fit: true; the verdict is valid only for the exact bytes judged, so every edit re-certifies. Round 1 judged the 23 drafted rows: 19 both-clean; 4 flagged (n2-g-002 two-answer among 農産物/鉱産物/林産物, n2-g-010 two-answer via 幼稚舎, n2-g-016 unnatural 昨日その前, n2-g-017 pass B picked 昨 for 昨来年). All four were rewritten and re-certified in round B on the new bytes: 002 and 010 both-clean, 016 failed again (the 去 distractor completes 去昨日, a real synonym of 一昨日 the bands do not carry), 017 failed again (pass B could not compose 再来年 at all). 016 was repaired once more (去→先, both passes clean in round C). 017 is burned: two rounds of judge failure on the same anchor means the item is not certifiable, and the row was replaced by n2-g-024 (再来月), both passes clean in round C. After round C the server's own leak rule (`hasStemLeak` in packages/item-engine/src/validation.ts) showed n2-g-013's passage printed 電車, which contains the key 車: the row would have been silently dropped at assembly rather than served. The sentence was rewritten (急な山道をゆっくり力強く登っていった) and re-certified on the new bytes in round D, both passes picking 車 with fit true. The mechanical gate must therefore also screen that the key kanji never appears in its own passage. Known limit: both passes are the author model's own family, so correlated error is not excluded and there is no human leg; the mechanical gate (scripts/check-goseikei.ts) carries the corpus-side screens, and the judges only catch the two-answer completions the corpus files do not list (幼稚舎, 去昨日, 昨来年 all absent from n5-n1 yet real to the judges). Transcripts: packages/japanese/.cache/judge/goseikei-n2-round1-A.md, -round1-B.md, -roundB-A.md, -roundB-B.md, -roundC-A.md, -roundC-B.md, -roundD-A.md, -roundD-B.md (a first round-B pass-A invocation returned two of four items and was discarded; the rerun is the recorded pass).",
+    "rejectedIds": ["n2-g-017"],
+    "verdicts": {
+      "certified_round1": 19,
+      "reworked_and_certified": 3,
+      "burned": 1,
+      "replacement_certified": 1,
+      "passage_rewritten_and_recertified": 1
+    },
+    "detail": [
+      {
+        "id": "n2-g-017",
+        "level": "N2",
+        "key": "再来年",
+        "why": [
+          "round1 pass2 distractor_picked (昨, fit false)",
+          "roundB pass1 distractor_picked (後, fit false)"
+        ],
+        "passes": {
+          "round1": {
+            "passA": { "verdict": "PASS", "pick": "再", "is_key": true },
+            "passB": {
+              "verdict": "FAIL",
+              "pick": "昨",
+              "is_key": false,
+              "note": "昨来年 is past; contradicts 予定だ. No option yields a usable compound"
+            }
+          },
+          "roundB": {
+            "passA": {
+              "verdict": "FAIL",
+              "pick": "後",
+              "is_key": false,
+              "note": "No option forms a real compound with 来年; sentence cannot be completed."
+            },
+            "passB": { "verdict": "PASS", "pick": "再", "is_key": true }
+          }
+        }
+      }
+    ]
+  }
+]

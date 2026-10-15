@@ -1,0 +1,4 @@
+{
+  "extends": "@manobu/config/tsconfig.base.json",
+  "include": ["src", "test"]
+}

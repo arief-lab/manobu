@@ -1,0 +1,74 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "inline review prompt: for each row, flag any option a competent N1 reader could defend as printed by BOTH documents, counting paraphrase (活用/利用, 地域/地方, 協力/協働, 産業/業種, 展開/促進, hypernym-for-hyponym) as a hit.",
+    "runDate": "2026-10-07",
+    "note": "Round A, judge family 1 over the 17-row N2 統合理解 batch. All 17 rows PASS: each reader-keyed row cleanly separated one both-document topic from three one-sided options.",
+    "verdicts": {
+      "pass": 17,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same as the first family; the two families run independently and the union of their rejections is what ships.",
+    "runDate": "2026-10-07",
+    "note": "Round A, judge family 2 over the same 17 rows. Two rows REJECT: n2t-1-3-1-22+r07-2-6-1-2 and n2t-r07-1-1-3-60+r07-1-2-3-32 each carry an option the reader could defend from both documents. Family 1 passed both, and that disagreement IS the verdict: a row two readers score differently is a row the surface screens did not decide, so it is rejected on the union rather than shipped on a majority.",
+    "verdicts": {
+      "pass": 15,
+      "ambiguous": 2,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n2t-1-3-1-22+r07-2-6-1-2", "n2t-r07-1-1-3-60+r07-1-2-3-32"]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same screens as round A: flag any option a reader could defend from BOTH documents once paraphrase counts.",
+    "runDate": "2026-10-07",
+    "note": "Round B, judge family 1 over the one replacement row the N2 regeneration produced. PASS. The 15 rows carried over from round A are byte-identical to the rows both families judged there (verified by a field-by-field diff of options, both passages and the stem), so the store ships fully judged.",
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same screens as round A: flag any option a reader could defend from BOTH documents once paraphrase counts.",
+    "runDate": "2026-10-07",
+    "note": "Round B, judge family 2 over the same single replacement row: PASS, agreeing with family 1. N2 統合理解 therefore ships 16 rows with every one of them passing two independent blind reads.",
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: classify each option A-only / B-only / both / neither, then apply the stem. Packet: .cache/judge/tougou-n2-keys-withheld.md, verdicts: .cache/judge/tougou-n2-A.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass A over the 8-row AUTHORED N2 統合理解 batch (n2to-1..n2to-8). All 8 PASS and every one was keyed exactly as shipped (8/8). Two loosest: n2to-6's shared premise is only implicit in passage A, which is what a 前提 item asks for, and n2to-2's key compresses the clash (new flow against moved flow) into one line. Correlated-error limit: both passes ran on the author model family, so agreement here is not independence. The two passes differ in procedure only, and the key was withheld from the packet, so the pairing tests whether a reader who cannot see the key lands on one option, not whether a second model would.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 8 items, deliberately different procedure: write what each writer wants changed and what each names as the cause, then one line on what the two have in common and one on where they point opposite, then answer the stem from those two lines rather than option by option. Packet: .cache/judge/tougou-n2-keys-withheld.md, verdicts: .cache/judge/tougou-n2-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass B over the same batch. 8 PASS, choices again matched the shipped keys. The pass reported that in every row the three distractors are sentences lifted from exactly one of the two documents, which is the construction this store intends: the key is the relation between the documents and the distractors are each document's own printed line. No row was burned.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

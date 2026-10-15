@@ -1,0 +1,79 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+dist
+build
+*.tsbuildinfo
+target
+
+# Generated files
+apps/web/src/routeTree.gen.ts
+
+# Environment variables
+.env
+.env*.local
+
+# IDEs and editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs
+.evlog/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Turbo
+.turbo
+.nx
+
+# Better-T-Stack
+.alchemy
+.vercel
+
+# Testing
+coverage
+.nyc_output
+
+# Misc
+*.tgz
+.cache
+tmp
+temp
+
+# Local SQLite sidecar databases
+local.db
+local.db-shm
+local.db-wal
+.fallow/
+
+# Skill installer symlink farms (skills now live in local-only .agents/.claude/)
+/skills/
+/.pi/
+
+# Agent/skill tooling directories: local machine setup, not project source.
+/.agents/
+/.claude/
+
+# Preserved scratch files. Untracked is not ignored, so without these they show
+# in every `git status` and a broad `git add` keeps re-adding them.
+/.acp-children.json
+/.qoder/
+/apps/server/.acp-children.json
+/backlog/docs/Pasted image.png
+/backlog/docs/Pasted image (2).png

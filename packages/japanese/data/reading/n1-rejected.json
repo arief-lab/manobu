@@ -1,0 +1,74 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS: two nouns completing the same compound or the same particle-frame is a reject even when one fits better.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 1 over the 24-row N1 短文 batch (.cache/judge/tanbun-n1.md, keys withheld). All 24 rows PASS on exactly one option. The N1 rows sit deeper in 白書 naming than the other levels (環境研究総合推進費, 都道府県構想, 公害紛争処理法, 独立行政法人), where the blank is completed by the official name the sentence itself prints, so the screen and the judge agree on where the answer comes from.",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 24 items, deliberately different procedure: first answer as a test-taker, then switch sides and build the strongest case the page alone allows for each of the other three options, and report every option that survives that argument.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 2 over the same batch: all 24 rows PASS, with the surviving option equal to the frozen key on every row (24/24 across both families). No row is burned, so the N1 store ships as generated. One caveat recorded rather than hidden: several N1 rows are completable by a reader who recognises the ministry or statute name, which is narrower than the passage-internal reasoning a real 短文 小問 asks for; the deterministic screens still hold (the frame is filled by exactly one in-level noun), so the rows ship, but the 大問 is easier to read as terminology than as reading.",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass A over the 16-row AUTHORED N1 短文 batch (n1s-1..n1s-16, packet .cache/judge/n1/tanbun.md, verdicts .cache/judge/n1/tanbun-A.md). All 16 rows PASS and every blind pick equals the frozen key (16/16). These rows replace the ＿＿ cloze batch the two records above certified: the passage is written rather than windowed, the 小問 asks one of the seven 内容理解 ねらい, and no answer is a word the sentence prints next to a blank. Batch shape measured off the store, not off the author's report: 160-240 runes (TANBUN_AUTHORED_BAND.N1), one paragraph, evidence 28-66 runes, 11 distinct stems across the seven intents, keys spread 4/4/4/4. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 16,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round A, pass B over the same 16 authored 短文 rows (verdicts .cache/judge/n1/tanbun-B.md, packet byte-identical to pass A). 16 PASS, 0 AMBIGUOUS, and the surviving option equals the frozen key on every row (16/16 across both passes). It named the near-misses and dismissed each on passage text rather than on a recognisable ministry name, which is the difference this construction was made for: the masked batch above was completable by knowing the statute, these are not.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 16,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass A over the 7 rows of this store the prose round touched (n1s-1, n1s-5, n1s-6, n1s-10, n1s-13, n1s-14, n1s-16; packet .cache/judge/n1/tanbun-rejudge.md, verdicts .cache/judge/n1/tanbun-rejudge-A.md, store sha256 51f26a6b413f… then f4d5c32fcdd702ab). 7 PASS, 0 AMBIGUOUS, all 7 picks equal the frozen key. Prose round: a separate blind proofread of the authored Japanese (particle case, subject/predicate fit, non-existent verb forms, Chinese counters, truncated compounds) flagged the spans; each one was checked against the store before it was applied, and only the spans the author agreed with were edited. Edits were mirrored into every field of the same row, because a distractor may lift a passage sentence verbatim and the gate requires the evidence span to stay a literal substring. Repairs here: 木簡には→木簡から and 担当室→担当課 and 申し出→申し込み (n1s-1, whose evidence span was re-pointed at the repaired sentence when the gate reported evidence-not-in-passage), 店が開かれた (n1s-6), 決まった (n1s-10), 流れることが (n1s-13), 空き区画 (n1s-16), plus 乗りえられる→乗り切れる, 四天/七天→四日/七日, 心もとのなさ→心もとなさ in the passage AND the stem that quotes it, 応募に落ちた→選考に落ちた. The other 9 rows are carried byte-identically: diffing a packet of them against tanbun.md shows text diffs NONE, so Round A still holds for them. No row burned.",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from the passage, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 7,
+      "unanswerable": 0
+    }
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "note": "Round B, pass B over the same 7 repaired 短文 rows (verdicts .cache/judge/n1/tanbun-rejudge-B.md): 7 PASS, 0 AMBIGUOUS, all 7 keyed as shipped, so the store ships as repaired at 16 rows. It reported that after the edits no option or passage sentence reads as broken Japanese, which is the point of running the adversarial procedure a second time over repaired prose rather than trusting the author's own reading of the fix. Correlated-error limit, recorded rather than hidden: both passes ran on the author model's own family, so their agreement is not independence. What the pairing tests is whether a reader who cannot see the key lands on exactly one option under two different procedures, not whether a second model would agree.",
+    "prompt": "same items, deliberately different procedure: answer the stem as a test-taker first, then switch sides and build the strongest case the passage alone allows for each of the other three options, quoting the span it would hang on, and report every option that survives.",
+    "rejectedIds": [],
+    "runDate": "2026-10-10",
+    "verdicts": {
+      "ambiguous": 0,
+      "pass": 7,
+      "unanswerable": 0
+    }
+  }
+]

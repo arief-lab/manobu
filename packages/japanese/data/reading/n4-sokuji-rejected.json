@@ -1,0 +1,149 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N4 sokuji candidates; the burned rows were replaced by newly authored rows judged in their own packets under the same protocol. Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. N4 ships authored-only: every N4 listening row upstream is a near-duplicate, English-gloss or too-short, leaving zero vendorable (TASK-173.8.1 AC#3).",
+    "rejectedIds": [
+      "n4-sj-103",
+      "n4-sj-108",
+      "n4-sj-111",
+      "n4-sj-128",
+      "n4-sj-133",
+      "n4-sj-203",
+      "n4-sj-204",
+      "n4-sj-207"
+    ],
+    "verdicts": {
+      "pass": 72,
+      "ambiguous": 8,
+      "unanswerable": 0,
+      "unfit": 2,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n4-sj-103",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Request to turn on the light: C 「はい、すぐ つけます」 is a direct acceptance, but B 「ええ、スィッチは あそこに あります」 is also a natural cooperative answer to the same request (telling the speaker where the switch is so they can do it). Two defensible responses."
+        ]
+      },
+      {
+        "id": "n4-sj-108",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "pass"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass2 AMBIGUOUS: Both B (\"はい、三年前に すんだ ことが あります\") and D (\"ええ、去年から 住んで います\") are natural, defensible affirmative answers to \"have you ever lived in Japan\"."
+        ]
+      },
+      {
+        "id": "n4-sj-111",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Colleague leaving early: D 「お疲れ様でした」 is the canonical fixed reply, but C 「また 明日。」 is also a completely natural response when a coworker says お先に失礼します at the end of the workday. Only the textbook pair separates them; pragmatically both fit.",
+          "pass2 AMBIGUOUS: To a coworker leaving work, both A (\"お疲れ様でした\") and C (\"また 明日。\") are what a native would actually reply; neither answers a different question."
+        ]
+      },
+      {
+        "id": "n4-sj-128",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "ambiguous"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Experience question 来たことはありますか: D 「はい、あります、2年前に 来ました」 is the textbook-perfect answer, but A 「ええ、毎年夏に 行きます」 also naturally answers it (yes, I have been here — I come every summer). Two defensible responses.",
+          "pass2 AMBIGUOUS: Both B (\"はい、あります、２年前に 来ました\") and D (\"ええ、毎年 夏に 行きます\") are natural, defensible affirmative answers to \"have you ever been to Japan\"."
+        ]
+      },
+      {
+        "id": "n4-sj-133",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Weekend question 何をしていましたか: B 「うちで 本を 読んでいました」 is the intended progressive-activity answer, but C 「6時に 起きました」 also validly reports what the speaker was doing (got up at 6). Question 何を does not exclude a wake-up activity."
+        ]
+      },
+      {
+        "id": "n4-sj-203",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "ambiguous"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 AMBIGUOUS: Invitation with ませんか: accepting (C) and declining with a reason (D, no racket yet) are both natural native responses."
+        ]
+      },
+      {
+        "id": "n4-sj-204",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "pass"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass2 UNFIT: 'あしを ふんで しまいました' is not natural Japanese for an apology, and 'いえ、ぜんぜん 大丈夫ですよ' is not a response a native speaker would actually give in this frame"
+        ]
+      },
+      {
+        "id": "n4-sj-207",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: どうしても 歩けなく なります is not a response a native speaker would actually give to the crowding remark; どうしても presupposes an attempted action."
+        ]
+      }
+    ]
+  }
+]

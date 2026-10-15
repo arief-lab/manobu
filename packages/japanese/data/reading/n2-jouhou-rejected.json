@@ -1,0 +1,74 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the 情報素材 alone, answer the stem the way the 大問 asks it, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 1 over the 12-row composed 情報検索 batch (keys withheld; transcript saved to .cache/judge/jouhou-family1.md). All 12 rows PASS, 0 AMBIGUOUS, 0 UNANSWERABLE, and every pick equals the frozen key by option content. The 6 N2 rows: n2j-inshi-1 and n2j-inshi-2 answer out of the 印紙税額 band alone; n2j-shotoku-1 and n2j-shotoku-2 out of the 速算表 band; the two kyuugaku rows out of the one Q&A line each stem names. n2j-inshi-2 is the weakest PASS and the judge flagged it for a human: the printed (注) says the 税率 is 軽減 for 契約金額 over 一定額 without printing either the threshold or the reduced figure, so a careful reader can call the row underdetermined. It survives because no other option is supported by anything the 素材 prints, and the 大問 asks the table. No row is burned, so the store ships as generated. This record counts the 6 rows of THIS level; the batch and the verdicts above cover all 12.",
+    "verdicts": {
+      "pass": 6,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 12 items, deliberately different procedure: locate the table row or line the stem points at, then check that the stem's own qualifier (文書の種類, 所得金額, 学校種別・課程) isolates exactly one location, and report any other option the 素材 still leaves open.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 2 over the same batch (transcript in .cache/judge/jouhou-family2.md): all 12 rows PASS and every pick equals the frozen key by option content. It named the traps and dismissed each on 素材 text: the 契約金額の記載のないもの row prints 200円 but only a stem with no 契約金額 could answer from it; 23％ sits in the shotoku 具体例 (7,000,000円×0.23) while 4,000,000円 is in the 20％ band; the 公立 and 国立 月額 of the kyuugaku Q&A are one line apart and the stem's school-type qualifier separates them. This record was frozen BEFORE the authored option order was spread across positions 0-3; the option SETS and the 素材 are byte-identical to what the judges read, and decidability is a property of the set, so no verdict moves. This record counts the 6 rows of THIS level; the batch and the verdicts above cover all 12.",
+    "verdicts": {
+      "pass": 6,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: locate the single row or line of the printed 素材 that answers the stem, check the stem's givens select one row, then mark each option CORRECT / WRONG / UNCERTAIN. Packet: .cache/judge/jouhou-n2-keys-withheld.md, verdicts: .cache/judge/jouhou-n2-A.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass A over the 8-row N2 情報検索 store. All 8 PASS and every one was keyed exactly as shipped (8/8). Weakest: n2j-inshi-2, because the 国税庁 (注) signals a 軽減税率 above an unprinted 一定額 without printing the figure, so the 素材 cannot positively rule 800万円 below it; no option reads off that note either, so the answer is still the only supported one. Correlated-error limit: both passes ran on the author model family, so agreement here is not independence. The two passes differ in procedure only, and the key was withheld from the packet, so the pairing tests whether a reader who cannot see the key lands on one option, not whether a second model would. Coverage restated on 2026-10-10, after the growth of this store was moved onto the generator route: of the 8 rows this pass read, 6 still ship byte for byte (n2j-inshi-1, n2j-inshi-2, n2j-shotoku-1, n2j-shotoku-2, n2j-kyuugaku-1, n2j-kyuugaku-2); n2j-inshi-3 and n2j-kyuugaku-3 were hand-written rows that left the store when the generator became the only writer of it, and the two rows that now stand in their place (n2j-ukeoi-1, n2j-ukeoi-2) are certified by the round-B records appended below. The verdict counts in this record are the 8 rows this pass actually read, not the 8 that ship.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 8 items, deliberately different procedure: read the whole 素材 first and list every place a reader could get a different number (a second table, a ※ or (注) line, a 括弧書き, an average row, a range boundary the stem sits on), then answer, then test whether each wrong reading lands on an option. Packet: .cache/judge/jouhou-n2-keys-withheld.md, verdicts: .cache/judge/jouhou-n2-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass B over the same batch. 8 PASS, choices again matched the shipped keys, and every wrong reading the pass catalogued either lands on no option or is ruled out by the 素材 as printed. Three printing notes came back and none of them is a defect of this store: the 印紙 row 「１万円以上100万円以下」 carries a full-width １ because that is what the pinned 国税庁 snapshot prints and the route forbids retyping a cell; the 所得税 bands leave gaps of under 1,000円 that the snapshot's own 1,000円未満切捨て rule closes, and no stem sits in a gap; n2j-shotoku-1's 15％ option is printed nowhere, which is filler rather than a leak. No row was burned. Coverage restated on 2026-10-10, after the growth of this store was moved onto the generator route: of the 8 rows this pass read, 6 still ship byte for byte (n2j-inshi-1, n2j-inshi-2, n2j-shotoku-1, n2j-shotoku-2, n2j-kyuugaku-1, n2j-kyuugaku-2); n2j-inshi-3 and n2j-kyuugaku-3 were hand-written rows that left the store when the generator became the only writer of it, and the two rows that now stand in their place (n2j-ukeoi-1, n2j-ukeoi-2) are certified by the round-B records appended below. The verdict counts in this record are the 8 rows this pass actually read, not the 8 that ship.",
+    "verdicts": {
+      "pass": 8,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: locate the single row or line of the printed 素材 that answers the stem, check the stem's givens select one row, then mark each option CORRECT / WRONG / UNCERTAIN. Packet: .cache/judge/jouhou-n2-roundB-keys-withheld.md, verdicts: .cache/judge/jouhou-n2-roundB-A.md",
+    "runDate": "2026-10-10",
+    "note": "Round B over the two 情報検索 rows the generator added when N2 grew from 6 to 8: the 請負 unit of the same pinned 国税庁 snapshot No.7140, read as its own 素材. Both PASS and each pick equals the shipped key by option text (n2j-ukeoi-1 answers 2千円, n2j-ukeoi-2 answers 1万円). Weakest, and the pass named it without being led: the printed (注) says a 建設工事の 請負 契約書 whose 契約金額 exceeds an unprinted 一定額 has its 税率 軽減, so the 素材 cannot positively rule 400万円 or 800万円 below that threshold. The row still passes because the note prints no figure at all, so no competing reading lands on any of the four options, and the 大問 asks the table. That is the same shape as the accepted n2j-inshi-2 weakness above, so it is a property of vendoring this snapshot rather than of these two rows. Correlated-error limit: both passes ran on the author model family, so agreement here is not independence; the key was withheld and the procedures differ, which tests whether a reader who cannot see the key lands on one option, not whether a second model would.",
+    "verdicts": {
+      "pass": 2,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 2 items, deliberately different procedure: read the whole 素材 first and catalogue every place a reader could get a different number (a second table, a ※ or (注) line, a 括弧書き, a 非課税 row, a 契約金額の記載のないもの row, a range boundary the stem sits on, a full-width digit), then answer, then test whether each wrong reading lands on an option. Packet: .cache/judge/jouhou-n2-roundB-keys-withheld.md, verdicts: .cache/judge/jouhou-n2-roundB-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round B, the catalogue-first pass over the same two rows: 2 PASS and the choices again matched the shipped keys by option text. It separated the readings that LAND on an option from those that land on nothing: the three wrong options of each item are other cells of the same printed band list, so an adjacent-band misreading does reach a choice, and the stem's own 契約金額 rules each one out by arithmetic the table prints (400万円 is not 以上 of 「200万円を超え300万円以下」 and not 超え of 「500万円を超え1千万円以下」; 800万円 is not 超え of 「1千万円を超え5千万円以下」). Neither amount sits on a band boundary, so the 超え/以下 edge reading cannot flip either band. The readings that land on nothing are harmless traps: the 契約金額の記載のないもの row prints 200円 which is in neither option set and which no stem without a 契約金額 could reach; the ※ line reaches only a document under 1万円; the full-width １ of 「１万円以上100万円以下」 is what the pinned snapshot prints and the route forbids retyping a cell. The (注) 軽減 line is the shared residual weakness and, as in round A, it prints neither the trigger 一定額 nor a reduced figure, so it injects doubt but derives no option. No row was burned, so the store ships exactly as the generator writes it.",
+    "verdicts": {
+      "pass": 2,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

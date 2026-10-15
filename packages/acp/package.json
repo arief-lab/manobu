@@ -1,0 +1,31 @@
+{
+  "name": "@manobu/acp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./acp-events": "./src/acp-events.ts",
+    "./conversation-guard": "./src/conversation-guard.ts",
+    "./direct-cli": "./src/direct-cli.ts",
+    "./direct-cli-session": "./src/direct-cli-session.ts",
+    "./launch-policy": "./src/launch-policy.ts",
+    "./mcp": "./src/mcp.ts",
+    "./registry": "./src/registry.ts",
+    "./session": "./src/session.ts",
+    "./session-terminals": "./src/session-terminals.ts",
+    "./session-translator": "./src/session-translator.ts",
+    "./session-types": "./src/session-types.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@agentclientprotocol/sdk": "^0.21.1",
+    "@types/bun": "catalog:"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

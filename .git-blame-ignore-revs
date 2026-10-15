@@ -1,0 +1,18 @@
+# Revisions whose diffs `git blame` should skip.
+#
+# Enable per clone (this file cannot enable itself, and it is not git config):
+#   git config blame.ignoreRevsFile .git-blame-ignore-revs
+#
+# GitHub honors the same list from Settings -> Administration automatically
+# once the file exists at the default branch root.
+
+# 3a6c8734e298dc4c463121936a606977620e56fd style(jlpt-mcp): make the crate
+# rustfmt-clean (TASK-97) - one default `cargo fmt` pass over 6 files, 64
+# hunks, no behaviour change. Without this, blame points every reformatted
+# line at the reformat instead of at the commit that wrote the code.
+3a6c8734e298dc4c463121936a606977620e56fd
+
+# 4409d50588d59a7d05d804a2dfe7913a74d7f59f style(src-tauri): make the Tauri
+# crate rustfmt-clean (TASK-98) - one default `cargo fmt` pass over 10 files,
+# 61 hunks, no behaviour change (cargo test: 45 passed before and after).
+4409d50588d59a7d05d804a2dfe7913a74d7f59f

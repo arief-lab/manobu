@@ -1,0 +1,222 @@
+[
+  {
+    "id": "greeting-1",
+    "category": "greeting",
+    "level": "pre-N5",
+    "jp": "こんにちは",
+    "en": "Hello / Good afternoon",
+    "reading": "こんにちは",
+    "romaji": "konnichiwa",
+    "themes": ["Daily", "Travel"],
+    "context": "Standard daytime greeting (roughly 11:00–17:00). Use おはようございます in the morning, こんばんは in the evening."
+  },
+  {
+    "id": "greeting-2",
+    "category": "greeting",
+    "level": "pre-N5",
+    "jp": "ありがとうございます",
+    "en": "Thank you (polite)",
+    "reading": "ありがとうございます",
+    "romaji": "arigatou gozaimasu",
+    "themes": ["Daily", "Travel"],
+    "context": "Polite thank-you. ありがとう alone is casual (friends); どうも is a casual thanks with a slight bow."
+  },
+  {
+    "id": "greeting-3",
+    "category": "greeting",
+    "level": "pre-N5",
+    "jp": "すみません",
+    "en": "Excuse me / Sorry",
+    "reading": "すみません",
+    "romaji": "sumimasen",
+    "themes": ["Daily", "Travel"],
+    "context": "Triple-duty: 'excuse me' to get attention, light apology, or 'thank you' (e.g. to a clerk). ごめんなさい is a stronger apology (to a person you wronged)."
+  },
+  {
+    "id": "greeting-4",
+    "category": "greeting",
+    "level": "pre-N5",
+    "jp": "お願いします",
+    "en": "Please (request)",
+    "reading": "おねがいします",
+    "romaji": "onegaishimasu",
+    "themes": ["Daily", "Travel"],
+    "context": "Universal polite request — 'please do this for me'. Pairs with ありがとうございます in service encounters."
+  },
+  {
+    "id": "greeting-5",
+    "category": "greeting",
+    "level": "pre-N5",
+    "jp": "はじめまして",
+    "en": "Nice to meet you (first time)",
+    "reading": "はじめまして",
+    "romaji": "hajimemashite",
+    "themes": ["Daily"],
+    "context": "Said on first introduction. Followed by どうぞよろしくおねがいします ('please be kind to me')."
+  },
+  {
+    "id": "order-1",
+    "category": "ordering",
+    "level": "pre-N5",
+    "jp": "これをください",
+    "en": "This one, please",
+    "reading": "これをください",
+    "romaji": "kore wo kudasai",
+    "themes": ["Travel", "Shopping"],
+    "context": "Point at the item. あれ (that one) for an item across the counter; それ (that one) for something near the listener. ください = please give me."
+  },
+  {
+    "id": "order-2",
+    "category": "ordering",
+    "level": "pre-N5",
+    "jp": "おねがいします",
+    "en": "Please (placing order)",
+    "reading": "おねがいします",
+    "romaji": "onegai shimasu",
+    "themes": ["Travel", "Shopping"],
+    "context": "Said when the clerk confirms your order. The 'seal' on a service transaction."
+  },
+  {
+    "id": "order-3",
+    "category": "ordering",
+    "level": "pre-N5",
+    "jp": "いくらですか",
+    "en": "How much is it?",
+    "reading": "いくらですか",
+    "romaji": "ikura desu ka",
+    "themes": ["Travel", "Shopping"],
+    "context": "The price question. 全部でいくらですか = 'how much in total?' (useful at the register)."
+  },
+  {
+    "id": "order-4",
+    "category": "ordering",
+    "level": "pre-N5",
+    "jp": "トイレはどこですか",
+    "en": "Where is the restroom?",
+    "reading": "トイレはどこですか",
+    "romaji": "toire wa doko desu ka",
+    "themes": ["Travel"],
+    "context": "The most-asked traveler question. お手洗い (otearai) is the formal word; トイレ is universally understood. 化粧室 (keshoushitsu) = powder room (often more polite in upscale hotels)."
+  },
+  {
+    "id": "order-5",
+    "category": "ordering",
+    "level": "pre-N5",
+    "jp": "おすすめは何ですか",
+    "en": "What do you recommend?",
+    "reading": "おすすめ は なん ですか",
+    "romaji": "osusume wa nan desu ka",
+    "themes": ["Travel", "Shopping"],
+    "context": "Asking the staff. 人気 (ninki) = 'popular';  signature (kiseki) = 'house special'. Both pair with は何ですか."
+  },
+  {
+    "id": "direction-1",
+    "category": "direction",
+    "level": "pre-N5",
+    "jp": "駅はどこですか",
+    "en": "Where is the station?",
+    "reading": "えき は どこ ですか",
+    "romaji": "eki wa doko desu ka",
+    "themes": ["Travel"],
+    "context": "Replace 駅 with any landmark: コンビニ (konbini), ホテル (hoteru), 空港 (kuukou)."
+  },
+  {
+    "id": "direction-2",
+    "category": "direction",
+    "level": "pre-N5",
+    "jp": "右に曲がってください",
+    "en": "Please turn right",
+    "reading": "みぎ に まがって ください",
+    "romaji": "migi ni magatte kudasai",
+    "themes": ["Travel"],
+    "context": "左 = hidari (left). Go straight = まっすぐ (massugu). The te-form + ください gives polite instructions."
+  },
+  {
+    "id": "direction-3",
+    "category": "direction",
+    "level": "pre-N5",
+    "jp": "ここで降ります",
+    "en": "I get off here (bus/train)",
+    "reading": "ここで おります",
+    "romaji": "koko de orimasu",
+    "themes": ["Travel"],
+    "context": "Said to the driver/announce button. おります is the humble verb for 'to get off' (yourself). 降ります is the plain equivalent."
+  },
+  {
+    "id": "direction-4",
+    "category": "direction",
+    "level": "pre-N5",
+    "jp": "歩いて行けますか",
+    "en": "Can I walk there?",
+    "reading": "あるいて いけま すか",
+    "romaji": "aruite ikemasu ka",
+    "themes": ["Travel"],
+    "context": "Asking a destination's distance. 遠い (tooi) = far; 近い (chikai) = near. バスで行けますか = 'can I take a bus there?'"
+  },
+  {
+    "id": "direction-5",
+    "category": "direction",
+    "level": "pre-N5",
+    "jp": "出口はどこですか",
+    "en": "Where is the exit?",
+    "reading": "でぐち は どこ ですか",
+    "romaji": "deguchi wa doko desu ka",
+    "themes": ["Travel"],
+    "context": "Subway/station exit. 入口 (iriguchi) = entrance. 北口 (kitaguchi) = north exit; 中央口 (chuouguchi) = central gate."
+  },
+  {
+    "id": "shopping-1",
+    "category": "shopping",
+    "level": "pre-N5",
+    "jp": "カードは使えますか",
+    "en": "Can I use a card?",
+    "reading": "カード は つかえます か",
+    "romaji": "kaado wa tsukaemasu ka",
+    "themes": ["Shopping", "Travel"],
+    "context": "Many small shops are cash-only. 現金 (genkin) = cash. 両替 (ryougae) = currency exchange."
+  },
+  {
+    "id": "shopping-2",
+    "category": "shopping",
+    "level": "pre-N5",
+    "jp": "袋をください",
+    "en": "A bag, please",
+    "reading": "ふくろ を ください",
+    "romaji": "fukuro wo kudasai",
+    "themes": ["Shopping"],
+    "context": "Plastic bags cost ¥3–¥10 since the 2020 regulation. 大丈夫です ('daijoubu desu') = 'no, thanks' (to decline)."
+  },
+  {
+    "id": "shopping-3",
+    "category": "shopping",
+    "level": "pre-N5",
+    "jp": "お会計お願いします",
+    "en": "Check, please (restaurant)",
+    "reading": "おかいけい おねがいします",
+    "romaji": "okaikei onegai shimasu",
+    "themes": ["Shopping", "Travel"],
+    "context": "In a restaurant, ask for the bill. 割り勘 (warikan) = split the bill; 持ち帰り (mochikaeri) = takeout."
+  },
+  {
+    "id": "shopping-4",
+    "category": "shopping",
+    "level": "pre-N5",
+    "jp": "試着してもいいですか",
+    "en": "May I try this on?",
+    "reading": "しちゃく しても いい ですか",
+    "romaji": "shichaku shite mo ii desu ka",
+    "themes": ["Shopping"],
+    "context": "Clothing shops. 別のサイズ (betsu no saizu) = 'a different size'. あります = 'we have it'."
+  },
+  {
+    "id": "shopping-5",
+    "category": "shopping",
+    "level": "pre-N5",
+    "jp": "免税できますか",
+    "en": "Can I get tax-free?",
+    "reading": "めんぜい できま すか",
+    "romaji": "menzei dekimasu ka",
+    "themes": ["Shopping", "Travel"],
+    "context": "Tourists with passport spending ≥¥5,000 (general goods) or ¥5,000 (consumables) at one shop. Show your passport at the register."
+  }
+]

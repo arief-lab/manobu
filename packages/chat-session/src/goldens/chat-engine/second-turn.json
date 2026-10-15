@@ -1,0 +1,339 @@
+{
+  "finalMessages": [
+    {
+      "content": "Let me check the corpus.",
+      "conversation_id": "conv-1",
+      "id": "thinking:think-1",
+      "msg_id": "think-1",
+      "position": "left",
+      "type": "thinking"
+    },
+    {
+      "content": null,
+      "conversation_id": "conv-1",
+      "id": "tool:call-1",
+      "kind": "read",
+      "locations": null,
+      "msg_id": "tool-1u",
+      "raw_input": {
+        "path": "src/x.ts"
+      },
+      "raw_output": "export const x = 1;\nexport const y = 2;",
+      "status": "completed",
+      "title": null,
+      "toolCallId": "call-1",
+      "type": "acp_tool_call"
+    },
+    {
+      "conversation_id": "conv-1",
+      "id": "perm:perm-1",
+      "msg_id": "perm-1",
+      "options": [
+        {
+          "kind": "allow_once",
+          "name": "Allow once",
+          "optionId": "allow_once"
+        },
+        {
+          "kind": "reject_once",
+          "name": "Reject",
+          "optionId": "reject"
+        }
+      ],
+      "requestId": "perm-1",
+      "toolCall": {
+        "toolCallId": "call-1"
+      },
+      "type": "acp_permission"
+    },
+    {
+      "content": "The file exports two constants.",
+      "conversation_id": "conv-1",
+      "id": "text:content-1",
+      "msg_id": "content-1",
+      "position": "left",
+      "type": "text"
+    },
+    {
+      "conversation_id": "conv-1",
+      "exitStatus": null,
+      "id": "term:term-1:term-1",
+      "msg_id": "term-1",
+      "output": "$ ls\nsrc",
+      "terminalId": "term-1",
+      "type": "acp_terminal_output"
+    },
+    {
+      "conversation_id": "conv-1",
+      "cost": {
+        "amount": 0.01,
+        "currency": "USD"
+      },
+      "id": "usage:conv-1",
+      "msg_id": "usage-1",
+      "size": 100,
+      "type": "acp_context_usage",
+      "used": 5
+    },
+    {
+      "content": "First streaming chunk.",
+      "conversation_id": "conv-1",
+      "id": "text:c2-a",
+      "msg_id": "c2-a",
+      "position": "left",
+      "turn_id": "turn-2",
+      "type": "text"
+    },
+    {
+      "content": "Replaced snapshot.",
+      "conversation_id": "conv-1",
+      "id": "text:c2-b",
+      "msg_id": "c2-b",
+      "position": "left",
+      "replace": true,
+      "turn_id": "turn-2",
+      "type": "text"
+    },
+    {
+      "conversation_id": "conv-1",
+      "id": "ask:ask-1",
+      "msg_id": "ask-1",
+      "questions": [
+        {
+          "question": "Which level are you studying?"
+        }
+      ],
+      "requestId": "ask-1",
+      "turn_id": "turn-2",
+      "type": "ask"
+    },
+    {
+      "conversation_id": "conv-1",
+      "id": "err:err-1",
+      "msg_id": "err-1",
+      "text": "tool exploded",
+      "turn_id": "turn-2",
+      "type": "error"
+    }
+  ],
+  "frames": [
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "session_id": "ses-1"
+      },
+      "msg_id": "start-1",
+      "type": "start"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "commands": [
+          {
+            "description": "Review",
+            "name": "review"
+          }
+        ]
+      },
+      "msg_id": "cmds-1",
+      "type": "available_commands"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "text": "Let me check the corpus.",
+        "type": "thinking"
+      },
+      "msg_id": "think-1",
+      "type": "thinking"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "kind": "read",
+        "rawInput": {
+          "path": "src/x.ts"
+        },
+        "rawOutput": "export const x = 1;",
+        "sessionUpdate": "tool_call",
+        "status": "pending",
+        "title": "read src/x.ts",
+        "toolCallId": "call-1"
+      },
+      "msg_id": "tool-1",
+      "type": "acp_tool_call"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "rawOutput": "export const x = 1;\nexport const y = 2;",
+        "sessionUpdate": "tool_call_update",
+        "status": "completed",
+        "toolCallId": "call-1"
+      },
+      "msg_id": "tool-1u",
+      "type": "acp_tool_call"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "options": [
+          {
+            "kind": "allow_once",
+            "name": "Allow once",
+            "optionId": "allow_once"
+          },
+          {
+            "kind": "reject_once",
+            "name": "Reject",
+            "optionId": "reject"
+          }
+        ],
+        "request_id": "perm-1",
+        "title": "Allow write?",
+        "tool_call": {
+          "toolCallId": "call-1"
+        }
+      },
+      "msg_id": "perm-1",
+      "type": "acp_permission"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "outcome": {
+          "optionId": "allow_once",
+          "outcome": "selected"
+        }
+      },
+      "msg_id": "perm-1r",
+      "request_id": "perm-1",
+      "type": "acp_permission_resolved"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "text": "The file exports two constants.",
+        "type": "text"
+      },
+      "msg_id": "content-1",
+      "type": "content"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "output": "$ ls\nsrc",
+        "terminal_id": "term-1"
+      },
+      "msg_id": "term-1",
+      "type": "acp_terminal_output"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "cost": {
+          "amount": 0.01,
+          "currency": "USD"
+        },
+        "size": 100,
+        "used": 5
+      },
+      "msg_id": "usage-1",
+      "type": "acp_context_usage"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "stopReason": "end_turn",
+        "usage": {
+          "outputTokens": 9,
+          "totalTokens": 42
+        }
+      },
+      "msg_id": "finish-1",
+      "type": "finish"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "text": "First streaming chunk.",
+        "type": "text"
+      },
+      "msg_id": "c2-a",
+      "turn_id": "turn-2",
+      "type": "content"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "text": "Replaced snapshot.",
+        "type": "text"
+      },
+      "msg_id": "c2-b",
+      "replace": true,
+      "turn_id": "turn-2",
+      "type": "content"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "options": [
+          {
+            "label": "N5",
+            "value": "n5"
+          },
+          {
+            "label": "N4",
+            "value": "n4"
+          }
+        ],
+        "questions": [
+          {
+            "question": "Which level are you studying?"
+          }
+        ],
+        "request_id": "ask-1"
+      },
+      "msg_id": "ask-1",
+      "turn_id": "turn-2",
+      "type": "ask"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "text": "tool exploded",
+        "type": "text"
+      },
+      "msg_id": "err-1",
+      "turn_id": "turn-2",
+      "type": "error"
+    },
+    {
+      "conversation_id": "conv-1",
+      "data": {
+        "stopReason": "error"
+      },
+      "msg_id": "finish-2",
+      "turn_id": "turn-2",
+      "type": "finish"
+    }
+  ],
+  "statuses": [
+    "idle",
+    "idle",
+    "streaming",
+    "streaming",
+    "streaming",
+    "idle",
+    "idle",
+    "streaming",
+    "streaming",
+    "idle",
+    "idle",
+    "streaming",
+    "streaming",
+    "streaming",
+    "error",
+    "error"
+  ]
+}

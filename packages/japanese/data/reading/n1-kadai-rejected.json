@@ -1,0 +1,34 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N1 candidates; a row ships only when BOTH passes return PASS and both picks are the frozen key. Unlike N2, the authored surplus alone covered every floor after the burns, so no replacement packet was needed. Packets were shuffled INDEPENDENTLY per row per pass (.cache/judge/n1-listening), so the key never sat in the same option slot twice and position could not leak the answer. N1 ships authored-only: JLPTSuccess ships listening at N5 only (LICENSE §29), so every N1 row is composed.",
+    "rejectedIds": ["n1-kd-123"],
+    "verdicts": {
+      "pass": 54,
+      "ambiguous": 0,
+      "unanswerable": 0,
+      "unfit": 2,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n1-kd-123",
+        "level": "N1",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: 今日は各班的な掲示板に貼る分だけ刷ってくれ is broken morphology; 各班的な is not a word a native speaker would say, so the heard script fails the UNFIT screen even though the intended answer is decidable.",
+          "pass2 UNFIT: same line, 各班的な judged a non-word; the scenario itself is broken Japanese."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "judge": "hyouki-judge (two independent model passes, keys withheld, per-pass option shuffle)",
+    "prompt": "packages/japanese/prompts/hyouki-validator.md",
+    "runDate": "2026-10-11",
+    "note": "Two independent blind passes over the authored 表記 candidates. Options were shuffled INDEPENDENTLY per pass and per row, so the key never sat in the slot the store froze. A row ships only when BOTH passes pick that key AND BOTH say the sentence genuinely reads as one word (fit). Every rejection below is a 表記 defect no mechanical screen can see: the corpus attests a spelling the paper would not print, or a second option shares the printed reading.",
+    "rejectedIds": ["n4-h-002"],
+    "verdicts": {
+      "accepted": 29,
+      "fit-false": 1,
+      "distractor-picked": 0
+    },
+    "detail": [
+      {
+        "id": "n4-h-002",
+        "level": "N4",
+        "why": [
+          "pass1-fit-false(Sagaru normally written 下がる; 下る reads as kudaru.)"
+        ]
+      }
+    ]
+  }
+]

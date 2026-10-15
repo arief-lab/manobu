@@ -1,0 +1,134 @@
+[
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "first 中文 pass. Two rows judged UNANSWERABLE. A third (n2c-1-1-1-11) returned no parseable verdict block at all, which is not a PASS and is rejected the same way: an unread verdict is not a passing one.",
+    "verdicts": {
+      "pass": 13,
+      "ambiguous": 0,
+      "unanswerable": 2
+    },
+    "rejectedIds": ["n2c-1-1-1-11", "n2c-1-1-1-38", "n2c-1-1-2-41"]
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-06",
+    "note": "second judge FAMILY, over the 16-row regenerated batch plus the 3 replacement rows the rejection record pulled in. It flagged the SAME two rows as the first family and agreed with the shipped key on EVERY row of the frozen store (16/16). It also returned a verdict for n2c-1-1-1-11, which the first family failed to parse; the row stays rejected regardless, because the safe direction for an unread verdict is out of the store.",
+    "verdicts": {
+      "pass": 17,
+      "ambiguous": 0,
+      "unanswerable": 2
+    },
+    "rejectedIds": ["n2c-1-1-1-38", "n2c-1-1-2-41"]
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "TASK-173.9.8 appended-rows pass: the 56 rows the page-set widening appended to `n2-chuubun.json`. The 16 pre-widening rows already carry both families' verdicts in the records above, so this pass judges the appended 56 only. Every row PASS and every blind pick agreed with the shipped key (56/56).",
+    "verdicts": {
+      "pass": 56,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY over the same 56 appended N2 rows. One AMBIGUOUS (n2c-1-3-1-10: 荒廃竹林の＿＿ admits the distractor 寺 as well as the key 整備); the other 55 rows PASS and agree with the shipped key.",
+    "verdicts": {
+      "pass": 55,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n2c-1-3-1-10"]
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "SECOND pass on the regeneration the rejection above forced. The N2 regeneration produced NO new row: the eligible supply after the rejection is 71 and the store is 71 rows, so nothing unjudged entered the store.",
+    "verdicts": {
+      "pass": 0,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY: the regenerated N2 store contains no unjudged row, so this pass judged nothing and rejects nothing.",
+    "verdicts": {
+      "pass": 0,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "opencode/big-pickle",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "TASK-173.9.10 appended-rows pass over the 令和7年版 regeneration (supply 71 -> 89): the 18 new N2 rows were judged blind, key withheld. 17 rows PASS and keyed as shipped; n2c-r07-1-2-1-5 is AMBIGUOUS: the slot 「＿＿の2030年」 defends both 勝負 (key) and ゴール (option 4) and nothing in the passage distinguishes them.",
+    "verdicts": {
+      "pass": 17,
+      "ambiguous": 1,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n2c-r07-1-2-1-5"]
+  },
+  {
+    "judge": "opencode/space-bunny-free",
+    "prompt": "prompts/reading-validator.md",
+    "runDate": "2026-10-07",
+    "note": "Second judge FAMILY over the same 18 appended N2 rows: 17 rows PASS keyed as shipped; n2c-r07-1-2-1-5 returned PASS but keyed option 4 ゴール against the shipped key 1 勝負. A row two readers key differently is a row the passage does not decide, so it is rejected (and the first family called it AMBIGUOUS independently).",
+    "verdicts": {
+      "pass": 18,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": ["n2c-r07-1-2-1-5"]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from it, then mark each option CORRECT / WRONG / UNCERTAIN. Packet: .cache/judge/chuubun-n2-keys-withheld.md, verdicts: .cache/judge/chuubun-n2-A.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass A over the 36-row AUTHORED N2 中文 batch (n2m-1..n2m-36). All 36 PASS and every one was keyed exactly as shipped (36/36). Two loose reads were recorded and still decided: n2m-5's key says 七時前に where the passage prints 七時までに, and n2m-34's key reaches the 百回 cutoff through the printed cost reason by contraposition. Correlated-error limit: both passes ran on the author model family, so agreement here is not independence. The two passes differ in procedure only, and the key was withheld from the packet, so the pairing tests whether a reader who cannot see the key lands on one option, not whether a second model would.",
+    "verdicts": {
+      "pass": 36,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 36 items, deliberately different procedure: state the one fact the passage would be tested on before reading the options, then classify each option THE-FEATURE / OTHER-PRINTED / UNPRINTED / CONTRADICTION. Packet: .cache/judge/chuubun-n2-keys-withheld.md, verdicts: .cache/judge/chuubun-n2-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass B over the same batch. 36 PASS, no second THE-FEATURE anywhere, and the choices again matched the shipped keys. One seam was flagged inside n2m-27 rather than in its answer: the 厚紙案 prints 印刷の日数も変わらない while the 結果 prints 発行の日は一週間遅れた, which the passage never reconciles. The 小問 itself was unambiguous, so this is not a rejection, but the row was rewritten to carry the delay's cause and re-certified in round B.",
+    "verdicts": {
+      "pass": 36,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "n2m-27 re-issued with the delay's own cause printed (返送が三週間後になった), judged with both procedures. Packet: .cache/judge/n2-roundC-keys-withheld.md, verdicts: .cache/judge/n2-roundC-A.md and .cache/judge/n2-roundC-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round B, over the rewritten n2m-27. PASS under both procedures, key unchanged, and both passes reported no internal contradiction left in the passage. No row in this store was burned.",
+    "verdicts": {
+      "pass": 1,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

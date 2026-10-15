@@ -1,0 +1,48 @@
+---
+id: TASK-173.9.24
+title: >-
+  Exam (real mode): author 文章の文法 (discourse cloze) at N1/N2/N3 and blind-certify
+  it -- the 文法 大問 after 用法
+status: Done
+assignee: []
+created_date: '2026-10-10 18:32'
+updated_date: '2026-10-10 20:51'
+labels: []
+dependencies: []
+parent_task_id: TASK-173.9
+priority: medium
+type: feature
+ordinal: 979000
+---
+
+## Description
+
+<!-- SECTION:DESCRIPTION:BEGIN -->
+文章の文法 is the last 文法 大問 with no source: PAPER_BLOCK_SHAPES declares it with itemTypes: [] (packages/item-engine/src/paper.ts:307) and it prints 5 小問 at every level (N1 大問7 paper.ts:516, N2 大問9 :542, N3 大問3 :568, N4 大問3 :593, N5 大問3 :615). doc-26 §3 taxonomy row: '文章の文法 | none | No'. The official ねらい: read a short multi-sentence passage and choose which of four SENTENCES belongs in the ＿＿ - discourse coherence (connectives, reference, tense/aspect), not sentence-level form. That is what separates it from 文の文法1/用法 (blanked FORM, grammar/{level}.json source) and from 文の文法2 (star-ordering of fragments). ROUTE (owner-approved family: pattern-driven 大問 use AI-authored items + two-blind-pass cert, doc-27 §11; prose-driven 大問 use authored prose + the same cert, doc-27 §10/§14): the item is authored prose end-to-end - a written passage, a written key sentence, three written incoherent-but-grammatical distractors. There is no licensed corpus that pairs a passage with its own removed sentence, so nothing mechanical re-derives the key: the two blind passes ARE the solvability proof, and the deterministic gate only re-proves SHAPE (one ＿＿, four distinct complete sentences, distractor not verbatim in the passage) and the cert record. SCOPE: N1/N2/N3. N4/N5 print the same 大問 and stay DECLINED with a named hole, exactly as N4 用法 does (a level with no store is declined, never invented - TASK-173.1 no-fallback). CODE ANCHORS: the whole chain copies the 用法 precedent built by TASK-173.9.23/.23.1/.23.2: itemType registration (packages/api-contract/src/exam.ts EXAM_ITEM_TYPES + packages/item-engine/src/types.ts ITEM_TYPES, where 'usage' sits at :8), block shape (paper.ts:307), band membership (paper.ts:57 LANGUAGE_KNOWLEDGE_ITEM_TYPES - 'usage' joined it after a full N2 paper lost points when the classifier dropped a placed type), stimulus requirement (packages/item-engine/src/stimuli.ts STIMULUS_REQUIREMENTS - a passage-answered 大問 owes 1 passage), store loader (apps/server/src/services/exam-corpus.ts usageStoreFor :665), picker (apps/server/src/services/exam-service.ts usageSourceFor :1855, READING_STORE_FOR :3677, anchor prefix + seenAnchors + spending via the catalog usedSets), honesty gate (isRefused trusts provenance composed + validated true), offline re-proof (packages/japanese/scripts/check-usage.ts + bun run check:usage), verdict freeze (data/reading/{level}-usage-rejected.json, one record per cert round, burned ids permanent), cert prompt (packages/japanese/prompts/usage-validator.md; TASK-173.9.23.2 strengthened the procedure: packets shuffled INDEPENDENTLY per pass so option position cannot leak the key).
+<!-- SECTION:DESCRIPTION:END -->
+
+## Acceptance Criteria
+<!-- AC:BEGIN -->
+- [x] #1 A new itemType 'discourse-cloze' is declared once in both lists (packages/api-contract/src/exam.ts EXAM_ITEM_TYPES and packages/item-engine/src/types.ts ITEM_TYPES), PAPER_BLOCK_SHAPES['bunshou-no-bunpou'].itemTypes becomes ['discourse-cloze'] (paper.ts:307), and STIMULUS_REQUIREMENTS (packages/item-engine/src/stimuli.ts) demands exactly 1 passage for it - the cloze text is the stimulus, the four options are SENTENCES, so the validator's stimulus-answered rules from the long-reading family apply (the stem alone is leak evidence, not the passage).
+- [x] #2 'discourse-cloze' joins LANGUAGE_KNOWLEDGE_ITEM_TYPES (packages/item-engine/src/paper.ts:57) following the 'usage' precedent (TASK-173.9.23: a placed type missing from the band lists silently loses points - a full N2 paper scored 57/60). An apps/server band test extends the N2 three-column check so a full paper still totals correctly with the 文章の文法 小問 placed.
+- [x] #3 The server serves the block at the three scoped levels: a bunshouStoreFor loader in apps/server/src/services/exam-corpus.ts (next to usageStoreFor :665) reads packages/japanese/data/reading/{n1,n2,n3}-bunshou.json and keeps only composed+validated rows; a discourseClozeSourceFor picker in exam-service.ts (next to usageSourceFor :1855) serves one cloze passage per 小問 with the fixed official 文章の文法 instruction line as stem, anchor prefix 'bunshou:', spending via a catalog usedSet and honoring seenAnchors; READING_STORE_FOR (exam-service.ts:3677) gains the entry so blockHasRealSource names the hole when the store is drained; N4/N5 (paper.ts:593,615) print the 大問, decline it and name it - never invent.
+- [x] #4 Stores are AUTHORED prose, written fresh per level inside the register the official ねらい PDFs in doc-26 §1 pin (a shorter colloquial passage at N3, longer 中文-grade at N2/N1; the concrete rune bands are fixed from doc-26 §1 at execution time and recorded in the LICENSE section). Each row: passage with exactly one ＿＿ run mid-discourse, key = the coherent removed sentence, three distractors that are each grammatical complete sentences but incoherent in this slot (wrong connective, wrong referent, wrong tense/aspect, or off-topic). construction 'authored', provenance 'composed', evidence = the discourse cue that decides (the sentence or connector before/after the blank).
+- [x] #5 Two blind judge passes per doc-27 §11 with a NEW prompt packages/japanese/prompts/bunshou-validator.md (its job: which sentence restores the discourse, and name any second arguable sentence). Packets are keyless and shuffled INDEPENDENTLY per pass (the TASK-173.9.23.2 strengthening). A row is kept only when both passes PASS and both pick the frozen key form; verdicts freeze to data/reading/{n1,n2,n3}-bunshou-rejected.json, burned ids permanent across cert rounds.
+- [x] #6 Deterministic offline gate: packages/japanese/scripts/check-bunshou.ts wired to 'bun run check:bunshou' (mirrors check-usage.ts structure and its six-screen split) re-proves per shipped row: composed+validated+validatedBy trio, id not in {level}-bunshou-rejected.json, exactly one ＿＿ in the passage, four DISTINCT full sentences as options (none equal to the key, none occurring verbatim inside the passage text), fixed stem, block 'bunshou-no-bunpou', level stamp, passage+key inside the declared rune bands. check:bunshou exits 0 over shipped stores and 1 over a mutated fixture (test/check-bunshou.test.ts).
+- [x] #7 Depth: each scoped store carries >= 20 rows (大問 count 5 x 4 papers, the owner depth standard) and apps/server/test/exam-bunshou.test.ts pins it: store shape + validated flags, picker spend, a real N3 paper fills 大問3 文章の文法, a drained store names the block, N4/N5 decline.
+- [x] #8 Mutation-gate seams: (a) a discourse-cloze row serves unvalidated in real -> CAUGHT; (b) store absent -> block named short, nothing fabricated -> CAUGHT; (c) check-bunshou misses a two-blank row -> CAUGHT. Each seam follows the usage seams declared for TASK-173.9.23.1 in scripts/mutation-gate.ts.
+- [x] #9 Docs: packages/japanese/data/LICENSE.md gains a section owning the authored 文章の文法 stores (prose authored here, the cert record, per-level bands, the N4/N5 decline); the store bullets in packages/japanese/AGENTS.md, apps/server/AGENTS.md and packages/item-engine/AGENTS.md (band/type) are updated; bun run check:dox green.
+- [x] #10 Full verification in one report: check-types 14/14, packages/japanese + packages/item-engine + apps/server suites green, check:bunshou exits 0, mutation-gate --check resolves every anchor, ultracite clean, check:dox green. Single commit on approval, no push.
+<!-- AC:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Docs pass found a real orthography defect chain: a KANJIDIC2-membership scan over every shipped data/reading store found three simplified-only codepoints that prose rounds had missed - 书 (U+4E66) in the check-bunshou.test baseRow fixture, 衔接 (U+8854) in the shipped n1-b-12 evidence, 单方面 (U+5355) in the shipped n1b-4 長文 passage. All three repaired to the Japanese forms (書店, 接続, 一方的; 一方的 is the same rune count, band totals unchanged); SIMPLIFIED_RE in check-bunshou.ts gained 0x4e66/0x8854/0x5355 with the finding in its comment; post-fix scan is clean over all shipped stores. No store hash is pinned by any test (the sha256 in the N1 中文 judge note is descriptive history only), so the two data edits stand without invalidating a verdict record. ultracite reformat of exam-service.ts moved the bunshou-anchor seam's target line from 8- to 6-space indent; the seam anchor in scripts/mutation-gate.ts was updated to the current bytes and all 5 bunshou seams were re-run: ALL CAUGHT. Final report: check-types 14/14, japanese 339 pass, item-engine 73 pass, server 494 tests 0 fail 1 skip, check:bunshou exits 0 (N3 29, N2 27, N1 28 rows), mutation-gate --check resolves all 170 anchors, ultracite clean over 673 files, check:dox green.
+<!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+文章の文法 now trains its real ねらい at N1/N2/N3 in a real paper: discourse-cloze registered once in contract+engine, block shape filled, 1-passage stimulus, LANGUAGE_KNOWLEDGE band membership, bunshouStoreFor + discourseClozeSourceFor serving blind-certified authored stores (29/27/28 rows, 4-paper depth), hole naming for the drained case, N4/N5 declined and named, check:bunshou re-proving shape+cert offline (9 screens incl. simplified-hanzi orthography), 5 mutation seams all caught, LICENSE §24 + three AGENTS updated. Verified by full suites + gates green.
+<!-- SECTION:FINAL_SUMMARY:END -->

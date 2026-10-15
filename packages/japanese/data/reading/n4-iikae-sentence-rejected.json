@@ -1,0 +1,7 @@
+{
+  "rejectedIds": ["n4-is-021", "n4-is-022"],
+  "reasons": {
+    "n4-is-021": "pass B says unfit: Answer adds destination 学校; だれとも行かない option also arguable.",
+    "n4-is-022": "pass A says unfit: Only candidate swaps この→あの, changing referent; no true paraphrase.; pass B says unfit: Closest option changes この to あの; no option keeps the facts."
+  }
+}

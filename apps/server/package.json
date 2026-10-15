@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsdown",
+    "check-types": "tsc -p tsconfig.typecheck.json",
+    "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
+    "compile:linux": "bun build --compile --target=bun-linux-x64 --minify --sourcemap ./src/index.ts --outfile dist/server-x86_64-unknown-linux-gnu",
+    "compile:windows": "bun build --compile --target=bun-windows-x64 --minify --sourcemap ./src/index.ts --outfile dist/server-x86_64-pc-windows-msvc.exe",
+    "dev": "bun run --hot src/index.ts",
+    "smoke:mcp": "bun run scripts/mcp-smoke.mjs",
+    "start": "bun run dist/index.mjs",
+    "test": "bun test test/*.test.ts"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.9.1",
+    "@libsql/linux-x64-gnu": "0.5.29",
+    "@libsql/win32-x64-msvc": "0.5.29",
+    "@manobu/acp": "workspace:*",
+    "@manobu/agent": "workspace:*",
+    "@manobu/api-contract": "workspace:*",
+    "@manobu/db": "workspace:*",
+    "@manobu/env": "workspace:*",
+    "@manobu/item-engine": "workspace:*",
+    "@manobu/srs": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@orpc/server": "2.0.0-beta.35",
+    "dotenv": "catalog:",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.12.32",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@manobu/config": "workspace:*",
+    "@orpc/client": "2.0.0-beta.35",
+    "@types/bun": "catalog:",
+    "tsdown": "^0.22.14",
+    "typescript": "catalog:"
+  }
+}

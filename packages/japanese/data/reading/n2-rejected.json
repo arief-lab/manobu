@@ -1,0 +1,62 @@
+[
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Strict on AMBIGUOUS: two nouns completing the same compound or the same particle-frame is a reject even when one fits better.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 1 over the 24-row N2 短文 batch (.cache/judge/tanbun-n2.md, keys withheld). All 24 rows PASS on exactly one option. Several rows hinge on a fixed compound the source prints (経済安全保障, 温室効果ガス, 透明性枠組み, 再生可能エネルギー, 陸上風力発電), which is the class the deterministic frame screen is strongest at, and the judge found no second noun for any of them.",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 24 items, deliberately different procedure: first answer as a test-taker, then switch sides and build the strongest case the page alone allows for each of the other three options, and report every option that survives that argument.",
+    "runDate": "2026-10-08",
+    "note": "Round A, judge family 2 over the same batch: all 24 rows PASS, and its surviving option equals the frozen key on every row (24/24 across both families). The two families independently rejected the same near-miss on their own terms, for instance 企業 in 地域＿＿の持続的な活用, on the ground that the page never treats local firms as a stock to be drawn on. The N2 store ships as generated, with no regeneration round.",
+    "verdicts": {
+      "pass": 24,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "packages/japanese/prompts/reading-validator.md, applied per item: read the passage alone, answer the 小問 from it, then mark each option CORRECT / WRONG / UNCERTAIN; exactly one option in CORRECT or UNCERTAIN is PASS, two or more is AMBIGUOUS, none is UNANSWERABLE. Packet: .cache/judge/tanbun-n2-keys-withheld.md, verdicts: .cache/judge/tanbun-n2-A.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass A over the 20-row AUTHORED N2 短文 batch (n2s-1..n2s-20). All 20 PASS and every one was keyed exactly as shipped (20/20). Correlated-error limit: both passes ran on the author model family, so agreement here is not independence. The two passes differ in procedure only, and the key was withheld from the packet, so the pairing tests whether a reader who cannot see the key lands on one option, not whether a second model would.",
+    "verdicts": {
+      "pass": 20,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "same 20 items, deliberately different procedure: for every option quote the exact span of the passage that decides it, or NONE; TRUE requires a quote, an option with no deciding span is UNSUPPORTED. Packet: .cache/judge/tanbun-n2-keys-withheld.md, verdicts: .cache/judge/tanbun-n2-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round A, pass B over the same batch. 17 PASS, 2 AMBIGUOUS, 1 UNANSWERABLE, and the 17 passes again chose the shipped key. n2s-7 was AMBIGUOUS because option 3 restated the printed 十一店 fact, which a quote test cannot drop when the stem asks for 筆者の考え, and option 1 was an unprinted 規制の話. n2s-19 was AMBIGUOUS because its key called the printed 正午から午後一時 a 午前の部, a span the passage never divides. n2s-14 was reported UNANSWERABLE because its key blamed the 毎月十件未満 condition for restoring the count, which the passage makes the remedy rather than the cause, and no option carried the printed cause. The three rows are burned here and their replacements ship as n2s-21, n2s-22 and n2s-23, re-certified below. The report's own table wrote PASS on the n2s-14 row while its totals line wrote UNANSWERABLE; the row note explains the key option as FALSE, which matches the totals, so the totals are what this record counts.",
+    "verdicts": {
+      "pass": 17,
+      "ambiguous": 2,
+      "unanswerable": 1
+    },
+    "rejectedIds": ["n2s-7", "n2s-14", "n2s-19"]
+  },
+  {
+    "judge": "qoder/general-purpose (blind: answer key withheld)",
+    "prompt": "the four rewritten rows, judged twice in one packet with both procedures above (quote test and stem-first). Packet: .cache/judge/n2-roundC-keys-withheld.md, verdicts: .cache/judge/n2-roundC-A.md and .cache/judge/n2-roundC-B.md",
+    "runDate": "2026-10-10",
+    "note": "Round B, over the rows round A rejected in this store: n2s-21 (was n2s-7), n2s-22 (was n2s-14), n2s-23 (was n2s-19). All three PASS under both procedures and both procedures picked the shipped key. The repairs moved the wrong answers from unprinted or printed-but-off-demand to spans the passage contradicts: n2s-21's 動機 option now reads 理解できない against the printed 理解できる, n2s-22's key now carries the printed 二台が…置き方をされたからである instead of the restoration condition, and n2s-23's key drops the invented 午前の部 for the printed 電話を受け付けない window. The packet also re-certified n2m-27, whose passage contradicted itself (厚紙案 is printed as 日数も変わらない while the 結果 was 一週間遅れた); that row is recorded in n2-chuubun-rejected.json.",
+    "verdicts": {
+      "pass": 3,
+      "ambiguous": 0,
+      "unanswerable": 0
+    },
+    "rejectedIds": []
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "judge": "listening-judge (two independent model passes, keys withheld, per-pass per-row option shuffle)",
+    "prompt": "packages/japanese/prompts/listening-validator.md",
+    "runDate": "2026-10-12",
+    "note": "Two independent blind passes over the authored N4 kadai candidates; the burned rows were replaced by newly authored rows judged in their own packets under the same protocol. Packets were shuffled INDEPENDENTLY per row per pass, so the key never sat in the same option slot twice and position could not leak the answer. A row ships only when BOTH passes return PASS and both picks are the frozen key. N4 ships authored-only: every N4 listening row upstream is a near-duplicate, English-gloss or too-short, leaving zero vendorable (TASK-173.8.1 AC#3).",
+    "rejectedIds": ["n4-kd-105", "n4-kd-131"],
+    "verdicts": {
+      "pass": 69,
+      "ambiguous": 0,
+      "unanswerable": 0,
+      "unfit": 3,
+      "distractor_picked": 0
+    },
+    "detail": [
+      {
+        "id": "n4-kd-105",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "pass"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: Opening customer line 「今夜 一室 あく 部屋は ありますか」 is ungrammatical standard Japanese: a dictionary-form verb cannot modify a noun (native would say 空いている 部屋). Broken grammar at N4 ships a wrong model, so UNFIT even though the content answer (海が 見える 部屋) is otherwise decidable.",
+          "pass2 PASS: Man explicitly picks the sea-view room over the mentioned mountain-view one."
+        ]
+      },
+      {
+        "id": "n4-kd-131",
+        "level": "N4",
+        "passes": {
+          "pass1": {
+            "verdict": "unfit"
+          },
+          "pass2": {
+            "verdict": "unfit"
+          }
+        },
+        "why": [
+          "pass1 UNFIT: The line 「じゃあ、私が ... 運ぶわ」 is spoken by 男の学生, but the assertive final particle わ is a feminine usage a native male speaker would not use here. A wrong-gender register line is a language defect at N4, so UNFIT even though the content pick (クーラーボックス) is otherwise decidable.",
+          "pass2 UNFIT: The 男 person's line ends in the feminine sentence-final particle わ (運ぶわ), Japanese a native male speaker would not naturally produce; content answer is clear but the register defect breaks the item."
+        ]
+      }
+    ]
+  }
+]
